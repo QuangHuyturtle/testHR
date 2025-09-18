@@ -1,0 +1,24 @@
+2025-09-18 09:45:10,872 - INFO - HR Decision Support System initialized
+2025-09-18 09:45:10,873 - INFO - Starting model training...
+2025-09-18 09:45:10,873 - INFO - Creating sample data with 1000 samples...
+2025-09-18 09:45:11,002 - INFO - Sample data saved to data\sample_candidates.csv
+2025-09-18 09:45:11,003 - INFO - Extracting features from candidate data...
+2025-09-18 09:45:12,713 - INFO - Model trained successfully!
+2025-09-18 09:45:12,713 - INFO - Accuracy: 0.945
+2025-09-18 09:45:12,719 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.81      0.90        59
+           1       0.93      1.00      0.96       141
+
+    accuracy                           0.94       200
+   macro avg       0.96      0.91      0.93       200
+weighted avg       0.95      0.94      0.94       200
+
+2025-09-18 09:45:12,732 - INFO - Model saved successfully
+2025-09-18 09:45:12,733 - INFO - Extracting features from candidate data...
+2025-09-18 09:45:12,756 - INFO - Prediction for TEST_001: Suitable (confidence: 0.915)
+2025-09-18 09:45:12,759 - INFO - Extracting features from candidate data...
+2025-09-18 09:45:12,780 - INFO - Prediction for TEST_002: Suitable (confidence: 0.947)
+2025-09-18 09:45:12,781 - INFO - Extracting features from candidate data...
+2025-09-18 09:45:12,803 - INFO - Prediction for TEST_003: Suitable (confidence: 0.763)

@@ -1,0 +1,1001 @@
+candidate_id,years_experience,education_level,skills,experience_description,position_applied,suitable
+CAND_0001,6,master,"teamwork, agile, python, linux, nodejs, leadership, kubernetes, java","Worked as consultant for 6 years with expertise in teamwork, agile, python",consultant,1
+CAND_0002,11,associate,"kubernetes, react, data analysis, communication, scrum","Worked as consultant for 11 years with expertise in kubernetes, react, data analysis",consultant,0
+CAND_0003,8,associate,"azure, agile, machine learning","Worked as consultant for 8 years with expertise in azure, agile, machine learning",consultant,0
+CAND_0004,17,associate,"scrum, javascript, data analysis","Worked as designer for 17 years with expertise in scrum, javascript, data analysis",designer,0
+CAND_0005,14,phd,"git, leadership","Worked as developer for 14 years with expertise in git, leadership",developer,1
+CAND_0006,15,phd,"docker, agile, azure, sql, data analysis","Worked as manager for 15 years with expertise in docker, agile, azure",manager,1
+CAND_0007,6,high_school,"scrum, nodejs, communication, kubernetes, python, leadership","Worked as designer for 6 years with expertise in scrum, nodejs, communication",designer,1
+CAND_0008,11,master,"leadership, kubernetes, nodejs, aws, scrum, sql, java","Worked as designer for 11 years with expertise in leadership, kubernetes, nodejs",designer,1
+CAND_0009,16,high_school,"aws, sql, leadership, git, teamwork","Worked as analyst for 16 years with expertise in aws, sql, leadership",analyst,1
+CAND_0010,11,associate,"git, kubernetes, scrum, leadership, project management, docker, communication, sql","Worked as designer for 11 years with expertise in git, kubernetes, scrum",designer,1
+CAND_0011,18,master,"docker, data analysis","Worked as designer for 18 years with expertise in docker, data analysis",designer,1
+CAND_0012,0,master,"project management, machine learning, leadership, java, docker, statistics","Worked as consultant for 0 years with expertise in project management, machine learning, leadership",consultant,1
+CAND_0013,2,high_school,"linux, nodejs, agile","Worked as consultant for 2 years with expertise in linux, nodejs, agile",consultant,0
+CAND_0014,13,phd,"statistics, project management, excel, teamwork, leadership, git, azure","Worked as manager for 13 years with expertise in statistics, project management, excel",manager,1
+CAND_0015,13,phd,"teamwork, statistics, sql, machine learning, react","Worked as manager for 13 years with expertise in teamwork, statistics, sql",manager,1
+CAND_0016,7,high_school,"java, aws, machine learning, scrum","Worked as developer for 7 years with expertise in java, aws, machine learning",developer,0
+CAND_0017,1,associate,"javascript, kubernetes","Worked as manager for 1 years with expertise in javascript, kubernetes",manager,0
+CAND_0018,2,master,"azure, javascript, sql","Worked as consultant for 2 years with expertise in azure, javascript, sql",consultant,0
+CAND_0019,4,phd,"data analysis, communication, java, javascript, teamwork","Worked as manager for 4 years with expertise in data analysis, communication, java",manager,1
+CAND_0020,4,master,"kubernetes, data analysis, statistics, nodejs, teamwork","Worked as analyst for 4 years with expertise in kubernetes, data analysis, statistics",analyst,1
+CAND_0021,18,bachelor,"git, teamwork, sql, data analysis, machine learning","Worked as consultant for 18 years with expertise in git, teamwork, sql",consultant,1
+CAND_0022,1,bachelor,"linux, data analysis, java, nodejs, project management, python, javascript, communication","Worked as developer for 1 years with expertise in linux, data analysis, java",developer,1
+CAND_0023,6,phd,"aws, machine learning","Worked as designer for 6 years with expertise in aws, machine learning",designer,1
+CAND_0024,19,bachelor,"communication, python, agile, git, scrum, java, kubernetes, data analysis","Worked as analyst for 19 years with expertise in communication, python, agile",analyst,1
+CAND_0025,10,bachelor,"react, scrum, python, sql, javascript, azure, aws, machine learning","Worked as analyst for 10 years with expertise in react, scrum, python",analyst,1
+CAND_0026,19,high_school,"communication, kubernetes, scrum, azure, linux, python","Worked as developer for 19 years with expertise in communication, kubernetes, scrum",developer,1
+CAND_0027,16,high_school,"scrum, project management, agile, communication, java, python, leadership","Worked as developer for 16 years with expertise in scrum, project management, agile",developer,1
+CAND_0028,13,high_school,"git, statistics, python, kubernetes, project management, teamwork, agile","Worked as consultant for 13 years with expertise in git, statistics, python",consultant,1
+CAND_0029,3,bachelor,"leadership, sql","Worked as developer for 3 years with expertise in leadership, sql",developer,1
+CAND_0030,0,high_school,"linux, sql, communication, leadership, aws, statistics, azure, nodejs","Worked as analyst for 0 years with expertise in linux, sql, communication",analyst,0
+CAND_0031,4,associate,"react, azure, leadership, machine learning","Worked as analyst for 4 years with expertise in react, azure, leadership",analyst,0
+CAND_0032,2,bachelor,"excel, leadership, teamwork, docker, communication","Worked as analyst for 2 years with expertise in excel, leadership, teamwork",analyst,1
+CAND_0033,14,bachelor,"azure, react, project management, kubernetes, statistics, nodejs, teamwork, excel","Worked as manager for 14 years with expertise in azure, react, project management",manager,1
+CAND_0034,5,phd,"machine learning, leadership, java, teamwork, kubernetes, project management","Worked as analyst for 5 years with expertise in machine learning, leadership, java",analyst,1
+CAND_0035,18,bachelor,"docker, sql, communication, excel, javascript, linux","Worked as consultant for 18 years with expertise in docker, sql, communication",consultant,1
+CAND_0036,3,high_school,"sql, agile, python, machine learning","Worked as developer for 3 years with expertise in sql, agile, python",developer,0
+CAND_0037,5,bachelor,"communication, scrum, data analysis, git, react, java, excel, aws","Worked as manager for 5 years with expertise in communication, scrum, data analysis",manager,1
+CAND_0038,14,high_school,"agile, excel, communication, scrum","Worked as designer for 14 years with expertise in agile, excel, communication",designer,0
+CAND_0039,8,bachelor,"statistics, project management, agile, azure, teamwork, scrum, nodejs, leadership","Worked as manager for 8 years with expertise in statistics, project management, agile",manager,1
+CAND_0040,12,master,"kubernetes, scrum, teamwork, communication, project management, java, docker","Worked as consultant for 12 years with expertise in kubernetes, scrum, teamwork",consultant,1
+CAND_0041,11,associate,"azure, kubernetes, leadership","Worked as consultant for 11 years with expertise in azure, kubernetes, leadership",consultant,0
+CAND_0042,10,high_school,"sql, project management, linux, azure, java","Worked as analyst for 10 years with expertise in sql, project management, linux",analyst,1
+CAND_0043,9,high_school,"docker, react, sql, leadership, linux, nodejs, javascript, agile","Worked as analyst for 9 years with expertise in docker, react, sql",analyst,1
+CAND_0044,9,master,"nodejs, aws","Worked as consultant for 9 years with expertise in nodejs, aws",consultant,1
+CAND_0045,12,master,"linux, python, project management, git, javascript, scrum","Worked as consultant for 12 years with expertise in linux, python, project management",consultant,1
+CAND_0046,7,associate,"linux, scrum","Worked as developer for 7 years with expertise in linux, scrum",developer,0
+CAND_0047,13,high_school,"docker, azure, git, leadership, nodejs, scrum, java, agile","Worked as manager for 13 years with expertise in docker, azure, git",manager,1
+CAND_0048,2,master,"agile, leadership, git","Worked as developer for 2 years with expertise in agile, leadership, git",developer,0
+CAND_0049,10,associate,"scrum, java, azure","Worked as designer for 10 years with expertise in scrum, java, azure",designer,0
+CAND_0050,16,phd,"leadership, statistics, machine learning, teamwork, react, sql, project management","Worked as consultant for 16 years with expertise in leadership, statistics, machine learning",consultant,1
+CAND_0051,6,bachelor,"linux, sql, data analysis","Worked as analyst for 6 years with expertise in linux, sql, data analysis",analyst,1
+CAND_0052,18,high_school,"excel, scrum, nodejs, linux, agile, python, teamwork, leadership","Worked as designer for 18 years with expertise in excel, scrum, nodejs",designer,1
+CAND_0053,3,phd,"scrum, teamwork, kubernetes","Worked as designer for 3 years with expertise in scrum, teamwork, kubernetes",designer,1
+CAND_0054,11,high_school,"react, python, machine learning, linux, sql, aws, javascript","Worked as analyst for 11 years with expertise in react, python, machine learning",analyst,1
+CAND_0055,12,associate,"git, communication, react, aws","Worked as consultant for 12 years with expertise in git, communication, react",consultant,0
+CAND_0056,7,associate,"communication, git, excel, scrum, teamwork, aws","Worked as designer for 7 years with expertise in communication, git, excel",designer,0
+CAND_0057,10,master,"teamwork, git, agile, excel","Worked as developer for 10 years with expertise in teamwork, git, agile",developer,1
+CAND_0058,8,associate,"kubernetes, scrum, data analysis, docker, aws, git","Worked as analyst for 8 years with expertise in kubernetes, scrum, data analysis",analyst,0
+CAND_0059,11,bachelor,"statistics, sql","Worked as manager for 11 years with expertise in statistics, sql",manager,1
+CAND_0060,8,phd,"python, docker, react, nodejs, sql, data analysis, excel, statistics","Worked as analyst for 8 years with expertise in python, docker, react",analyst,1
+CAND_0061,9,high_school,"linux, teamwork, excel, statistics, scrum","Worked as manager for 9 years with expertise in linux, teamwork, excel",manager,0
+CAND_0062,12,associate,"agile, aws, data analysis, linux, azure, kubernetes, nodejs","Worked as designer for 12 years with expertise in agile, aws, data analysis",designer,0
+CAND_0063,6,master,"data analysis, react","Worked as consultant for 6 years with expertise in data analysis, react",consultant,1
+CAND_0064,4,bachelor,"git, nodejs, python, agile, teamwork, scrum, statistics","Worked as designer for 4 years with expertise in git, nodejs, python",designer,1
+CAND_0065,8,high_school,"project management, communication, linux, git","Worked as analyst for 8 years with expertise in project management, communication, linux",analyst,0
+CAND_0066,12,phd,"project management, azure","Worked as developer for 12 years with expertise in project management, azure",developer,1
+CAND_0067,1,master,"linux, project management, sql, kubernetes, aws, teamwork","Worked as manager for 1 years with expertise in linux, project management, sql",manager,1
+CAND_0068,18,master,"agile, python, communication, excel","Worked as developer for 18 years with expertise in agile, python, communication",developer,1
+CAND_0069,6,associate,"linux, sql, agile","Worked as designer for 6 years with expertise in linux, sql, agile",designer,0
+CAND_0070,8,associate,"teamwork, communication, agile, statistics, project management","Worked as designer for 8 years with expertise in teamwork, communication, agile",designer,1
+CAND_0071,14,phd,"docker, communication, kubernetes, agile, sql","Worked as designer for 14 years with expertise in docker, communication, kubernetes",designer,1
+CAND_0072,8,phd,"statistics, docker, teamwork, project management","Worked as consultant for 8 years with expertise in statistics, docker, teamwork",consultant,1
+CAND_0073,5,associate,"data analysis, docker, kubernetes, leadership","Worked as consultant for 5 years with expertise in data analysis, docker, kubernetes",consultant,0
+CAND_0074,2,master,"statistics, aws, excel, scrum, python, leadership, javascript","Worked as developer for 2 years with expertise in statistics, aws, excel",developer,1
+CAND_0075,17,bachelor,"aws, javascript","Worked as consultant for 17 years with expertise in aws, javascript",consultant,1
+CAND_0076,8,phd,"machine learning, agile, sql, docker, nodejs, react","Worked as developer for 8 years with expertise in machine learning, agile, sql",developer,1
+CAND_0077,8,associate,"git, nodejs, communication","Worked as designer for 8 years with expertise in git, nodejs, communication",designer,0
+CAND_0078,18,master,"sql, java, project management, kubernetes, python, excel","Worked as consultant for 18 years with expertise in sql, java, project management",consultant,1
+CAND_0079,19,phd,"aws, python, azure, communication, statistics","Worked as designer for 19 years with expertise in aws, python, azure",designer,1
+CAND_0080,11,bachelor,"docker, scrum, azure","Worked as consultant for 11 years with expertise in docker, scrum, azure",consultant,1
+CAND_0081,14,high_school,"kubernetes, leadership, azure","Worked as designer for 14 years with expertise in kubernetes, leadership, azure",designer,0
+CAND_0082,15,associate,"java, project management, javascript","Worked as consultant for 15 years with expertise in java, project management, javascript",consultant,1
+CAND_0083,5,master,"azure, git, nodejs, aws, excel, communication","Worked as manager for 5 years with expertise in azure, git, nodejs",manager,1
+CAND_0084,11,associate,"machine learning, python, docker, javascript, teamwork, leadership","Worked as designer for 11 years with expertise in machine learning, python, docker",designer,1
+CAND_0085,0,phd,"azure, project management, machine learning, data analysis, nodejs, teamwork, javascript, sql","Worked as consultant for 0 years with expertise in azure, project management, machine learning",consultant,1
+CAND_0086,15,phd,"statistics, communication","Worked as consultant for 15 years with expertise in statistics, communication",consultant,1
+CAND_0087,1,associate,"data analysis, statistics","Worked as consultant for 1 years with expertise in data analysis, statistics",consultant,0
+CAND_0088,2,associate,"python, kubernetes, git, agile, statistics, linux, sql","Worked as analyst for 2 years with expertise in python, kubernetes, git",analyst,0
+CAND_0089,13,associate,"git, communication, python, project management","Worked as designer for 13 years with expertise in git, communication, python",designer,1
+CAND_0090,13,bachelor,"kubernetes, excel, statistics, data analysis, agile, linux, nodejs, machine learning","Worked as consultant for 13 years with expertise in kubernetes, excel, statistics",consultant,1
+CAND_0091,3,master,"javascript, azure, sql, kubernetes, scrum, communication, statistics","Worked as designer for 3 years with expertise in javascript, azure, sql",designer,1
+CAND_0092,7,high_school,"aws, data analysis, communication, nodejs","Worked as analyst for 7 years with expertise in aws, data analysis, communication",analyst,0
+CAND_0093,16,phd,"data analysis, sql, python, linux, azure","Worked as manager for 16 years with expertise in data analysis, sql, python",manager,1
+CAND_0094,10,master,"statistics, java, aws, linux, git","Worked as manager for 10 years with expertise in statistics, java, aws",manager,1
+CAND_0095,1,master,"git, machine learning, kubernetes, aws, python","Worked as consultant for 1 years with expertise in git, machine learning, kubernetes",consultant,1
+CAND_0096,19,master,"java, teamwork, linux, scrum, kubernetes","Worked as analyst for 19 years with expertise in java, teamwork, linux",analyst,1
+CAND_0097,19,associate,"leadership, react, agile, communication, linux, aws","Worked as developer for 19 years with expertise in leadership, react, agile",developer,1
+CAND_0098,3,associate,"docker, teamwork, linux, excel, azure, sql, project management","Worked as manager for 3 years with expertise in docker, teamwork, linux",manager,1
+CAND_0099,1,bachelor,"project management, agile, azure, machine learning","Worked as analyst for 1 years with expertise in project management, agile, azure",analyst,0
+CAND_0100,7,phd,"python, azure, leadership, agile, machine learning","Worked as analyst for 7 years with expertise in python, azure, leadership",analyst,1
+CAND_0101,1,bachelor,"docker, java, communication, data analysis, agile, machine learning","Worked as analyst for 1 years with expertise in docker, java, communication",analyst,1
+CAND_0102,3,master,"python, sql, communication, statistics, react, leadership, nodejs, teamwork","Worked as analyst for 3 years with expertise in python, sql, communication",analyst,1
+CAND_0103,6,phd,"nodejs, agile, teamwork, data analysis, java, leadership","Worked as developer for 6 years with expertise in nodejs, agile, teamwork",developer,1
+CAND_0104,15,master,"statistics, javascript, agile, project management","Worked as analyst for 15 years with expertise in statistics, javascript, agile",analyst,1
+CAND_0105,7,phd,"excel, teamwork, sql, data analysis","Worked as designer for 7 years with expertise in excel, teamwork, sql",designer,1
+CAND_0106,2,high_school,"python, git, docker, excel, java","Worked as consultant for 2 years with expertise in python, git, docker",consultant,0
+CAND_0107,15,master,"docker, machine learning, agile, azure, statistics, git, leadership, data analysis","Worked as developer for 15 years with expertise in docker, machine learning, agile",developer,1
+CAND_0108,1,phd,"machine learning, linux, javascript, python, kubernetes, sql, data analysis, scrum","Worked as consultant for 1 years with expertise in machine learning, linux, javascript",consultant,1
+CAND_0109,16,phd,"leadership, java, scrum","Worked as manager for 16 years with expertise in leadership, java, scrum",manager,1
+CAND_0110,1,phd,"teamwork, java, statistics, excel, sql, kubernetes, project management, leadership","Worked as consultant for 1 years with expertise in teamwork, java, statistics",consultant,1
+CAND_0111,4,associate,"data analysis, excel","Worked as analyst for 4 years with expertise in data analysis, excel",analyst,0
+CAND_0112,19,master,"docker, leadership, python","Worked as analyst for 19 years with expertise in docker, leadership, python",analyst,1
+CAND_0113,19,associate,"docker, java, react","Worked as manager for 19 years with expertise in docker, java, react",manager,0
+CAND_0114,19,master,"azure, teamwork, aws, java, communication, python, project management","Worked as analyst for 19 years with expertise in azure, teamwork, aws",analyst,1
+CAND_0115,16,bachelor,"leadership, javascript, communication, linux","Worked as designer for 16 years with expertise in leadership, javascript, communication",designer,1
+CAND_0116,2,phd,"teamwork, scrum","Worked as manager for 2 years with expertise in teamwork, scrum",manager,0
+CAND_0117,6,associate,"linux, python","Worked as manager for 6 years with expertise in linux, python",manager,0
+CAND_0118,9,high_school,"excel, azure, aws, kubernetes, javascript, linux, communication","Worked as consultant for 9 years with expertise in excel, azure, aws",consultant,0
+CAND_0119,6,phd,"aws, java, azure","Worked as analyst for 6 years with expertise in aws, java, azure",analyst,1
+CAND_0120,3,associate,"communication, javascript, sql, azure, leadership, machine learning, linux, docker","Worked as developer for 3 years with expertise in communication, javascript, sql",developer,1
+CAND_0121,1,associate,"kubernetes, docker, java, linux","Worked as analyst for 1 years with expertise in kubernetes, docker, java",analyst,0
+CAND_0122,13,bachelor,"statistics, aws","Worked as consultant for 13 years with expertise in statistics, aws",consultant,1
+CAND_0123,10,master,"react, python, scrum, nodejs, azure","Worked as analyst for 10 years with expertise in react, python, scrum",analyst,1
+CAND_0124,7,high_school,"nodejs, agile","Worked as designer for 7 years with expertise in nodejs, agile",designer,0
+CAND_0125,3,master,"agile, kubernetes, project management, linux, communication, react, azure, leadership","Worked as analyst for 3 years with expertise in agile, kubernetes, project management",analyst,1
+CAND_0126,14,master,"communication, leadership","Worked as designer for 14 years with expertise in communication, leadership",designer,1
+CAND_0127,14,bachelor,"machine learning, docker","Worked as manager for 14 years with expertise in machine learning, docker",manager,1
+CAND_0128,5,phd,"git, scrum","Worked as manager for 5 years with expertise in git, scrum",manager,1
+CAND_0129,13,master,"scrum, statistics, docker, machine learning, sql, python, nodejs","Worked as consultant for 13 years with expertise in scrum, statistics, docker",consultant,1
+CAND_0130,13,high_school,"leadership, java, react, nodejs, project management","Worked as manager for 13 years with expertise in leadership, java, react",manager,1
+CAND_0131,8,master,"data analysis, leadership, agile, aws, sql","Worked as manager for 8 years with expertise in data analysis, leadership, agile",manager,1
+CAND_0132,0,phd,"git, kubernetes","Worked as consultant for 0 years with expertise in git, kubernetes",consultant,0
+CAND_0133,18,master,"excel, git, machine learning, aws, kubernetes","Worked as designer for 18 years with expertise in excel, git, machine learning",designer,1
+CAND_0134,11,associate,"machine learning, java, project management, azure","Worked as manager for 11 years with expertise in machine learning, java, project management",manager,1
+CAND_0135,6,phd,"sql, kubernetes","Worked as consultant for 6 years with expertise in sql, kubernetes",consultant,1
+CAND_0136,12,phd,"java, teamwork, sql, agile, react","Worked as developer for 12 years with expertise in java, teamwork, sql",developer,1
+CAND_0137,14,master,"kubernetes, teamwork, data analysis","Worked as analyst for 14 years with expertise in kubernetes, teamwork, data analysis",analyst,1
+CAND_0138,18,bachelor,"linux, excel, docker","Worked as consultant for 18 years with expertise in linux, excel, docker",consultant,1
+CAND_0139,12,associate,"azure, linux, nodejs, communication, python, aws","Worked as consultant for 12 years with expertise in azure, linux, nodejs",consultant,1
+CAND_0140,10,associate,"docker, react","Worked as manager for 10 years with expertise in docker, react",manager,0
+CAND_0141,14,bachelor,"react, teamwork","Worked as manager for 14 years with expertise in react, teamwork",manager,1
+CAND_0142,13,bachelor,"communication, excel, react","Worked as manager for 13 years with expertise in communication, excel, react",manager,1
+CAND_0143,12,bachelor,"linux, statistics","Worked as designer for 12 years with expertise in linux, statistics",designer,1
+CAND_0144,13,master,"teamwork, machine learning, statistics, communication, leadership","Worked as consultant for 13 years with expertise in teamwork, machine learning, statistics",consultant,1
+CAND_0145,4,phd,"javascript, excel, teamwork, leadership, scrum, communication","Worked as designer for 4 years with expertise in javascript, excel, teamwork",designer,1
+CAND_0146,18,bachelor,"docker, git, scrum, aws, machine learning","Worked as analyst for 18 years with expertise in docker, git, scrum",analyst,1
+CAND_0147,18,master,"sql, aws, react, statistics","Worked as consultant for 18 years with expertise in sql, aws, react",consultant,1
+CAND_0148,9,associate,"react, excel, statistics, data analysis, nodejs","Worked as consultant for 9 years with expertise in react, excel, statistics",consultant,0
+CAND_0149,8,high_school,"linux, python, git, project management","Worked as designer for 8 years with expertise in linux, python, git",designer,1
+CAND_0150,18,bachelor,"sql, machine learning","Worked as analyst for 18 years with expertise in sql, machine learning",analyst,1
+CAND_0151,6,high_school,"python, teamwork","Worked as developer for 6 years with expertise in python, teamwork",developer,0
+CAND_0152,3,phd,"machine learning, sql, azure, javascript, leadership, project management, data analysis, excel","Worked as manager for 3 years with expertise in machine learning, sql, azure",manager,1
+CAND_0153,8,phd,"scrum, project management","Worked as designer for 8 years with expertise in scrum, project management",designer,1
+CAND_0154,0,master,"data analysis, excel","Worked as manager for 0 years with expertise in data analysis, excel",manager,0
+CAND_0155,4,master,"react, data analysis, leadership, docker","Worked as developer for 4 years with expertise in react, data analysis, leadership",developer,1
+CAND_0156,3,phd,"excel, react, statistics, agile, git, docker","Worked as consultant for 3 years with expertise in excel, react, statistics",consultant,1
+CAND_0157,16,associate,"agile, project management, git, react, excel","Worked as consultant for 16 years with expertise in agile, project management, git",consultant,1
+CAND_0158,10,high_school,"git, javascript, sql","Worked as designer for 10 years with expertise in git, javascript, sql",designer,0
+CAND_0159,6,master,"java, excel, agile, aws, kubernetes, data analysis, machine learning","Worked as developer for 6 years with expertise in java, excel, agile",developer,1
+CAND_0160,8,phd,"statistics, kubernetes, leadership","Worked as analyst for 8 years with expertise in statistics, kubernetes, leadership",analyst,1
+CAND_0161,9,bachelor,"java, machine learning, project management, javascript","Worked as consultant for 9 years with expertise in java, machine learning, project management",consultant,1
+CAND_0162,13,associate,"agile, javascript","Worked as analyst for 13 years with expertise in agile, javascript",analyst,0
+CAND_0163,12,bachelor,"aws, project management, git, machine learning, kubernetes","Worked as consultant for 12 years with expertise in aws, project management, git",consultant,1
+CAND_0164,10,phd,"kubernetes, azure, excel","Worked as developer for 10 years with expertise in kubernetes, azure, excel",developer,1
+CAND_0165,3,high_school,"project management, react, python, data analysis, javascript, statistics, aws, java","Worked as manager for 3 years with expertise in project management, react, python",manager,1
+CAND_0166,2,master,"communication, docker, nodejs, data analysis, linux, git","Worked as consultant for 2 years with expertise in communication, docker, nodejs",consultant,0
+CAND_0167,19,phd,"javascript, project management, excel","Worked as manager for 19 years with expertise in javascript, project management, excel",manager,1
+CAND_0168,10,bachelor,"javascript, data analysis, react, python","Worked as consultant for 10 years with expertise in javascript, data analysis, react",consultant,1
+CAND_0169,8,bachelor,"git, data analysis, project management, scrum, teamwork, agile, nodejs","Worked as designer for 8 years with expertise in git, data analysis, project management",designer,1
+CAND_0170,19,phd,"docker, python, scrum, java, excel, agile, nodejs, aws","Worked as consultant for 19 years with expertise in docker, python, scrum",consultant,1
+CAND_0171,3,high_school,"agile, java, docker, nodejs, javascript, python","Worked as consultant for 3 years with expertise in agile, java, docker",consultant,1
+CAND_0172,9,bachelor,"java, docker, git, aws, javascript, communication, project management, kubernetes","Worked as analyst for 9 years with expertise in java, docker, git",analyst,1
+CAND_0173,1,bachelor,"communication, linux, react, aws, scrum, nodejs, excel, statistics","Worked as developer for 1 years with expertise in communication, linux, react",developer,0
+CAND_0174,14,master,"docker, machine learning, teamwork","Worked as designer for 14 years with expertise in docker, machine learning, teamwork",designer,1
+CAND_0175,0,phd,"aws, statistics, kubernetes, machine learning, python, git, data analysis","Worked as manager for 0 years with expertise in aws, statistics, kubernetes",manager,1
+CAND_0176,2,associate,"javascript, project management, teamwork, java","Worked as manager for 2 years with expertise in javascript, project management, teamwork",manager,0
+CAND_0177,0,associate,"teamwork, leadership, linux, azure","Worked as developer for 0 years with expertise in teamwork, leadership, linux",developer,0
+CAND_0178,9,high_school,"docker, azure, nodejs","Worked as developer for 9 years with expertise in docker, azure, nodejs",developer,0
+CAND_0179,1,master,"kubernetes, agile, python, communication, linux, statistics, azure","Worked as analyst for 1 years with expertise in kubernetes, agile, python",analyst,1
+CAND_0180,15,high_school,"nodejs, kubernetes, project management, teamwork, docker","Worked as manager for 15 years with expertise in nodejs, kubernetes, project management",manager,1
+CAND_0181,12,master,"project management, react","Worked as developer for 12 years with expertise in project management, react",developer,1
+CAND_0182,14,master,"kubernetes, javascript, linux, azure","Worked as consultant for 14 years with expertise in kubernetes, javascript, linux",consultant,1
+CAND_0183,15,associate,"agile, git, machine learning, aws, teamwork, linux","Worked as manager for 15 years with expertise in agile, git, machine learning",manager,0
+CAND_0184,9,high_school,"azure, nodejs, scrum, javascript, linux, kubernetes","Worked as developer for 9 years with expertise in azure, nodejs, scrum",developer,0
+CAND_0185,17,associate,"scrum, kubernetes, nodejs","Worked as manager for 17 years with expertise in scrum, kubernetes, nodejs",manager,0
+CAND_0186,17,bachelor,"data analysis, excel, agile, docker, azure, java, kubernetes, scrum","Worked as consultant for 17 years with expertise in data analysis, excel, agile",consultant,1
+CAND_0187,13,phd,"sql, kubernetes, linux, java, aws, communication, scrum","Worked as designer for 13 years with expertise in sql, kubernetes, linux",designer,1
+CAND_0188,11,bachelor,"nodejs, javascript, react, leadership, azure, data analysis, statistics, java","Worked as developer for 11 years with expertise in nodejs, javascript, react",developer,1
+CAND_0189,0,high_school,"agile, python, azure","Worked as manager for 0 years with expertise in agile, python, azure",manager,0
+CAND_0190,8,high_school,"nodejs, sql, azure, teamwork","Worked as developer for 8 years with expertise in nodejs, sql, azure",developer,0
+CAND_0191,4,associate,"nodejs, java, linux, kubernetes","Worked as developer for 4 years with expertise in nodejs, java, linux",developer,0
+CAND_0192,15,high_school,"nodejs, linux, python, leadership, sql","Worked as manager for 15 years with expertise in nodejs, linux, python",manager,1
+CAND_0193,3,master,"python, kubernetes","Worked as designer for 3 years with expertise in python, kubernetes",designer,1
+CAND_0194,19,bachelor,"project management, javascript, python, azure, git, data analysis, statistics, nodejs","Worked as analyst for 19 years with expertise in project management, javascript, python",analyst,1
+CAND_0195,4,bachelor,"statistics, kubernetes, java, excel, react, python","Worked as designer for 4 years with expertise in statistics, kubernetes, java",designer,1
+CAND_0196,11,associate,"kubernetes, sql, docker, linux","Worked as designer for 11 years with expertise in kubernetes, sql, docker",designer,0
+CAND_0197,13,phd,"java, javascript, docker, teamwork, kubernetes","Worked as manager for 13 years with expertise in java, javascript, docker",manager,1
+CAND_0198,5,phd,"git, python, javascript, sql","Worked as consultant for 5 years with expertise in git, python, javascript",consultant,1
+CAND_0199,5,bachelor,"java, project management, kubernetes, statistics, excel","Worked as designer for 5 years with expertise in java, project management, kubernetes",designer,1
+CAND_0200,5,associate,"communication, project management, data analysis, statistics, python","Worked as developer for 5 years with expertise in communication, project management, data analysis",developer,1
+CAND_0201,10,associate,"docker, communication, python, aws, excel, javascript","Worked as designer for 10 years with expertise in docker, communication, python",designer,1
+CAND_0202,8,bachelor,"teamwork, javascript","Worked as developer for 8 years with expertise in teamwork, javascript",developer,1
+CAND_0203,0,bachelor,"kubernetes, teamwork, azure, statistics, project management, leadership, scrum, react","Worked as manager for 0 years with expertise in kubernetes, teamwork, azure",manager,1
+CAND_0204,16,master,"data analysis, agile, python, java, nodejs, sql, leadership, javascript","Worked as designer for 16 years with expertise in data analysis, agile, python",designer,1
+CAND_0205,7,phd,"machine learning, python, communication, scrum, data analysis","Worked as designer for 7 years with expertise in machine learning, python, communication",designer,1
+CAND_0206,19,bachelor,"data analysis, javascript, java, teamwork, azure, agile, machine learning","Worked as consultant for 19 years with expertise in data analysis, javascript, java",consultant,1
+CAND_0207,3,associate,"sql, linux, git, docker, teamwork, java, aws, excel","Worked as analyst for 3 years with expertise in sql, linux, git",analyst,1
+CAND_0208,1,high_school,"data analysis, docker","Worked as consultant for 1 years with expertise in data analysis, docker",consultant,0
+CAND_0209,11,master,"docker, kubernetes, agile, java, git","Worked as manager for 11 years with expertise in docker, kubernetes, agile",manager,1
+CAND_0210,3,master,"python, machine learning, sql, react, agile, git","Worked as developer for 3 years with expertise in python, machine learning, sql",developer,1
+CAND_0211,16,bachelor,"azure, git, excel, javascript, communication, statistics, kubernetes, data analysis","Worked as consultant for 16 years with expertise in azure, git, excel",consultant,1
+CAND_0212,7,associate,"javascript, linux, scrum, sql, azure, leadership","Worked as manager for 7 years with expertise in javascript, linux, scrum",manager,1
+CAND_0213,13,associate,"java, docker, javascript, react","Worked as consultant for 13 years with expertise in java, docker, javascript",consultant,0
+CAND_0214,1,high_school,"sql, scrum","Worked as designer for 1 years with expertise in sql, scrum",designer,0
+CAND_0215,5,associate,"data analysis, kubernetes, nodejs, excel, linux, aws","Worked as consultant for 5 years with expertise in data analysis, kubernetes, nodejs",consultant,0
+CAND_0216,1,phd,"machine learning, kubernetes, data analysis, java, python","Worked as manager for 1 years with expertise in machine learning, kubernetes, data analysis",manager,1
+CAND_0217,7,high_school,"leadership, machine learning, excel","Worked as designer for 7 years with expertise in leadership, machine learning, excel",designer,0
+CAND_0218,2,phd,"git, excel, communication","Worked as manager for 2 years with expertise in git, excel, communication",manager,0
+CAND_0219,19,high_school,"project management, java, leadership, react, azure, javascript, excel","Worked as designer for 19 years with expertise in project management, java, leadership",designer,1
+CAND_0220,17,phd,"aws, data analysis, kubernetes, java","Worked as designer for 17 years with expertise in aws, data analysis, kubernetes",designer,1
+CAND_0221,8,bachelor,"python, scrum","Worked as analyst for 8 years with expertise in python, scrum",analyst,1
+CAND_0222,11,high_school,"kubernetes, project management, nodejs, sql, teamwork, git, machine learning, java","Worked as consultant for 11 years with expertise in kubernetes, project management, nodejs",consultant,1
+CAND_0223,5,bachelor,"kubernetes, nodejs, communication, statistics, git, azure, sql, react","Worked as consultant for 5 years with expertise in kubernetes, nodejs, communication",consultant,1
+CAND_0224,3,high_school,"linux, communication, data analysis, statistics, machine learning, teamwork, java","Worked as developer for 3 years with expertise in linux, communication, data analysis",developer,1
+CAND_0225,10,associate,"teamwork, leadership, python, scrum","Worked as developer for 10 years with expertise in teamwork, leadership, python",developer,1
+CAND_0226,12,associate,"sql, git, python, scrum","Worked as designer for 12 years with expertise in sql, git, python",designer,0
+CAND_0227,5,associate,"agile, java, linux, kubernetes, scrum, docker, statistics, project management","Worked as analyst for 5 years with expertise in agile, java, linux",analyst,1
+CAND_0228,5,bachelor,"data analysis, sql, machine learning, communication, agile","Worked as developer for 5 years with expertise in data analysis, sql, machine learning",developer,1
+CAND_0229,14,master,"data analysis, python, communication, machine learning, statistics","Worked as developer for 14 years with expertise in data analysis, python, communication",developer,1
+CAND_0230,12,high_school,"git, python, nodejs, statistics, communication","Worked as analyst for 12 years with expertise in git, python, nodejs",analyst,1
+CAND_0231,14,master,"java, javascript, docker, python, scrum, teamwork","Worked as designer for 14 years with expertise in java, javascript, docker",designer,1
+CAND_0232,14,master,"python, statistics, teamwork, nodejs","Worked as designer for 14 years with expertise in python, statistics, teamwork",designer,1
+CAND_0233,19,master,"python, communication, kubernetes, react, leadership, javascript, statistics, project management","Worked as developer for 19 years with expertise in python, communication, kubernetes",developer,1
+CAND_0234,11,associate,"data analysis, communication, linux","Worked as consultant for 11 years with expertise in data analysis, communication, linux",consultant,0
+CAND_0235,0,bachelor,"kubernetes, data analysis, docker, communication, javascript","Worked as consultant for 0 years with expertise in kubernetes, data analysis, docker",consultant,0
+CAND_0236,17,bachelor,"kubernetes, project management, react, linux, aws, git","Worked as manager for 17 years with expertise in kubernetes, project management, react",manager,1
+CAND_0237,15,phd,"data analysis, machine learning, javascript, python, aws","Worked as developer for 15 years with expertise in data analysis, machine learning, javascript",developer,1
+CAND_0238,3,bachelor,"python, javascript, excel, agile, docker, sql, teamwork, react","Worked as analyst for 3 years with expertise in python, javascript, excel",analyst,1
+CAND_0239,15,phd,"java, teamwork","Worked as designer for 15 years with expertise in java, teamwork",designer,1
+CAND_0240,13,phd,"data analysis, excel","Worked as designer for 13 years with expertise in data analysis, excel",designer,1
+CAND_0241,7,phd,"aws, azure, scrum, leadership, git","Worked as manager for 7 years with expertise in aws, azure, scrum",manager,1
+CAND_0242,15,bachelor,"project management, scrum, react, azure, kubernetes, linux, teamwork","Worked as designer for 15 years with expertise in project management, scrum, react",designer,1
+CAND_0243,8,master,"python, excel, aws, project management, leadership, java, agile","Worked as manager for 8 years with expertise in python, excel, aws",manager,1
+CAND_0244,10,phd,"excel, machine learning","Worked as designer for 10 years with expertise in excel, machine learning",designer,1
+CAND_0245,0,bachelor,"java, kubernetes, agile, scrum, python","Worked as manager for 0 years with expertise in java, kubernetes, agile",manager,1
+CAND_0246,19,master,"machine learning, java","Worked as manager for 19 years with expertise in machine learning, java",manager,1
+CAND_0247,13,master,"statistics, javascript, communication, azure, docker, java","Worked as consultant for 13 years with expertise in statistics, javascript, communication",consultant,1
+CAND_0248,6,phd,"kubernetes, teamwork, communication, javascript, machine learning, git, scrum","Worked as analyst for 6 years with expertise in kubernetes, teamwork, communication",analyst,1
+CAND_0249,18,master,"communication, docker, teamwork, java, linux","Worked as analyst for 18 years with expertise in communication, docker, teamwork",analyst,1
+CAND_0250,17,associate,"excel, linux, kubernetes, sql, leadership, aws, statistics, react","Worked as consultant for 17 years with expertise in excel, linux, kubernetes",consultant,1
+CAND_0251,6,high_school,"leadership, docker, communication, teamwork, kubernetes","Worked as consultant for 6 years with expertise in leadership, docker, communication",consultant,1
+CAND_0252,3,bachelor,"sql, kubernetes, docker, scrum, linux","Worked as analyst for 3 years with expertise in sql, kubernetes, docker",analyst,1
+CAND_0253,4,phd,"scrum, python, machine learning, communication, sql, java","Worked as analyst for 4 years with expertise in scrum, python, machine learning",analyst,1
+CAND_0254,2,phd,"excel, git, nodejs, react","Worked as consultant for 2 years with expertise in excel, git, nodejs",consultant,0
+CAND_0255,16,high_school,"python, aws, communication, leadership, excel","Worked as analyst for 16 years with expertise in python, aws, communication",analyst,1
+CAND_0256,18,bachelor,"scrum, excel, agile, react, docker","Worked as developer for 18 years with expertise in scrum, excel, agile",developer,1
+CAND_0257,17,master,"leadership, sql, machine learning","Worked as consultant for 17 years with expertise in leadership, sql, machine learning",consultant,1
+CAND_0258,0,bachelor,"python, scrum, kubernetes, teamwork","Worked as designer for 0 years with expertise in python, scrum, kubernetes",designer,0
+CAND_0259,7,phd,"azure, agile","Worked as developer for 7 years with expertise in azure, agile",developer,1
+CAND_0260,7,bachelor,"javascript, java, agile, react, statistics, nodejs, git, kubernetes","Worked as analyst for 7 years with expertise in javascript, java, agile",analyst,1
+CAND_0261,17,high_school,"leadership, teamwork","Worked as manager for 17 years with expertise in leadership, teamwork",manager,0
+CAND_0262,0,master,"machine learning, statistics, project management, nodejs, excel, kubernetes","Worked as developer for 0 years with expertise in machine learning, statistics, project management",developer,1
+CAND_0263,5,phd,"javascript, docker, data analysis, machine learning, python, agile, linux","Worked as analyst for 5 years with expertise in javascript, docker, data analysis",analyst,1
+CAND_0264,3,high_school,"kubernetes, react","Worked as manager for 3 years with expertise in kubernetes, react",manager,0
+CAND_0265,2,phd,"javascript, python, kubernetes","Worked as consultant for 2 years with expertise in javascript, python, kubernetes",consultant,0
+CAND_0266,4,high_school,"kubernetes, python, teamwork, communication, machine learning","Worked as analyst for 4 years with expertise in kubernetes, python, teamwork",analyst,1
+CAND_0267,18,high_school,"machine learning, docker, azure, excel, react, git, java, leadership","Worked as designer for 18 years with expertise in machine learning, docker, azure",designer,1
+CAND_0268,12,phd,"project management, aws, python","Worked as manager for 12 years with expertise in project management, aws, python",manager,1
+CAND_0269,6,bachelor,"machine learning, leadership, java, kubernetes, linux","Worked as manager for 6 years with expertise in machine learning, leadership, java",manager,1
+CAND_0270,11,high_school,"java, kubernetes, communication, azure","Worked as manager for 11 years with expertise in java, kubernetes, communication",manager,0
+CAND_0271,19,associate,"leadership, nodejs, excel, python, agile, statistics, machine learning","Worked as analyst for 19 years with expertise in leadership, nodejs, excel",analyst,1
+CAND_0272,1,master,"azure, aws, statistics, docker, javascript, linux","Worked as developer for 1 years with expertise in azure, aws, statistics",developer,0
+CAND_0273,16,bachelor,"react, nodejs, scrum","Worked as developer for 16 years with expertise in react, nodejs, scrum",developer,1
+CAND_0274,10,master,"excel, javascript, git, machine learning, docker, teamwork, leadership, react","Worked as analyst for 10 years with expertise in excel, javascript, git",analyst,1
+CAND_0275,15,associate,"sql, nodejs, communication","Worked as analyst for 15 years with expertise in sql, nodejs, communication",analyst,0
+CAND_0276,17,associate,"project management, azure","Worked as analyst for 17 years with expertise in project management, azure",analyst,0
+CAND_0277,14,bachelor,"docker, communication, machine learning, sql, excel, statistics, nodejs, scrum","Worked as developer for 14 years with expertise in docker, communication, machine learning",developer,1
+CAND_0278,11,associate,"project management, leadership, docker","Worked as manager for 11 years with expertise in project management, leadership, docker",manager,0
+CAND_0279,6,master,"scrum, react, communication, statistics, teamwork, data analysis, agile, machine learning","Worked as consultant for 6 years with expertise in scrum, react, communication",consultant,1
+CAND_0280,14,phd,"teamwork, kubernetes, java, linux, machine learning, agile, javascript","Worked as analyst for 14 years with expertise in teamwork, kubernetes, java",analyst,1
+CAND_0281,0,phd,"kubernetes, communication, nodejs, docker","Worked as analyst for 0 years with expertise in kubernetes, communication, nodejs",analyst,0
+CAND_0282,9,associate,"machine learning, data analysis, azure, linux, project management, excel, docker","Worked as analyst for 9 years with expertise in machine learning, data analysis, azure",analyst,1
+CAND_0283,0,bachelor,"javascript, scrum","Worked as analyst for 0 years with expertise in javascript, scrum",analyst,0
+CAND_0284,16,high_school,"project management, statistics, javascript","Worked as consultant for 16 years with expertise in project management, statistics, javascript",consultant,0
+CAND_0285,14,bachelor,"excel, linux","Worked as designer for 14 years with expertise in excel, linux",designer,1
+CAND_0286,10,high_school,"leadership, react, javascript, git","Worked as analyst for 10 years with expertise in leadership, react, javascript",analyst,0
+CAND_0287,13,bachelor,"scrum, teamwork, communication","Worked as analyst for 13 years with expertise in scrum, teamwork, communication",analyst,1
+CAND_0288,15,master,"machine learning, nodejs, kubernetes","Worked as analyst for 15 years with expertise in machine learning, nodejs, kubernetes",analyst,1
+CAND_0289,12,master,"kubernetes, teamwork, python, java, aws","Worked as analyst for 12 years with expertise in kubernetes, teamwork, python",analyst,1
+CAND_0290,4,high_school,"aws, kubernetes, machine learning, python, java, teamwork","Worked as manager for 4 years with expertise in aws, kubernetes, machine learning",manager,1
+CAND_0291,16,high_school,"communication, excel, linux, statistics, kubernetes, react, javascript","Worked as manager for 16 years with expertise in communication, excel, linux",manager,0
+CAND_0292,5,phd,"javascript, python, project management, statistics","Worked as manager for 5 years with expertise in javascript, python, project management",manager,1
+CAND_0293,19,high_school,"react, sql, kubernetes","Worked as developer for 19 years with expertise in react, sql, kubernetes",developer,0
+CAND_0294,0,bachelor,"communication, react, statistics, javascript, machine learning","Worked as analyst for 0 years with expertise in communication, react, statistics",analyst,0
+CAND_0295,0,phd,"teamwork, data analysis, azure","Worked as analyst for 0 years with expertise in teamwork, data analysis, azure",analyst,0
+CAND_0296,0,phd,"data analysis, sql, agile, javascript, project management","Worked as developer for 0 years with expertise in data analysis, sql, agile",developer,1
+CAND_0297,7,bachelor,"agile, kubernetes, javascript","Worked as analyst for 7 years with expertise in agile, kubernetes, javascript",analyst,1
+CAND_0298,12,phd,"excel, git, java","Worked as manager for 12 years with expertise in excel, git, java",manager,1
+CAND_0299,4,phd,"javascript, java, react, data analysis, linux, statistics","Worked as consultant for 4 years with expertise in javascript, java, react",consultant,1
+CAND_0300,19,master,"azure, linux, javascript, nodejs, teamwork, communication","Worked as manager for 19 years with expertise in azure, linux, javascript",manager,1
+CAND_0301,10,high_school,"linux, docker, agile, react, data analysis, kubernetes","Worked as consultant for 10 years with expertise in linux, docker, agile",consultant,0
+CAND_0302,1,high_school,"excel, kubernetes, git, statistics, data analysis, agile","Worked as designer for 1 years with expertise in excel, kubernetes, git",designer,0
+CAND_0303,6,associate,"machine learning, leadership, excel, react, scrum, kubernetes, aws","Worked as developer for 6 years with expertise in machine learning, leadership, excel",developer,1
+CAND_0304,12,bachelor,"java, teamwork, linux, python, docker, react, azure","Worked as designer for 12 years with expertise in java, teamwork, linux",designer,1
+CAND_0305,17,phd,"communication, javascript, react, python","Worked as consultant for 17 years with expertise in communication, javascript, react",consultant,1
+CAND_0306,4,associate,"javascript, react, linux","Worked as analyst for 4 years with expertise in javascript, react, linux",analyst,0
+CAND_0307,18,master,"git, javascript","Worked as analyst for 18 years with expertise in git, javascript",analyst,1
+CAND_0308,4,phd,"react, java, statistics, nodejs, azure, sql, project management, aws","Worked as analyst for 4 years with expertise in react, java, statistics",analyst,1
+CAND_0309,15,bachelor,"communication, docker, data analysis, scrum, azure, machine learning","Worked as consultant for 15 years with expertise in communication, docker, data analysis",consultant,1
+CAND_0310,6,high_school,"project management, statistics, kubernetes, docker, react, python","Worked as designer for 6 years with expertise in project management, statistics, kubernetes",designer,1
+CAND_0311,0,master,"machine learning, aws, statistics, teamwork, sql, excel, kubernetes, communication","Worked as developer for 0 years with expertise in machine learning, aws, statistics",developer,0
+CAND_0312,16,phd,"python, linux, nodejs, docker, git","Worked as analyst for 16 years with expertise in python, linux, nodejs",analyst,1
+CAND_0313,11,associate,"kubernetes, react, statistics, javascript, docker, scrum, git","Worked as manager for 11 years with expertise in kubernetes, react, statistics",manager,0
+CAND_0314,9,master,"python, excel","Worked as analyst for 9 years with expertise in python, excel",analyst,1
+CAND_0315,9,bachelor,"kubernetes, react, scrum, aws, teamwork, excel","Worked as manager for 9 years with expertise in kubernetes, react, scrum",manager,1
+CAND_0316,5,master,"leadership, kubernetes, java, linux","Worked as manager for 5 years with expertise in leadership, kubernetes, java",manager,1
+CAND_0317,12,master,"scrum, data analysis, agile, python, java","Worked as analyst for 12 years with expertise in scrum, data analysis, agile",analyst,1
+CAND_0318,15,phd,"azure, aws, scrum, excel","Worked as manager for 15 years with expertise in azure, aws, scrum",manager,1
+CAND_0319,6,high_school,"javascript, teamwork, leadership, statistics","Worked as consultant for 6 years with expertise in javascript, teamwork, leadership",consultant,0
+CAND_0320,4,bachelor,"react, kubernetes, git, communication, aws, excel, sql, project management","Worked as analyst for 4 years with expertise in react, kubernetes, git",analyst,1
+CAND_0321,12,bachelor,"scrum, python, docker, communication, git, react, nodejs, sql","Worked as analyst for 12 years with expertise in scrum, python, docker",analyst,1
+CAND_0322,5,associate,"machine learning, communication, docker, teamwork","Worked as manager for 5 years with expertise in machine learning, communication, docker",manager,0
+CAND_0323,2,bachelor,"react, git, azure","Worked as analyst for 2 years with expertise in react, git, azure",analyst,0
+CAND_0324,13,associate,"leadership, agile, linux, teamwork, azure, excel","Worked as consultant for 13 years with expertise in leadership, agile, linux",consultant,1
+CAND_0325,5,high_school,"javascript, nodejs","Worked as manager for 5 years with expertise in javascript, nodejs",manager,0
+CAND_0326,6,high_school,"scrum, statistics, linux, aws, sql, nodejs, excel","Worked as consultant for 6 years with expertise in scrum, statistics, linux",consultant,0
+CAND_0327,13,associate,"excel, communication","Worked as developer for 13 years with expertise in excel, communication",developer,0
+CAND_0328,15,master,"git, scrum","Worked as developer for 15 years with expertise in git, scrum",developer,1
+CAND_0329,18,high_school,"kubernetes, excel, agile, linux","Worked as analyst for 18 years with expertise in kubernetes, excel, agile",analyst,0
+CAND_0330,0,phd,"react, leadership","Worked as analyst for 0 years with expertise in react, leadership",analyst,0
+CAND_0331,10,phd,"agile, react, javascript, python, communication, docker","Worked as designer for 10 years with expertise in agile, react, javascript",designer,1
+CAND_0332,8,high_school,"data analysis, aws, scrum","Worked as consultant for 8 years with expertise in data analysis, aws, scrum",consultant,0
+CAND_0333,13,master,"aws, javascript, kubernetes, project management, scrum, communication","Worked as manager for 13 years with expertise in aws, javascript, kubernetes",manager,1
+CAND_0334,14,associate,"python, excel, communication, linux, teamwork, git, aws, machine learning","Worked as consultant for 14 years with expertise in python, excel, communication",consultant,1
+CAND_0335,5,phd,"aws, project management, react, sql, azure, scrum, javascript, docker","Worked as designer for 5 years with expertise in aws, project management, react",designer,1
+CAND_0336,8,associate,"aws, python, machine learning, leadership, react, communication, scrum","Worked as analyst for 8 years with expertise in aws, python, machine learning",analyst,1
+CAND_0337,13,phd,"docker, python, git","Worked as analyst for 13 years with expertise in docker, python, git",analyst,1
+CAND_0338,9,master,"teamwork, statistics, docker, aws, javascript","Worked as developer for 9 years with expertise in teamwork, statistics, docker",developer,1
+CAND_0339,4,bachelor,"docker, statistics, data analysis, nodejs, agile, sql, java, kubernetes","Worked as manager for 4 years with expertise in docker, statistics, data analysis",manager,1
+CAND_0340,4,phd,"communication, javascript","Worked as designer for 4 years with expertise in communication, javascript",designer,1
+CAND_0341,17,bachelor,"azure, sql, teamwork, excel, docker","Worked as developer for 17 years with expertise in azure, sql, teamwork",developer,1
+CAND_0342,8,master,"nodejs, kubernetes","Worked as analyst for 8 years with expertise in nodejs, kubernetes",analyst,1
+CAND_0343,10,high_school,"leadership, azure, statistics, excel, agile, react","Worked as designer for 10 years with expertise in leadership, azure, statistics",designer,1
+CAND_0344,9,high_school,"aws, nodejs, sql","Worked as manager for 9 years with expertise in aws, nodejs, sql",manager,0
+CAND_0345,9,bachelor,"sql, azure, aws, python, excel","Worked as designer for 9 years with expertise in sql, azure, aws",designer,1
+CAND_0346,0,phd,"scrum, linux, python, agile, git","Worked as manager for 0 years with expertise in scrum, linux, python",manager,1
+CAND_0347,5,high_school,"communication, leadership, kubernetes, sql","Worked as developer for 5 years with expertise in communication, leadership, kubernetes",developer,0
+CAND_0348,4,high_school,"data analysis, python, excel, javascript, sql","Worked as analyst for 4 years with expertise in data analysis, python, excel",analyst,1
+CAND_0349,3,high_school,"statistics, react, excel, data analysis, python, communication, docker","Worked as consultant for 3 years with expertise in statistics, react, excel",consultant,1
+CAND_0350,16,high_school,"machine learning, scrum","Worked as manager for 16 years with expertise in machine learning, scrum",manager,0
+CAND_0351,19,high_school,"scrum, docker, teamwork","Worked as designer for 19 years with expertise in scrum, docker, teamwork",designer,0
+CAND_0352,19,high_school,"sql, communication","Worked as analyst for 19 years with expertise in sql, communication",analyst,0
+CAND_0353,16,master,"java, python, project management, git, react, agile","Worked as analyst for 16 years with expertise in java, python, project management",analyst,1
+CAND_0354,10,high_school,"communication, python, agile, project management, javascript, azure, data analysis","Worked as designer for 10 years with expertise in communication, python, agile",designer,1
+CAND_0355,1,bachelor,"communication, azure, java, linux","Worked as consultant for 1 years with expertise in communication, azure, java",consultant,0
+CAND_0356,14,bachelor,"data analysis, aws, leadership, agile, python","Worked as consultant for 14 years with expertise in data analysis, aws, leadership",consultant,1
+CAND_0357,16,bachelor,"react, machine learning, leadership, scrum, statistics, communication, teamwork","Worked as analyst for 16 years with expertise in react, machine learning, leadership",analyst,1
+CAND_0358,5,associate,"statistics, teamwork, kubernetes, aws, agile, sql, javascript","Worked as manager for 5 years with expertise in statistics, teamwork, kubernetes",manager,0
+CAND_0359,13,associate,"react, aws, statistics","Worked as designer for 13 years with expertise in react, aws, statistics",designer,0
+CAND_0360,17,master,"python, statistics, teamwork","Worked as analyst for 17 years with expertise in python, statistics, teamwork",analyst,1
+CAND_0361,8,bachelor,"statistics, python","Worked as analyst for 8 years with expertise in statistics, python",analyst,1
+CAND_0362,15,associate,"sql, statistics, kubernetes, leadership, linux, git, project management","Worked as manager for 15 years with expertise in sql, statistics, kubernetes",manager,1
+CAND_0363,11,phd,"excel, statistics","Worked as designer for 11 years with expertise in excel, statistics",designer,1
+CAND_0364,19,associate,"leadership, teamwork, docker, aws","Worked as developer for 19 years with expertise in leadership, teamwork, docker",developer,0
+CAND_0365,14,master,"git, scrum","Worked as consultant for 14 years with expertise in git, scrum",consultant,1
+CAND_0366,9,high_school,"azure, java","Worked as developer for 9 years with expertise in azure, java",developer,0
+CAND_0367,10,high_school,"machine learning, agile, javascript, data analysis, statistics, aws","Worked as analyst for 10 years with expertise in machine learning, agile, javascript",analyst,0
+CAND_0368,17,master,"sql, git, data analysis, javascript","Worked as designer for 17 years with expertise in sql, git, data analysis",designer,1
+CAND_0369,12,master,"react, teamwork","Worked as manager for 12 years with expertise in react, teamwork",manager,1
+CAND_0370,16,associate,"nodejs, project management, linux, aws, java, sql, git","Worked as designer for 16 years with expertise in nodejs, project management, linux",designer,1
+CAND_0371,14,high_school,"linux, excel, leadership, azure, statistics","Worked as analyst for 14 years with expertise in linux, excel, leadership",analyst,1
+CAND_0372,10,associate,"nodejs, docker, python, aws, leadership","Worked as developer for 10 years with expertise in nodejs, docker, python",developer,1
+CAND_0373,11,associate,"docker, linux, scrum, statistics, teamwork, machine learning, excel, communication","Worked as analyst for 11 years with expertise in docker, linux, scrum",analyst,0
+CAND_0374,16,master,"project management, git, nodejs, agile","Worked as analyst for 16 years with expertise in project management, git, nodejs",analyst,1
+CAND_0375,5,associate,"javascript, teamwork, communication, data analysis","Worked as designer for 5 years with expertise in javascript, teamwork, communication",designer,0
+CAND_0376,6,high_school,"scrum, kubernetes, excel, react","Worked as analyst for 6 years with expertise in scrum, kubernetes, excel",analyst,0
+CAND_0377,14,high_school,"linux, statistics, teamwork","Worked as manager for 14 years with expertise in linux, statistics, teamwork",manager,0
+CAND_0378,5,phd,"azure, aws, agile, communication, scrum, nodejs, kubernetes, docker","Worked as analyst for 5 years with expertise in azure, aws, agile",analyst,1
+CAND_0379,0,bachelor,"git, aws, data analysis","Worked as analyst for 0 years with expertise in git, aws, data analysis",analyst,0
+CAND_0380,1,phd,"nodejs, leadership, java, excel, scrum","Worked as designer for 1 years with expertise in nodejs, leadership, java",designer,1
+CAND_0381,9,associate,"java, data analysis, git, project management","Worked as developer for 9 years with expertise in java, data analysis, git",developer,1
+CAND_0382,1,associate,"leadership, aws, linux, statistics","Worked as analyst for 1 years with expertise in leadership, aws, linux",analyst,0
+CAND_0383,5,bachelor,"javascript, communication","Worked as analyst for 5 years with expertise in javascript, communication",analyst,1
+CAND_0384,8,associate,"agile, machine learning, python","Worked as designer for 8 years with expertise in agile, machine learning, python",designer,0
+CAND_0385,1,master,"docker, aws, kubernetes, nodejs","Worked as analyst for 1 years with expertise in docker, aws, kubernetes",analyst,0
+CAND_0386,0,master,"project management, leadership, linux, teamwork","Worked as consultant for 0 years with expertise in project management, leadership, linux",consultant,0
+CAND_0387,19,associate,"machine learning, data analysis, linux","Worked as manager for 19 years with expertise in machine learning, data analysis, linux",manager,0
+CAND_0388,16,high_school,"scrum, react, python, agile, machine learning","Worked as developer for 16 years with expertise in scrum, react, python",developer,1
+CAND_0389,4,bachelor,"linux, data analysis, project management, scrum, javascript, docker","Worked as consultant for 4 years with expertise in linux, data analysis, project management",consultant,1
+CAND_0390,0,associate,"react, java","Worked as manager for 0 years with expertise in react, java",manager,0
+CAND_0391,1,high_school,"statistics, javascript, azure, linux, project management, aws","Worked as designer for 1 years with expertise in statistics, javascript, azure",designer,0
+CAND_0392,11,bachelor,"data analysis, aws, javascript, teamwork, communication, react","Worked as analyst for 11 years with expertise in data analysis, aws, javascript",analyst,1
+CAND_0393,9,master,"sql, project management, communication, nodejs, data analysis, scrum","Worked as developer for 9 years with expertise in sql, project management, communication",developer,1
+CAND_0394,17,phd,"agile, communication, scrum, react","Worked as developer for 17 years with expertise in agile, communication, scrum",developer,1
+CAND_0395,5,associate,"react, sql, scrum, teamwork, project management, data analysis, javascript","Worked as analyst for 5 years with expertise in react, sql, scrum",analyst,1
+CAND_0396,19,master,"nodejs, react, linux","Worked as consultant for 19 years with expertise in nodejs, react, linux",consultant,1
+CAND_0397,10,high_school,"scrum, linux, project management, python, react, azure, data analysis, communication","Worked as manager for 10 years with expertise in scrum, linux, project management",manager,1
+CAND_0398,7,associate,"scrum, project management, linux, docker, communication, azure","Worked as designer for 7 years with expertise in scrum, project management, linux",designer,1
+CAND_0399,14,associate,"project management, java, agile, statistics, machine learning, teamwork, kubernetes","Worked as developer for 14 years with expertise in project management, java, agile",developer,1
+CAND_0400,10,master,"excel, java, project management, python, docker, javascript","Worked as manager for 10 years with expertise in excel, java, project management",manager,1
+CAND_0401,11,high_school,"kubernetes, git, communication","Worked as consultant for 11 years with expertise in kubernetes, git, communication",consultant,0
+CAND_0402,12,bachelor,"agile, statistics","Worked as analyst for 12 years with expertise in agile, statistics",analyst,1
+CAND_0403,13,high_school,"linux, git, statistics, machine learning, java, javascript, python","Worked as consultant for 13 years with expertise in linux, git, statistics",consultant,1
+CAND_0404,13,high_school,"nodejs, excel","Worked as analyst for 13 years with expertise in nodejs, excel",analyst,0
+CAND_0405,10,high_school,"react, data analysis, python, excel, azure, docker, communication, java","Worked as consultant for 10 years with expertise in react, data analysis, python",consultant,1
+CAND_0406,18,master,"aws, data analysis, machine learning, linux, java, leadership, javascript","Worked as developer for 18 years with expertise in aws, data analysis, machine learning",developer,1
+CAND_0407,12,master,"docker, leadership, git, agile, communication","Worked as manager for 12 years with expertise in docker, leadership, git",manager,1
+CAND_0408,8,bachelor,"sql, aws, machine learning, react, data analysis, statistics, javascript, nodejs","Worked as manager for 8 years with expertise in sql, aws, machine learning",manager,1
+CAND_0409,16,master,"nodejs, teamwork, data analysis, aws, react, docker, azure","Worked as designer for 16 years with expertise in nodejs, teamwork, data analysis",designer,1
+CAND_0410,8,master,"react, javascript","Worked as designer for 8 years with expertise in react, javascript",designer,1
+CAND_0411,6,master,"linux, azure, python, statistics, kubernetes, java, excel, agile","Worked as consultant for 6 years with expertise in linux, azure, python",consultant,1
+CAND_0412,16,high_school,"git, kubernetes, sql, python","Worked as analyst for 16 years with expertise in git, kubernetes, sql",analyst,0
+CAND_0413,19,associate,"project management, linux, scrum, communication","Worked as developer for 19 years with expertise in project management, linux, scrum",developer,0
+CAND_0414,18,high_school,"project management, agile, teamwork, javascript, excel, machine learning","Worked as manager for 18 years with expertise in project management, agile, teamwork",manager,1
+CAND_0415,9,high_school,"statistics, git, leadership, nodejs, react, excel, linux, azure","Worked as manager for 9 years with expertise in statistics, git, leadership",manager,1
+CAND_0416,6,associate,"agile, leadership","Worked as developer for 6 years with expertise in agile, leadership",developer,0
+CAND_0417,14,high_school,"git, machine learning, azure, excel","Worked as consultant for 14 years with expertise in git, machine learning, azure",consultant,0
+CAND_0418,13,master,"azure, javascript, communication, git","Worked as analyst for 13 years with expertise in azure, javascript, communication",analyst,1
+CAND_0419,10,high_school,"teamwork, javascript, react, communication, docker, agile, data analysis","Worked as consultant for 10 years with expertise in teamwork, javascript, react",consultant,0
+CAND_0420,14,high_school,"react, javascript, java","Worked as developer for 14 years with expertise in react, javascript, java",developer,0
+CAND_0421,2,high_school,"communication, machine learning, data analysis, project management, excel","Worked as manager for 2 years with expertise in communication, machine learning, data analysis",manager,0
+CAND_0422,13,associate,"leadership, sql, git, kubernetes","Worked as developer for 13 years with expertise in leadership, sql, git",developer,0
+CAND_0423,9,master,"git, java, project management, communication, python","Worked as manager for 9 years with expertise in git, java, project management",manager,1
+CAND_0424,3,bachelor,"project management, scrum","Worked as analyst for 3 years with expertise in project management, scrum",analyst,1
+CAND_0425,2,master,"statistics, data analysis, sql, aws","Worked as consultant for 2 years with expertise in statistics, data analysis, sql",consultant,0
+CAND_0426,16,high_school,"java, data analysis","Worked as analyst for 16 years with expertise in java, data analysis",analyst,0
+CAND_0427,19,associate,"teamwork, data analysis, java, kubernetes, scrum","Worked as manager for 19 years with expertise in teamwork, data analysis, java",manager,1
+CAND_0428,9,associate,"kubernetes, agile, project management, communication","Worked as developer for 9 years with expertise in kubernetes, agile, project management",developer,0
+CAND_0429,2,phd,"nodejs, aws, docker, java, leadership, kubernetes, azure, linux","Worked as developer for 2 years with expertise in nodejs, aws, docker",developer,1
+CAND_0430,13,master,"linux, statistics, react, javascript, kubernetes, leadership","Worked as developer for 13 years with expertise in linux, statistics, react",developer,1
+CAND_0431,19,associate,"react, linux, agile, scrum, sql","Worked as developer for 19 years with expertise in react, linux, agile",developer,0
+CAND_0432,0,phd,"javascript, kubernetes, excel, statistics, nodejs","Worked as developer for 0 years with expertise in javascript, kubernetes, excel",developer,0
+CAND_0433,19,phd,"sql, excel, project management, react, machine learning, data analysis, java, communication","Worked as consultant for 19 years with expertise in sql, excel, project management",consultant,1
+CAND_0434,17,high_school,"data analysis, docker, scrum","Worked as consultant for 17 years with expertise in data analysis, docker, scrum",consultant,0
+CAND_0435,9,high_school,"project management, leadership, docker, react, scrum, nodejs","Worked as analyst for 9 years with expertise in project management, leadership, docker",analyst,1
+CAND_0436,11,bachelor,"statistics, project management, agile, data analysis, teamwork, machine learning, javascript","Worked as developer for 11 years with expertise in statistics, project management, agile",developer,1
+CAND_0437,16,master,"excel, aws, kubernetes, sql, docker, statistics","Worked as developer for 16 years with expertise in excel, aws, kubernetes",developer,1
+CAND_0438,4,bachelor,"leadership, java, excel","Worked as analyst for 4 years with expertise in leadership, java, excel",analyst,1
+CAND_0439,11,high_school,"project management, excel, aws, sql","Worked as consultant for 11 years with expertise in project management, excel, aws",consultant,0
+CAND_0440,1,bachelor,"nodejs, excel, kubernetes, aws, communication, linux, sql","Worked as consultant for 1 years with expertise in nodejs, excel, kubernetes",consultant,0
+CAND_0441,17,phd,"javascript, azure, java, git, data analysis, aws, scrum","Worked as manager for 17 years with expertise in javascript, azure, java",manager,1
+CAND_0442,5,high_school,"project management, javascript, teamwork, data analysis, git, python","Worked as manager for 5 years with expertise in project management, javascript, teamwork",manager,1
+CAND_0443,7,bachelor,"agile, leadership, kubernetes, scrum, teamwork, excel, azure, machine learning","Worked as manager for 7 years with expertise in agile, leadership, kubernetes",manager,1
+CAND_0444,3,bachelor,"kubernetes, data analysis","Worked as developer for 3 years with expertise in kubernetes, data analysis",developer,1
+CAND_0445,18,high_school,"teamwork, git, project management, sql, react, scrum","Worked as consultant for 18 years with expertise in teamwork, git, project management",consultant,1
+CAND_0446,10,high_school,"python, scrum, project management, linux","Worked as manager for 10 years with expertise in python, scrum, project management",manager,1
+CAND_0447,17,high_school,"communication, project management","Worked as analyst for 17 years with expertise in communication, project management",analyst,0
+CAND_0448,7,phd,"sql, react, communication, nodejs, leadership","Worked as manager for 7 years with expertise in sql, react, communication",manager,1
+CAND_0449,12,phd,"agile, git, teamwork","Worked as analyst for 12 years with expertise in agile, git, teamwork",analyst,1
+CAND_0450,19,high_school,"react, statistics, communication, sql, scrum","Worked as manager for 19 years with expertise in react, statistics, communication",manager,0
+CAND_0451,4,bachelor,"communication, azure, kubernetes","Worked as designer for 4 years with expertise in communication, azure, kubernetes",designer,1
+CAND_0452,19,associate,"azure, linux, sql, docker, react, agile, project management","Worked as designer for 19 years with expertise in azure, linux, sql",designer,1
+CAND_0453,12,master,"kubernetes, javascript, git, azure, agile, data analysis, python","Worked as developer for 12 years with expertise in kubernetes, javascript, git",developer,1
+CAND_0454,17,master,"git, agile, machine learning, azure, nodejs, leadership, excel, aws","Worked as developer for 17 years with expertise in git, agile, machine learning",developer,1
+CAND_0455,2,phd,"java, leadership, linux, communication, agile, git, docker, kubernetes","Worked as manager for 2 years with expertise in java, leadership, linux",manager,1
+CAND_0456,19,bachelor,"java, agile","Worked as analyst for 19 years with expertise in java, agile",analyst,1
+CAND_0457,12,bachelor,"leadership, kubernetes, azure, linux, docker","Worked as consultant for 12 years with expertise in leadership, kubernetes, azure",consultant,1
+CAND_0458,0,bachelor,"excel, docker, react, nodejs, git, sql","Worked as consultant for 0 years with expertise in excel, docker, react",consultant,0
+CAND_0459,14,bachelor,"agile, python, kubernetes, java, teamwork, communication, data analysis, statistics","Worked as analyst for 14 years with expertise in agile, python, kubernetes",analyst,1
+CAND_0460,10,phd,"linux, project management","Worked as developer for 10 years with expertise in linux, project management",developer,1
+CAND_0461,7,phd,"communication, git, docker, machine learning, leadership, data analysis, python","Worked as developer for 7 years with expertise in communication, git, docker",developer,1
+CAND_0462,16,associate,"react, machine learning, git, nodejs, statistics, leadership, agile, communication","Worked as developer for 16 years with expertise in react, machine learning, git",developer,1
+CAND_0463,9,bachelor,"azure, statistics, react","Worked as designer for 9 years with expertise in azure, statistics, react",designer,1
+CAND_0464,2,associate,"docker, java, statistics, sql","Worked as analyst for 2 years with expertise in docker, java, statistics",analyst,0
+CAND_0465,12,master,"scrum, docker, leadership, aws","Worked as developer for 12 years with expertise in scrum, docker, leadership",developer,1
+CAND_0466,1,bachelor,"azure, data analysis","Worked as analyst for 1 years with expertise in azure, data analysis",analyst,0
+CAND_0467,5,associate,"machine learning, kubernetes, java, project management, git, scrum, agile","Worked as designer for 5 years with expertise in machine learning, kubernetes, java",designer,1
+CAND_0468,3,associate,"machine learning, linux, git, excel, nodejs, python","Worked as analyst for 3 years with expertise in machine learning, linux, git",analyst,1
+CAND_0469,10,high_school,"react, project management","Worked as designer for 10 years with expertise in react, project management",designer,0
+CAND_0470,9,phd,"kubernetes, teamwork, linux","Worked as manager for 9 years with expertise in kubernetes, teamwork, linux",manager,1
+CAND_0471,16,high_school,"java, react, docker, scrum, machine learning, kubernetes, azure, leadership","Worked as developer for 16 years with expertise in java, react, docker",developer,1
+CAND_0472,10,bachelor,"communication, teamwork, scrum, sql, javascript, git","Worked as consultant for 10 years with expertise in communication, teamwork, scrum",consultant,1
+CAND_0473,2,high_school,"javascript, git, scrum, data analysis, react, nodejs","Worked as analyst for 2 years with expertise in javascript, git, scrum",analyst,0
+CAND_0474,19,associate,"git, scrum, kubernetes","Worked as manager for 19 years with expertise in git, scrum, kubernetes",manager,0
+CAND_0475,4,master,"python, leadership, nodejs, git","Worked as analyst for 4 years with expertise in python, leadership, nodejs",analyst,1
+CAND_0476,19,master,"data analysis, teamwork, java","Worked as developer for 19 years with expertise in data analysis, teamwork, java",developer,1
+CAND_0477,13,bachelor,"statistics, nodejs, aws","Worked as consultant for 13 years with expertise in statistics, nodejs, aws",consultant,1
+CAND_0478,9,phd,"git, teamwork, project management, react, azure, python, aws, java","Worked as designer for 9 years with expertise in git, teamwork, project management",designer,1
+CAND_0479,14,phd,"machine learning, scrum","Worked as designer for 14 years with expertise in machine learning, scrum",designer,1
+CAND_0480,19,high_school,"linux, docker, teamwork, python, javascript, agile, aws","Worked as developer for 19 years with expertise in linux, docker, teamwork",developer,1
+CAND_0481,10,master,"scrum, agile, kubernetes, react","Worked as consultant for 10 years with expertise in scrum, agile, kubernetes",consultant,1
+CAND_0482,5,bachelor,"docker, leadership","Worked as developer for 5 years with expertise in docker, leadership",developer,1
+CAND_0483,14,associate,"aws, linux, teamwork","Worked as manager for 14 years with expertise in aws, linux, teamwork",manager,0
+CAND_0484,11,bachelor,"javascript, python, aws, project management, nodejs, scrum, java","Worked as consultant for 11 years with expertise in javascript, python, aws",consultant,1
+CAND_0485,19,phd,"docker, linux, java","Worked as consultant for 19 years with expertise in docker, linux, java",consultant,1
+CAND_0486,5,bachelor,"java, agile, project management, javascript, nodejs","Worked as analyst for 5 years with expertise in java, agile, project management",analyst,1
+CAND_0487,19,bachelor,"linux, data analysis, statistics, sql, excel, machine learning","Worked as consultant for 19 years with expertise in linux, data analysis, statistics",consultant,1
+CAND_0488,2,high_school,"teamwork, leadership, nodejs, excel, react, git, machine learning, linux","Worked as consultant for 2 years with expertise in teamwork, leadership, nodejs",consultant,0
+CAND_0489,6,phd,"scrum, data analysis, java, git, javascript, azure","Worked as consultant for 6 years with expertise in scrum, data analysis, java",consultant,1
+CAND_0490,0,high_school,"sql, teamwork, scrum, statistics","Worked as developer for 0 years with expertise in sql, teamwork, scrum",developer,0
+CAND_0491,15,phd,"teamwork, react, leadership, sql, azure, python","Worked as developer for 15 years with expertise in teamwork, react, leadership",developer,1
+CAND_0492,7,high_school,"linux, scrum, data analysis, project management","Worked as consultant for 7 years with expertise in linux, scrum, data analysis",consultant,0
+CAND_0493,5,master,"java, data analysis, teamwork, javascript, scrum, communication","Worked as designer for 5 years with expertise in java, data analysis, teamwork",designer,1
+CAND_0494,19,bachelor,"agile, project management, communication, python, docker, kubernetes, scrum, excel","Worked as manager for 19 years with expertise in agile, project management, communication",manager,1
+CAND_0495,4,high_school,"azure, nodejs, leadership, excel, data analysis","Worked as designer for 4 years with expertise in azure, nodejs, leadership",designer,1
+CAND_0496,3,phd,"docker, java, git, excel, azure, data analysis","Worked as manager for 3 years with expertise in docker, java, git",manager,1
+CAND_0497,19,high_school,"azure, scrum, linux, project management, agile, sql","Worked as consultant for 19 years with expertise in azure, scrum, linux",consultant,1
+CAND_0498,6,bachelor,"java, git, statistics, excel, project management, sql, teamwork","Worked as analyst for 6 years with expertise in java, git, statistics",analyst,1
+CAND_0499,1,phd,"linux, docker, python, machine learning, leadership","Worked as developer for 1 years with expertise in linux, docker, python",developer,1
+CAND_0500,18,associate,"data analysis, linux, machine learning, react, teamwork, communication, python","Worked as manager for 18 years with expertise in data analysis, linux, machine learning",manager,1
+CAND_0501,12,phd,"excel, linux, react, data analysis","Worked as manager for 12 years with expertise in excel, linux, react",manager,1
+CAND_0502,11,master,"linux, javascript, scrum, project management","Worked as designer for 11 years with expertise in linux, javascript, scrum",designer,1
+CAND_0503,9,bachelor,"data analysis, project management, excel, leadership, react","Worked as developer for 9 years with expertise in data analysis, project management, excel",developer,1
+CAND_0504,9,master,"excel, scrum, linux, data analysis, python, git, machine learning, azure","Worked as developer for 9 years with expertise in excel, scrum, linux",developer,1
+CAND_0505,11,phd,"linux, statistics, java, agile, react, communication, python","Worked as developer for 11 years with expertise in linux, statistics, java",developer,1
+CAND_0506,16,phd,"docker, python, linux, java, project management, javascript, aws","Worked as manager for 16 years with expertise in docker, python, linux",manager,1
+CAND_0507,2,associate,"nodejs, agile","Worked as consultant for 2 years with expertise in nodejs, agile",consultant,0
+CAND_0508,8,associate,"aws, communication, teamwork, react, java, data analysis","Worked as designer for 8 years with expertise in aws, communication, teamwork",designer,1
+CAND_0509,12,phd,"aws, javascript, leadership, linux, statistics, java","Worked as developer for 12 years with expertise in aws, javascript, leadership",developer,1
+CAND_0510,1,master,"azure, excel, nodejs, java, aws, sql","Worked as analyst for 1 years with expertise in azure, excel, nodejs",analyst,1
+CAND_0511,7,master,"git, sql, azure, excel, data analysis, teamwork, kubernetes","Worked as manager for 7 years with expertise in git, sql, azure",manager,1
+CAND_0512,15,master,"azure, agile, docker, javascript, machine learning, python, excel","Worked as analyst for 15 years with expertise in azure, agile, docker",analyst,1
+CAND_0513,12,bachelor,"javascript, react, sql, machine learning, python","Worked as designer for 12 years with expertise in javascript, react, sql",designer,1
+CAND_0514,11,high_school,"javascript, aws, git, linux","Worked as consultant for 11 years with expertise in javascript, aws, git",consultant,0
+CAND_0515,7,high_school,"react, teamwork, azure, excel, java","Worked as analyst for 7 years with expertise in react, teamwork, azure",analyst,1
+CAND_0516,3,associate,"sql, java, nodejs, agile, javascript, azure, data analysis","Worked as analyst for 3 years with expertise in sql, java, nodejs",analyst,1
+CAND_0517,14,high_school,"agile, leadership, data analysis, kubernetes, excel","Worked as consultant for 14 years with expertise in agile, leadership, data analysis",consultant,1
+CAND_0518,18,phd,"aws, javascript, kubernetes, excel, scrum, project management, react, data analysis","Worked as designer for 18 years with expertise in aws, javascript, kubernetes",designer,1
+CAND_0519,4,high_school,"machine learning, scrum","Worked as developer for 4 years with expertise in machine learning, scrum",developer,0
+CAND_0520,1,master,"statistics, javascript, react, sql, project management, azure, agile, machine learning","Worked as consultant for 1 years with expertise in statistics, javascript, react",consultant,1
+CAND_0521,3,associate,"leadership, docker, excel","Worked as analyst for 3 years with expertise in leadership, docker, excel",analyst,0
+CAND_0522,14,bachelor,"leadership, communication, sql, git, linux, aws, docker, javascript","Worked as developer for 14 years with expertise in leadership, communication, sql",developer,1
+CAND_0523,4,master,"docker, agile, teamwork, excel, machine learning, python","Worked as manager for 4 years with expertise in docker, agile, teamwork",manager,1
+CAND_0524,12,master,"docker, agile, leadership, data analysis, machine learning, java","Worked as analyst for 12 years with expertise in docker, agile, leadership",analyst,1
+CAND_0525,6,phd,"statistics, data analysis, teamwork, kubernetes, communication, javascript, aws","Worked as developer for 6 years with expertise in statistics, data analysis, teamwork",developer,1
+CAND_0526,9,phd,"excel, react, git","Worked as analyst for 9 years with expertise in excel, react, git",analyst,1
+CAND_0527,14,phd,"sql, statistics","Worked as developer for 14 years with expertise in sql, statistics",developer,1
+CAND_0528,4,master,"project management, git","Worked as manager for 4 years with expertise in project management, git",manager,1
+CAND_0529,12,high_school,"agile, react, java, machine learning, docker, azure, scrum, teamwork","Worked as developer for 12 years with expertise in agile, react, java",developer,1
+CAND_0530,2,bachelor,"git, scrum, project management, java, sql","Worked as manager for 2 years with expertise in git, scrum, project management",manager,1
+CAND_0531,3,high_school,"python, machine learning, azure, project management, java","Worked as consultant for 3 years with expertise in python, machine learning, azure",consultant,1
+CAND_0532,5,master,"leadership, kubernetes, communication, python, linux","Worked as manager for 5 years with expertise in leadership, kubernetes, communication",manager,1
+CAND_0533,18,associate,"docker, azure, kubernetes, sql, project management, linux, agile","Worked as designer for 18 years with expertise in docker, azure, kubernetes",designer,1
+CAND_0534,3,high_school,"javascript, linux, aws, python, react, project management, git","Worked as designer for 3 years with expertise in javascript, linux, aws",designer,1
+CAND_0535,14,high_school,"linux, kubernetes, teamwork, aws, project management, java","Worked as consultant for 14 years with expertise in linux, kubernetes, teamwork",consultant,1
+CAND_0536,6,bachelor,"azure, nodejs, linux, project management, git, javascript","Worked as designer for 6 years with expertise in azure, nodejs, linux",designer,1
+CAND_0537,5,bachelor,"project management, nodejs, agile, sql, javascript, statistics, java","Worked as analyst for 5 years with expertise in project management, nodejs, agile",analyst,1
+CAND_0538,8,bachelor,"kubernetes, data analysis, agile, docker","Worked as analyst for 8 years with expertise in kubernetes, data analysis, agile",analyst,1
+CAND_0539,6,bachelor,"data analysis, python, teamwork, azure, javascript, sql, linux","Worked as developer for 6 years with expertise in data analysis, python, teamwork",developer,1
+CAND_0540,17,phd,"linux, scrum, kubernetes, react, data analysis, nodejs, machine learning, docker","Worked as designer for 17 years with expertise in linux, scrum, kubernetes",designer,1
+CAND_0541,6,high_school,"aws, kubernetes, java, teamwork, project management, communication, statistics","Worked as manager for 6 years with expertise in aws, kubernetes, java",manager,1
+CAND_0542,19,high_school,"sql, git, agile","Worked as developer for 19 years with expertise in sql, git, agile",developer,0
+CAND_0543,15,associate,"aws, communication, javascript","Worked as designer for 15 years with expertise in aws, communication, javascript",designer,0
+CAND_0544,8,associate,"aws, data analysis, statistics, agile, java, project management","Worked as analyst for 8 years with expertise in aws, data analysis, statistics",analyst,1
+CAND_0545,3,high_school,"react, java, linux, leadership, javascript","Worked as designer for 3 years with expertise in react, java, linux",designer,1
+CAND_0546,6,bachelor,"kubernetes, linux","Worked as developer for 6 years with expertise in kubernetes, linux",developer,1
+CAND_0547,4,high_school,"leadership, teamwork, linux, react","Worked as analyst for 4 years with expertise in leadership, teamwork, linux",analyst,0
+CAND_0548,15,associate,"javascript, python","Worked as developer for 15 years with expertise in javascript, python",developer,0
+CAND_0549,1,associate,"machine learning, git, scrum, data analysis, java, communication","Worked as designer for 1 years with expertise in machine learning, git, scrum",designer,0
+CAND_0550,9,master,"data analysis, communication, teamwork, statistics, aws, azure, project management, nodejs","Worked as manager for 9 years with expertise in data analysis, communication, teamwork",manager,1
+CAND_0551,11,associate,"statistics, excel, machine learning","Worked as developer for 11 years with expertise in statistics, excel, machine learning",developer,0
+CAND_0552,15,bachelor,"react, javascript, git, teamwork","Worked as developer for 15 years with expertise in react, javascript, git",developer,1
+CAND_0553,10,phd,"azure, scrum","Worked as designer for 10 years with expertise in azure, scrum",designer,1
+CAND_0554,0,associate,"statistics, leadership, react, teamwork, nodejs, java","Worked as developer for 0 years with expertise in statistics, leadership, react",developer,0
+CAND_0555,9,bachelor,"statistics, sql, teamwork, nodejs","Worked as consultant for 9 years with expertise in statistics, sql, teamwork",consultant,1
+CAND_0556,4,high_school,"agile, nodejs, react, kubernetes, docker, python, communication","Worked as designer for 4 years with expertise in agile, nodejs, react",designer,1
+CAND_0557,11,bachelor,"javascript, teamwork, kubernetes, azure, python","Worked as developer for 11 years with expertise in javascript, teamwork, kubernetes",developer,1
+CAND_0558,19,master,"data analysis, nodejs, excel, react","Worked as consultant for 19 years with expertise in data analysis, nodejs, excel",consultant,1
+CAND_0559,14,high_school,"javascript, sql, docker, aws, project management","Worked as consultant for 14 years with expertise in javascript, sql, docker",consultant,1
+CAND_0560,18,master,"statistics, python","Worked as designer for 18 years with expertise in statistics, python",designer,1
+CAND_0561,11,phd,"aws, java, agile","Worked as manager for 11 years with expertise in aws, java, agile",manager,1
+CAND_0562,3,associate,"git, react, agile","Worked as manager for 3 years with expertise in git, react, agile",manager,0
+CAND_0563,5,phd,"python, leadership, nodejs, azure, aws, sql, kubernetes, data analysis","Worked as designer for 5 years with expertise in python, leadership, nodejs",designer,1
+CAND_0564,16,phd,"leadership, javascript","Worked as designer for 16 years with expertise in leadership, javascript",designer,1
+CAND_0565,2,master,"machine learning, python, git, docker, azure, react, data analysis","Worked as developer for 2 years with expertise in machine learning, python, git",developer,1
+CAND_0566,6,master,"nodejs, data analysis, machine learning, project management","Worked as developer for 6 years with expertise in nodejs, data analysis, machine learning",developer,1
+CAND_0567,3,phd,"sql, react, data analysis, java, agile, javascript, project management, communication","Worked as developer for 3 years with expertise in sql, react, data analysis",developer,1
+CAND_0568,11,phd,"scrum, azure, java, aws, javascript, nodejs, kubernetes, excel","Worked as analyst for 11 years with expertise in scrum, azure, java",analyst,1
+CAND_0569,18,associate,"excel, statistics, kubernetes, git, teamwork, docker","Worked as designer for 18 years with expertise in excel, statistics, kubernetes",designer,0
+CAND_0570,17,master,"project management, react, communication","Worked as consultant for 17 years with expertise in project management, react, communication",consultant,1
+CAND_0571,16,bachelor,"project management, data analysis, leadership","Worked as developer for 16 years with expertise in project management, data analysis, leadership",developer,1
+CAND_0572,11,high_school,"statistics, javascript, data analysis, java, teamwork, machine learning, excel, leadership","Worked as developer for 11 years with expertise in statistics, javascript, data analysis",developer,1
+CAND_0573,17,associate,"azure, communication, kubernetes, nodejs, statistics, agile, data analysis, scrum","Worked as developer for 17 years with expertise in azure, communication, kubernetes",developer,0
+CAND_0574,12,associate,"python, azure, data analysis, linux, communication, nodejs","Worked as analyst for 12 years with expertise in python, azure, data analysis",analyst,1
+CAND_0575,6,high_school,"agile, communication, sql, machine learning, excel, java, scrum","Worked as manager for 6 years with expertise in agile, communication, sql",manager,1
+CAND_0576,6,master,"machine learning, communication, linux, project management, java, aws","Worked as analyst for 6 years with expertise in machine learning, communication, linux",analyst,1
+CAND_0577,5,phd,"excel, scrum, sql, nodejs, agile, javascript, python","Worked as consultant for 5 years with expertise in excel, scrum, sql",consultant,1
+CAND_0578,18,bachelor,"git, java","Worked as consultant for 18 years with expertise in git, java",consultant,1
+CAND_0579,18,phd,"python, aws, leadership, excel, data analysis","Worked as consultant for 18 years with expertise in python, aws, leadership",consultant,1
+CAND_0580,12,master,"communication, react, excel, statistics","Worked as analyst for 12 years with expertise in communication, react, excel",analyst,1
+CAND_0581,14,high_school,"data analysis, machine learning, javascript, scrum, java","Worked as analyst for 14 years with expertise in data analysis, machine learning, javascript",analyst,1
+CAND_0582,7,phd,"machine learning, data analysis, communication, sql, nodejs, leadership, docker","Worked as developer for 7 years with expertise in machine learning, data analysis, communication",developer,1
+CAND_0583,1,high_school,"machine learning, javascript, scrum, git, python, react, statistics, leadership","Worked as manager for 1 years with expertise in machine learning, javascript, scrum",manager,0
+CAND_0584,6,associate,"aws, scrum, linux, python, javascript, teamwork, git","Worked as consultant for 6 years with expertise in aws, scrum, linux",consultant,1
+CAND_0585,2,master,"sql, react, project management, kubernetes, leadership, docker, machine learning, linux","Worked as consultant for 2 years with expertise in sql, react, project management",consultant,1
+CAND_0586,6,associate,"linux, statistics, docker, machine learning, aws, agile, react","Worked as manager for 6 years with expertise in linux, statistics, docker",manager,0
+CAND_0587,15,high_school,"java, python, project management","Worked as designer for 15 years with expertise in java, python, project management",designer,1
+CAND_0588,5,associate,"sql, react, azure, kubernetes, agile, git, java","Worked as consultant for 5 years with expertise in sql, react, azure",consultant,1
+CAND_0589,0,master,"agile, excel, react, leadership, kubernetes","Worked as designer for 0 years with expertise in agile, excel, react",designer,1
+CAND_0590,10,master,"data analysis, project management, react, statistics, javascript, agile, nodejs","Worked as manager for 10 years with expertise in data analysis, project management, react",manager,1
+CAND_0591,3,phd,"sql, linux, project management, azure, excel, communication","Worked as developer for 3 years with expertise in sql, linux, project management",developer,1
+CAND_0592,19,high_school,"react, java, kubernetes, git, linux, leadership","Worked as analyst for 19 years with expertise in react, java, kubernetes",analyst,1
+CAND_0593,1,phd,"azure, python, docker, git, nodejs, machine learning, excel, kubernetes","Worked as manager for 1 years with expertise in azure, python, docker",manager,1
+CAND_0594,16,phd,"sql, teamwork, aws, javascript, leadership, statistics","Worked as developer for 16 years with expertise in sql, teamwork, aws",developer,1
+CAND_0595,12,associate,"javascript, statistics, machine learning, agile, docker, java, python, communication","Worked as manager for 12 years with expertise in javascript, statistics, machine learning",manager,1
+CAND_0596,1,master,"react, nodejs, java, scrum, python, teamwork, aws, git","Worked as developer for 1 years with expertise in react, nodejs, java",developer,1
+CAND_0597,9,high_school,"scrum, machine learning, project management, git, communication, agile, kubernetes","Worked as designer for 9 years with expertise in scrum, machine learning, project management",designer,1
+CAND_0598,9,high_school,"leadership, docker, linux, data analysis, react, agile","Worked as manager for 9 years with expertise in leadership, docker, linux",manager,1
+CAND_0599,16,associate,"javascript, nodejs, data analysis, azure, java, machine learning, agile, leadership","Worked as manager for 16 years with expertise in javascript, nodejs, data analysis",manager,1
+CAND_0600,14,master,"agile, azure, python, git, docker, communication, aws","Worked as manager for 14 years with expertise in agile, azure, python",manager,1
+CAND_0601,13,bachelor,"teamwork, machine learning, azure","Worked as consultant for 13 years with expertise in teamwork, machine learning, azure",consultant,1
+CAND_0602,14,high_school,"communication, agile, sql, linux, javascript","Worked as analyst for 14 years with expertise in communication, agile, sql",analyst,0
+CAND_0603,0,bachelor,"leadership, communication, statistics, excel, java, nodejs, docker","Worked as analyst for 0 years with expertise in leadership, communication, statistics",analyst,1
+CAND_0604,9,phd,"statistics, teamwork, nodejs","Worked as analyst for 9 years with expertise in statistics, teamwork, nodejs",analyst,1
+CAND_0605,8,master,"scrum, leadership, javascript, linux, react, java","Worked as developer for 8 years with expertise in scrum, leadership, javascript",developer,1
+CAND_0606,5,master,"git, azure, project management, docker, react, leadership","Worked as manager for 5 years with expertise in git, azure, project management",manager,1
+CAND_0607,10,master,"communication, machine learning, data analysis, statistics, java","Worked as developer for 10 years with expertise in communication, machine learning, data analysis",developer,1
+CAND_0608,17,master,"python, project management, azure, scrum, javascript, nodejs, machine learning, sql","Worked as manager for 17 years with expertise in python, project management, azure",manager,1
+CAND_0609,15,master,"linux, git, kubernetes, scrum, aws","Worked as developer for 15 years with expertise in linux, git, kubernetes",developer,1
+CAND_0610,8,phd,"react, scrum, git, agile, azure, javascript, kubernetes","Worked as manager for 8 years with expertise in react, scrum, git",manager,1
+CAND_0611,10,master,"git, teamwork","Worked as designer for 10 years with expertise in git, teamwork",designer,1
+CAND_0612,14,phd,"machine learning, nodejs, project management","Worked as consultant for 14 years with expertise in machine learning, nodejs, project management",consultant,1
+CAND_0613,4,bachelor,"linux, sql, teamwork, javascript, agile, java, data analysis, git","Worked as analyst for 4 years with expertise in linux, sql, teamwork",analyst,1
+CAND_0614,15,associate,"kubernetes, java, machine learning, leadership, docker, linux, python","Worked as developer for 15 years with expertise in kubernetes, java, machine learning",developer,1
+CAND_0615,16,high_school,"javascript, teamwork, aws, azure, git, python, data analysis","Worked as analyst for 16 years with expertise in javascript, teamwork, aws",analyst,1
+CAND_0616,0,high_school,"statistics, machine learning, git, sql","Worked as consultant for 0 years with expertise in statistics, machine learning, git",consultant,0
+CAND_0617,17,associate,"kubernetes, nodejs, react","Worked as developer for 17 years with expertise in kubernetes, nodejs, react",developer,0
+CAND_0618,10,master,"aws, sql","Worked as manager for 10 years with expertise in aws, sql",manager,1
+CAND_0619,0,high_school,"react, sql, aws, azure, java, data analysis","Worked as analyst for 0 years with expertise in react, sql, aws",analyst,0
+CAND_0620,15,phd,"project management, git, agile, machine learning, react, python, communication, kubernetes","Worked as consultant for 15 years with expertise in project management, git, agile",consultant,1
+CAND_0621,19,bachelor,"sql, statistics, git","Worked as consultant for 19 years with expertise in sql, statistics, git",consultant,1
+CAND_0622,1,master,"python, aws, git, sql, excel","Worked as manager for 1 years with expertise in python, aws, git",manager,1
+CAND_0623,3,associate,"project management, aws, scrum, kubernetes, python","Worked as manager for 3 years with expertise in project management, aws, scrum",manager,1
+CAND_0624,5,phd,"data analysis, react, sql","Worked as designer for 5 years with expertise in data analysis, react, sql",designer,1
+CAND_0625,3,bachelor,"data analysis, aws","Worked as analyst for 3 years with expertise in data analysis, aws",analyst,1
+CAND_0626,12,master,"leadership, project management, teamwork, aws, machine learning, java, python","Worked as manager for 12 years with expertise in leadership, project management, teamwork",manager,1
+CAND_0627,12,associate,"linux, react, scrum, machine learning, data analysis, sql, docker","Worked as manager for 12 years with expertise in linux, react, scrum",manager,0
+CAND_0628,4,high_school,"python, scrum, data analysis, linux, agile, azure, leadership, sql","Worked as designer for 4 years with expertise in python, scrum, data analysis",designer,1
+CAND_0629,11,phd,"git, teamwork","Worked as designer for 11 years with expertise in git, teamwork",designer,1
+CAND_0630,12,associate,"kubernetes, machine learning, project management, communication, data analysis, nodejs, python","Worked as consultant for 12 years with expertise in kubernetes, machine learning, project management",consultant,1
+CAND_0631,4,associate,"azure, nodejs, communication, agile, javascript, teamwork, python","Worked as analyst for 4 years with expertise in azure, nodejs, communication",analyst,1
+CAND_0632,3,associate,"react, java, excel, javascript, project management, scrum, azure","Worked as analyst for 3 years with expertise in react, java, excel",analyst,1
+CAND_0633,8,master,"agile, leadership","Worked as developer for 8 years with expertise in agile, leadership",developer,1
+CAND_0634,2,associate,"communication, nodejs, teamwork, azure","Worked as developer for 2 years with expertise in communication, nodejs, teamwork",developer,0
+CAND_0635,0,bachelor,"teamwork, leadership, javascript, java, excel, machine learning, statistics, communication","Worked as designer for 0 years with expertise in teamwork, leadership, javascript",designer,1
+CAND_0636,11,phd,"javascript, teamwork, git, nodejs, data analysis, react, excel","Worked as developer for 11 years with expertise in javascript, teamwork, git",developer,1
+CAND_0637,14,phd,"project management, docker, teamwork","Worked as analyst for 14 years with expertise in project management, docker, teamwork",analyst,1
+CAND_0638,2,phd,"azure, aws, scrum, kubernetes, leadership, machine learning","Worked as developer for 2 years with expertise in azure, aws, scrum",developer,1
+CAND_0639,19,high_school,"java, aws, project management, data analysis, docker, communication, kubernetes, nodejs","Worked as manager for 19 years with expertise in java, aws, project management",manager,1
+CAND_0640,3,phd,"machine learning, project management, linux, azure","Worked as designer for 3 years with expertise in machine learning, project management, linux",designer,1
+CAND_0641,9,associate,"react, leadership","Worked as designer for 9 years with expertise in react, leadership",designer,0
+CAND_0642,12,master,"teamwork, react, linux, git, java","Worked as developer for 12 years with expertise in teamwork, react, linux",developer,1
+CAND_0643,19,phd,"excel, scrum, agile, docker, python, java, git","Worked as manager for 19 years with expertise in excel, scrum, agile",manager,1
+CAND_0644,11,master,"teamwork, project management","Worked as consultant for 11 years with expertise in teamwork, project management",consultant,1
+CAND_0645,15,phd,"teamwork, excel, linux, nodejs, react","Worked as designer for 15 years with expertise in teamwork, excel, linux",designer,1
+CAND_0646,14,associate,"linux, teamwork","Worked as manager for 14 years with expertise in linux, teamwork",manager,0
+CAND_0647,5,bachelor,"linux, sql, scrum, java, leadership, docker","Worked as consultant for 5 years with expertise in linux, sql, scrum",consultant,1
+CAND_0648,16,bachelor,"java, python, statistics, azure","Worked as designer for 16 years with expertise in java, python, statistics",designer,1
+CAND_0649,17,associate,"docker, python, git, azure, teamwork, leadership, kubernetes","Worked as manager for 17 years with expertise in docker, python, git",manager,1
+CAND_0650,8,high_school,"aws, react, nodejs, git, machine learning, data analysis, project management","Worked as developer for 8 years with expertise in aws, react, nodejs",developer,1
+CAND_0651,15,associate,"sql, nodejs","Worked as manager for 15 years with expertise in sql, nodejs",manager,0
+CAND_0652,13,bachelor,"kubernetes, linux, machine learning, project management, javascript, teamwork, data analysis","Worked as developer for 13 years with expertise in kubernetes, linux, machine learning",developer,1
+CAND_0653,2,master,"statistics, linux, kubernetes, scrum, teamwork, git","Worked as developer for 2 years with expertise in statistics, linux, kubernetes",developer,0
+CAND_0654,2,bachelor,"nodejs, teamwork, git, linux, java, project management, react","Worked as developer for 2 years with expertise in nodejs, teamwork, git",developer,1
+CAND_0655,16,associate,"kubernetes, communication, aws, linux, docker, azure, agile","Worked as analyst for 16 years with expertise in kubernetes, communication, aws",analyst,0
+CAND_0656,6,associate,"java, react, javascript, git, statistics, azure, python","Worked as developer for 6 years with expertise in java, react, javascript",developer,1
+CAND_0657,8,bachelor,"docker, excel, scrum","Worked as manager for 8 years with expertise in docker, excel, scrum",manager,1
+CAND_0658,19,high_school,"sql, linux, communication","Worked as consultant for 19 years with expertise in sql, linux, communication",consultant,0
+CAND_0659,2,phd,"git, data analysis, javascript, docker, scrum, linux","Worked as analyst for 2 years with expertise in git, data analysis, javascript",analyst,0
+CAND_0660,12,associate,"agile, java, git","Worked as manager for 12 years with expertise in agile, java, git",manager,0
+CAND_0661,2,associate,"project management, git, sql, kubernetes","Worked as designer for 2 years with expertise in project management, git, sql",designer,0
+CAND_0662,14,associate,"communication, agile, linux","Worked as developer for 14 years with expertise in communication, agile, linux",developer,0
+CAND_0663,15,associate,"excel, machine learning","Worked as analyst for 15 years with expertise in excel, machine learning",analyst,0
+CAND_0664,3,associate,"kubernetes, docker, git, java, aws, agile, excel, teamwork","Worked as analyst for 3 years with expertise in kubernetes, docker, git",analyst,1
+CAND_0665,14,phd,"excel, kubernetes, azure, scrum, nodejs, git, java, agile","Worked as analyst for 14 years with expertise in excel, kubernetes, azure",analyst,1
+CAND_0666,2,associate,"react, docker, statistics, data analysis, python, agile","Worked as developer for 2 years with expertise in react, docker, statistics",developer,0
+CAND_0667,9,high_school,"aws, project management, python, excel, leadership, git, agile, nodejs","Worked as consultant for 9 years with expertise in aws, project management, python",consultant,1
+CAND_0668,2,associate,"javascript, linux, aws, azure, react, machine learning, teamwork, agile","Worked as developer for 2 years with expertise in javascript, linux, aws",developer,0
+CAND_0669,12,associate,"git, statistics","Worked as developer for 12 years with expertise in git, statistics",developer,0
+CAND_0670,16,associate,"java, communication, react, project management, statistics, scrum","Worked as manager for 16 years with expertise in java, communication, react",manager,1
+CAND_0671,0,high_school,"linux, project management, data analysis","Worked as developer for 0 years with expertise in linux, project management, data analysis",developer,0
+CAND_0672,6,master,"leadership, communication","Worked as analyst for 6 years with expertise in leadership, communication",analyst,1
+CAND_0673,1,phd,"agile, data analysis, excel, leadership, machine learning","Worked as designer for 1 years with expertise in agile, data analysis, excel",designer,1
+CAND_0674,11,associate,"docker, azure, communication, agile, nodejs, excel","Worked as analyst for 11 years with expertise in docker, azure, communication",analyst,0
+CAND_0675,12,bachelor,"docker, javascript, kubernetes, leadership","Worked as designer for 12 years with expertise in docker, javascript, kubernetes",designer,1
+CAND_0676,8,high_school,"machine learning, excel, git, scrum, linux, leadership, nodejs","Worked as analyst for 8 years with expertise in machine learning, excel, git",analyst,1
+CAND_0677,16,bachelor,"linux, javascript, teamwork, docker, scrum, python, nodejs, react","Worked as consultant for 16 years with expertise in linux, javascript, teamwork",consultant,1
+CAND_0678,11,high_school,"data analysis, statistics, communication, git, leadership","Worked as designer for 11 years with expertise in data analysis, statistics, communication",designer,1
+CAND_0679,13,phd,"linux, leadership, react, python, excel, agile, azure","Worked as designer for 13 years with expertise in linux, leadership, react",designer,1
+CAND_0680,3,phd,"javascript, statistics, sql, teamwork, python, machine learning","Worked as consultant for 3 years with expertise in javascript, statistics, sql",consultant,1
+CAND_0681,7,associate,"python, machine learning, project management, nodejs, agile, react, linux","Worked as developer for 7 years with expertise in python, machine learning, project management",developer,1
+CAND_0682,0,high_school,"agile, linux, aws, data analysis, git, excel, kubernetes","Worked as analyst for 0 years with expertise in agile, linux, aws",analyst,0
+CAND_0683,11,master,"docker, linux, agile, nodejs, aws","Worked as consultant for 11 years with expertise in docker, linux, agile",consultant,1
+CAND_0684,3,master,"java, kubernetes, communication, python, teamwork","Worked as manager for 3 years with expertise in java, kubernetes, communication",manager,1
+CAND_0685,4,associate,"teamwork, agile, scrum, excel, linux","Worked as analyst for 4 years with expertise in teamwork, agile, scrum",analyst,0
+CAND_0686,15,phd,"linux, java, agile","Worked as designer for 15 years with expertise in linux, java, agile",designer,1
+CAND_0687,17,phd,"teamwork, kubernetes, data analysis, communication, aws, python, project management","Worked as manager for 17 years with expertise in teamwork, kubernetes, data analysis",manager,1
+CAND_0688,11,master,"docker, azure, aws, communication, kubernetes, project management","Worked as developer for 11 years with expertise in docker, azure, aws",developer,1
+CAND_0689,7,master,"docker, linux, scrum, aws, python, azure, leadership","Worked as manager for 7 years with expertise in docker, linux, scrum",manager,1
+CAND_0690,6,bachelor,"git, scrum","Worked as consultant for 6 years with expertise in git, scrum",consultant,1
+CAND_0691,12,associate,"statistics, machine learning, teamwork, sql, leadership, python, project management","Worked as analyst for 12 years with expertise in statistics, machine learning, teamwork",analyst,1
+CAND_0692,5,bachelor,"docker, nodejs, data analysis, scrum, leadership","Worked as designer for 5 years with expertise in docker, nodejs, data analysis",designer,1
+CAND_0693,19,high_school,"statistics, git, leadership, project management, aws","Worked as manager for 19 years with expertise in statistics, git, leadership",manager,1
+CAND_0694,18,bachelor,"kubernetes, react, aws, sql","Worked as developer for 18 years with expertise in kubernetes, react, aws",developer,1
+CAND_0695,9,phd,"statistics, aws","Worked as consultant for 9 years with expertise in statistics, aws",consultant,1
+CAND_0696,1,master,"machine learning, linux, git, scrum","Worked as developer for 1 years with expertise in machine learning, linux, git",developer,0
+CAND_0697,5,phd,"statistics, excel, docker, nodejs","Worked as developer for 5 years with expertise in statistics, excel, docker",developer,1
+CAND_0698,1,bachelor,"project management, java, linux, sql, agile, kubernetes","Worked as developer for 1 years with expertise in project management, java, linux",developer,1
+CAND_0699,14,associate,"communication, teamwork, agile, statistics, java, linux, react","Worked as analyst for 14 years with expertise in communication, teamwork, agile",analyst,1
+CAND_0700,15,high_school,"java, agile, aws, project management","Worked as analyst for 15 years with expertise in java, agile, aws",analyst,1
+CAND_0701,19,high_school,"javascript, java, teamwork, linux, excel, project management, git, python","Worked as consultant for 19 years with expertise in javascript, java, teamwork",consultant,1
+CAND_0702,16,phd,"sql, scrum, machine learning","Worked as developer for 16 years with expertise in sql, scrum, machine learning",developer,1
+CAND_0703,2,high_school,"leadership, javascript","Worked as designer for 2 years with expertise in leadership, javascript",designer,0
+CAND_0704,5,high_school,"leadership, agile, excel, statistics","Worked as developer for 5 years with expertise in leadership, agile, excel",developer,0
+CAND_0705,19,phd,"linux, react","Worked as designer for 19 years with expertise in linux, react",designer,1
+CAND_0706,15,bachelor,"docker, aws, scrum, agile, react, git, java, communication","Worked as analyst for 15 years with expertise in docker, aws, scrum",analyst,1
+CAND_0707,16,bachelor,"python, leadership, project management, javascript","Worked as analyst for 16 years with expertise in python, leadership, project management",analyst,1
+CAND_0708,4,phd,"docker, teamwork, react, nodejs, python, excel, statistics, azure","Worked as manager for 4 years with expertise in docker, teamwork, react",manager,1
+CAND_0709,11,high_school,"azure, nodejs, data analysis, teamwork, agile","Worked as manager for 11 years with expertise in azure, nodejs, data analysis",manager,0
+CAND_0710,10,high_school,"scrum, javascript, linux, machine learning, python, git, kubernetes","Worked as manager for 10 years with expertise in scrum, javascript, linux",manager,1
+CAND_0711,7,bachelor,"docker, git, nodejs, kubernetes, react, java","Worked as consultant for 7 years with expertise in docker, git, nodejs",consultant,1
+CAND_0712,1,high_school,"data analysis, java","Worked as designer for 1 years with expertise in data analysis, java",designer,0
+CAND_0713,1,phd,"communication, nodejs, agile, excel","Worked as developer for 1 years with expertise in communication, nodejs, agile",developer,0
+CAND_0714,10,associate,"javascript, git","Worked as developer for 10 years with expertise in javascript, git",developer,0
+CAND_0715,14,master,"react, agile, javascript","Worked as designer for 14 years with expertise in react, agile, javascript",designer,1
+CAND_0716,11,phd,"statistics, teamwork, excel, git","Worked as analyst for 11 years with expertise in statistics, teamwork, excel",analyst,1
+CAND_0717,6,master,"excel, azure, javascript, machine learning, leadership","Worked as designer for 6 years with expertise in excel, azure, javascript",designer,1
+CAND_0718,1,bachelor,"leadership, sql","Worked as analyst for 1 years with expertise in leadership, sql",analyst,0
+CAND_0719,18,associate,"leadership, git, communication, agile, docker, nodejs, aws","Worked as manager for 18 years with expertise in leadership, git, communication",manager,1
+CAND_0720,14,high_school,"excel, javascript, linux, python, java, react","Worked as designer for 14 years with expertise in excel, javascript, linux",designer,1
+CAND_0721,4,high_school,"statistics, kubernetes, sql, agile, python, project management, scrum, data analysis","Worked as consultant for 4 years with expertise in statistics, kubernetes, sql",consultant,1
+CAND_0722,13,master,"project management, git, sql, statistics, leadership, excel, java","Worked as analyst for 13 years with expertise in project management, git, sql",analyst,1
+CAND_0723,19,bachelor,"machine learning, scrum, azure, agile, python, sql","Worked as manager for 19 years with expertise in machine learning, scrum, azure",manager,1
+CAND_0724,2,master,"machine learning, excel, project management, java, nodejs","Worked as designer for 2 years with expertise in machine learning, excel, project management",designer,1
+CAND_0725,7,high_school,"aws, communication, react, excel, java, scrum","Worked as designer for 7 years with expertise in aws, communication, react",designer,1
+CAND_0726,3,bachelor,"statistics, data analysis, javascript, nodejs, aws, agile","Worked as designer for 3 years with expertise in statistics, data analysis, javascript",designer,1
+CAND_0727,0,master,"teamwork, excel, agile, linux","Worked as analyst for 0 years with expertise in teamwork, excel, agile",analyst,0
+CAND_0728,16,phd,"azure, teamwork, git, linux, python, react, project management, docker","Worked as analyst for 16 years with expertise in azure, teamwork, git",analyst,1
+CAND_0729,13,master,"linux, machine learning, project management, nodejs","Worked as designer for 13 years with expertise in linux, machine learning, project management",designer,1
+CAND_0730,17,bachelor,"nodejs, agile, machine learning","Worked as manager for 17 years with expertise in nodejs, agile, machine learning",manager,1
+CAND_0731,4,master,"machine learning, docker","Worked as designer for 4 years with expertise in machine learning, docker",designer,1
+CAND_0732,2,phd,"java, machine learning, javascript, teamwork","Worked as manager for 2 years with expertise in java, machine learning, javascript",manager,0
+CAND_0733,4,phd,"scrum, leadership","Worked as designer for 4 years with expertise in scrum, leadership",designer,1
+CAND_0734,1,bachelor,"java, excel, linux, python","Worked as developer for 1 years with expertise in java, excel, linux",developer,0
+CAND_0735,14,high_school,"react, statistics, sql, communication, teamwork, nodejs, leadership, agile","Worked as manager for 14 years with expertise in react, statistics, sql",manager,1
+CAND_0736,2,associate,"git, leadership","Worked as developer for 2 years with expertise in git, leadership",developer,0
+CAND_0737,4,master,"machine learning, linux, javascript, python, communication, react, project management","Worked as developer for 4 years with expertise in machine learning, linux, javascript",developer,1
+CAND_0738,12,master,"nodejs, react, data analysis, docker","Worked as designer for 12 years with expertise in nodejs, react, data analysis",designer,1
+CAND_0739,14,master,"leadership, git, azure, teamwork","Worked as developer for 14 years with expertise in leadership, git, azure",developer,1
+CAND_0740,10,phd,"project management, data analysis, azure, javascript, agile, statistics, docker, communication","Worked as manager for 10 years with expertise in project management, data analysis, azure",manager,1
+CAND_0741,16,associate,"docker, aws","Worked as analyst for 16 years with expertise in docker, aws",analyst,0
+CAND_0742,4,associate,"agile, sql, python, java, git","Worked as developer for 4 years with expertise in agile, sql, python",developer,1
+CAND_0743,1,master,"docker, java, excel, javascript, python, project management, sql","Worked as designer for 1 years with expertise in docker, java, excel",designer,1
+CAND_0744,12,phd,"azure, javascript, teamwork, java, docker, machine learning","Worked as manager for 12 years with expertise in azure, javascript, teamwork",manager,1
+CAND_0745,2,phd,"aws, linux","Worked as developer for 2 years with expertise in aws, linux",developer,0
+CAND_0746,19,associate,"machine learning, communication","Worked as developer for 19 years with expertise in machine learning, communication",developer,0
+CAND_0747,8,associate,"project management, java, aws, agile, scrum","Worked as manager for 8 years with expertise in project management, java, aws",manager,1
+CAND_0748,9,associate,"statistics, agile, docker, sql, javascript, teamwork, communication, git","Worked as manager for 9 years with expertise in statistics, agile, docker",manager,0
+CAND_0749,17,high_school,"kubernetes, project management, sql, scrum, excel, javascript, docker, azure","Worked as designer for 17 years with expertise in kubernetes, project management, sql",designer,1
+CAND_0750,18,master,"react, javascript, aws, agile, nodejs, excel, kubernetes, python","Worked as designer for 18 years with expertise in react, javascript, aws",designer,1
+CAND_0751,14,associate,"machine learning, scrum, agile","Worked as analyst for 14 years with expertise in machine learning, scrum, agile",analyst,0
+CAND_0752,2,phd,"kubernetes, agile, excel","Worked as consultant for 2 years with expertise in kubernetes, agile, excel",consultant,0
+CAND_0753,16,high_school,"agile, linux, machine learning","Worked as consultant for 16 years with expertise in agile, linux, machine learning",consultant,0
+CAND_0754,14,high_school,"leadership, linux, agile","Worked as designer for 14 years with expertise in leadership, linux, agile",designer,0
+CAND_0755,15,bachelor,"git, scrum, statistics, kubernetes, project management, linux, teamwork","Worked as designer for 15 years with expertise in git, scrum, statistics",designer,1
+CAND_0756,7,bachelor,"azure, sql","Worked as analyst for 7 years with expertise in azure, sql",analyst,1
+CAND_0757,11,high_school,"leadership, statistics, project management","Worked as developer for 11 years with expertise in leadership, statistics, project management",developer,0
+CAND_0758,16,phd,"communication, azure, javascript, machine learning, excel","Worked as developer for 16 years with expertise in communication, azure, javascript",developer,1
+CAND_0759,8,bachelor,"statistics, machine learning, aws, data analysis, project management, excel, react, java","Worked as analyst for 8 years with expertise in statistics, machine learning, aws",analyst,1
+CAND_0760,9,associate,"project management, excel, react, scrum","Worked as developer for 9 years with expertise in project management, excel, react",developer,0
+CAND_0761,6,master,"react, python, leadership, machine learning, linux, docker, excel, project management","Worked as manager for 6 years with expertise in react, python, leadership",manager,1
+CAND_0762,9,master,"linux, azure, python","Worked as designer for 9 years with expertise in linux, azure, python",designer,1
+CAND_0763,7,phd,"agile, data analysis","Worked as manager for 7 years with expertise in agile, data analysis",manager,1
+CAND_0764,5,high_school,"teamwork, leadership, communication, project management, javascript, scrum, data analysis, python","Worked as consultant for 5 years with expertise in teamwork, leadership, communication",consultant,1
+CAND_0765,12,associate,"kubernetes, git, linux","Worked as developer for 12 years with expertise in kubernetes, git, linux",developer,0
+CAND_0766,12,phd,"git, project management, agile","Worked as developer for 12 years with expertise in git, project management, agile",developer,1
+CAND_0767,1,phd,"javascript, git, python, data analysis","Worked as manager for 1 years with expertise in javascript, git, python",manager,0
+CAND_0768,5,associate,"javascript, git, excel, kubernetes, azure, nodejs, react, docker","Worked as consultant for 5 years with expertise in javascript, git, excel",consultant,0
+CAND_0769,11,high_school,"machine learning, statistics, react, sql, communication, excel","Worked as manager for 11 years with expertise in machine learning, statistics, react",manager,0
+CAND_0770,14,master,"kubernetes, teamwork, azure, linux, communication","Worked as designer for 14 years with expertise in kubernetes, teamwork, azure",designer,1
+CAND_0771,4,associate,"linux, javascript, excel, communication","Worked as developer for 4 years with expertise in linux, javascript, excel",developer,0
+CAND_0772,14,phd,"linux, sql, aws, scrum, statistics, nodejs","Worked as consultant for 14 years with expertise in linux, sql, aws",consultant,1
+CAND_0773,11,master,"statistics, nodejs, java, azure, leadership, agile, machine learning, teamwork","Worked as designer for 11 years with expertise in statistics, nodejs, java",designer,1
+CAND_0774,14,high_school,"data analysis, javascript, git","Worked as analyst for 14 years with expertise in data analysis, javascript, git",analyst,0
+CAND_0775,1,bachelor,"communication, sql, react","Worked as manager for 1 years with expertise in communication, sql, react",manager,0
+CAND_0776,3,high_school,"python, machine learning, git, docker, nodejs","Worked as developer for 3 years with expertise in python, machine learning, git",developer,1
+CAND_0777,5,associate,"python, nodejs, machine learning, excel","Worked as designer for 5 years with expertise in python, nodejs, machine learning",designer,0
+CAND_0778,12,high_school,"sql, scrum","Worked as designer for 12 years with expertise in sql, scrum",designer,0
+CAND_0779,10,master,"docker, aws, linux, leadership, statistics, react, sql, communication","Worked as consultant for 10 years with expertise in docker, aws, linux",consultant,1
+CAND_0780,13,phd,"python, java, machine learning, linux, teamwork","Worked as analyst for 13 years with expertise in python, java, machine learning",analyst,1
+CAND_0781,5,master,"machine learning, azure, leadership, git, communication, nodejs, javascript, aws","Worked as consultant for 5 years with expertise in machine learning, azure, leadership",consultant,1
+CAND_0782,0,high_school,"nodejs, docker, git, java, scrum, kubernetes, machine learning","Worked as designer for 0 years with expertise in nodejs, docker, git",designer,0
+CAND_0783,8,bachelor,"leadership, aws, kubernetes, agile","Worked as consultant for 8 years with expertise in leadership, aws, kubernetes",consultant,1
+CAND_0784,7,master,"python, nodejs, javascript, kubernetes","Worked as developer for 7 years with expertise in python, nodejs, javascript",developer,1
+CAND_0785,16,master,"javascript, communication, leadership","Worked as consultant for 16 years with expertise in javascript, communication, leadership",consultant,1
+CAND_0786,6,high_school,"linux, sql, azure, communication, data analysis, machine learning, excel","Worked as manager for 6 years with expertise in linux, sql, azure",manager,0
+CAND_0787,15,associate,"project management, communication","Worked as developer for 15 years with expertise in project management, communication",developer,0
+CAND_0788,1,high_school,"javascript, leadership, git, agile, nodejs, project management, machine learning","Worked as manager for 1 years with expertise in javascript, leadership, git",manager,0
+CAND_0789,4,high_school,"scrum, statistics, linux, python, aws, nodejs","Worked as developer for 4 years with expertise in scrum, statistics, linux",developer,1
+CAND_0790,6,associate,"project management, sql, aws, communication, teamwork","Worked as designer for 6 years with expertise in project management, sql, aws",designer,1
+CAND_0791,1,high_school,"git, scrum, azure","Worked as developer for 1 years with expertise in git, scrum, azure",developer,0
+CAND_0792,7,master,"sql, communication","Worked as manager for 7 years with expertise in sql, communication",manager,1
+CAND_0793,1,master,"python, react, docker","Worked as consultant for 1 years with expertise in python, react, docker",consultant,0
+CAND_0794,8,associate,"excel, react, kubernetes, azure, python","Worked as designer for 8 years with expertise in excel, react, kubernetes",designer,1
+CAND_0795,13,high_school,"data analysis, agile, sql","Worked as developer for 13 years with expertise in data analysis, agile, sql",developer,0
+CAND_0796,8,high_school,"python, git","Worked as designer for 8 years with expertise in python, git",designer,0
+CAND_0797,12,phd,"agile, teamwork, leadership, git, sql, java, machine learning","Worked as developer for 12 years with expertise in agile, teamwork, leadership",developer,1
+CAND_0798,9,master,"excel, data analysis, scrum, docker, linux, aws","Worked as analyst for 9 years with expertise in excel, data analysis, scrum",analyst,1
+CAND_0799,18,associate,"kubernetes, communication","Worked as manager for 18 years with expertise in kubernetes, communication",manager,0
+CAND_0800,15,phd,"agile, leadership, aws, docker, machine learning","Worked as designer for 15 years with expertise in agile, leadership, aws",designer,1
+CAND_0801,1,bachelor,"azure, linux, agile, nodejs, data analysis, leadership","Worked as developer for 1 years with expertise in azure, linux, agile",developer,1
+CAND_0802,9,bachelor,"docker, excel, git, project management, agile","Worked as developer for 9 years with expertise in docker, excel, git",developer,1
+CAND_0803,9,high_school,"agile, nodejs, statistics, react","Worked as consultant for 9 years with expertise in agile, nodejs, statistics",consultant,0
+CAND_0804,2,master,"azure, sql, docker","Worked as consultant for 2 years with expertise in azure, sql, docker",consultant,0
+CAND_0805,9,high_school,"agile, sql, communication, azure, teamwork, scrum, statistics, excel","Worked as manager for 9 years with expertise in agile, sql, communication",manager,0
+CAND_0806,15,high_school,"git, react, statistics, agile, communication","Worked as developer for 15 years with expertise in git, react, statistics",developer,0
+CAND_0807,14,high_school,"docker, leadership, agile, javascript, azure, sql","Worked as consultant for 14 years with expertise in docker, leadership, agile",consultant,1
+CAND_0808,12,bachelor,"project management, azure, docker, data analysis","Worked as analyst for 12 years with expertise in project management, azure, docker",analyst,1
+CAND_0809,14,bachelor,"teamwork, leadership, react","Worked as analyst for 14 years with expertise in teamwork, leadership, react",analyst,1
+CAND_0810,7,high_school,"aws, linux, python, react, git","Worked as developer for 7 years with expertise in aws, linux, python",developer,1
+CAND_0811,10,master,"aws, nodejs, linux, teamwork, kubernetes","Worked as consultant for 10 years with expertise in aws, nodejs, linux",consultant,1
+CAND_0812,16,phd,"python, project management, machine learning, aws, teamwork","Worked as consultant for 16 years with expertise in python, project management, machine learning",consultant,1
+CAND_0813,4,bachelor,"excel, machine learning, linux, nodejs","Worked as developer for 4 years with expertise in excel, machine learning, linux",developer,1
+CAND_0814,1,associate,"kubernetes, azure","Worked as manager for 1 years with expertise in kubernetes, azure",manager,0
+CAND_0815,18,high_school,"kubernetes, java, python","Worked as designer for 18 years with expertise in kubernetes, java, python",designer,0
+CAND_0816,6,high_school,"git, machine learning, scrum","Worked as analyst for 6 years with expertise in git, machine learning, scrum",analyst,0
+CAND_0817,18,phd,"java, agile","Worked as consultant for 18 years with expertise in java, agile",consultant,1
+CAND_0818,13,bachelor,"python, communication, azure, project management","Worked as developer for 13 years with expertise in python, communication, azure",developer,1
+CAND_0819,14,master,"python, agile","Worked as designer for 14 years with expertise in python, agile",designer,1
+CAND_0820,12,high_school,"linux, java, nodejs","Worked as manager for 12 years with expertise in linux, java, nodejs",manager,0
+CAND_0821,8,high_school,"machine learning, sql, leadership, aws, scrum","Worked as designer for 8 years with expertise in machine learning, sql, leadership",designer,1
+CAND_0822,9,high_school,"javascript, excel, leadership, machine learning","Worked as consultant for 9 years with expertise in javascript, excel, leadership",consultant,0
+CAND_0823,17,bachelor,"machine learning, aws, nodejs, teamwork","Worked as designer for 17 years with expertise in machine learning, aws, nodejs",designer,1
+CAND_0824,0,bachelor,"docker, project management, linux, excel, machine learning","Worked as developer for 0 years with expertise in docker, project management, linux",developer,1
+CAND_0825,6,bachelor,"aws, java","Worked as manager for 6 years with expertise in aws, java",manager,1
+CAND_0826,4,associate,"agile, sql, java","Worked as consultant for 4 years with expertise in agile, sql, java",consultant,0
+CAND_0827,2,bachelor,"machine learning, kubernetes, teamwork, git, agile, azure, data analysis, java","Worked as designer for 2 years with expertise in machine learning, kubernetes, teamwork",designer,1
+CAND_0828,17,high_school,"statistics, communication, sql, react, java, kubernetes, scrum","Worked as designer for 17 years with expertise in statistics, communication, sql",designer,1
+CAND_0829,11,master,"machine learning, sql, scrum, python","Worked as consultant for 11 years with expertise in machine learning, sql, scrum",consultant,1
+CAND_0830,12,master,"react, git, leadership, scrum, nodejs, teamwork","Worked as analyst for 12 years with expertise in react, git, leadership",analyst,1
+CAND_0831,7,associate,"leadership, docker, excel, python, project management, agile, java, sql","Worked as developer for 7 years with expertise in leadership, docker, excel",developer,1
+CAND_0832,14,phd,"azure, nodejs, project management, linux, statistics, sql","Worked as designer for 14 years with expertise in azure, nodejs, project management",designer,1
+CAND_0833,4,phd,"scrum, leadership, statistics","Worked as developer for 4 years with expertise in scrum, leadership, statistics",developer,1
+CAND_0834,16,bachelor,"kubernetes, teamwork, agile, statistics, project management, aws, nodejs","Worked as developer for 16 years with expertise in kubernetes, teamwork, agile",developer,1
+CAND_0835,12,master,"sql, git, excel, javascript","Worked as consultant for 12 years with expertise in sql, git, excel",consultant,1
+CAND_0836,13,associate,"scrum, nodejs, machine learning, git, aws, project management","Worked as manager for 13 years with expertise in scrum, nodejs, machine learning",manager,1
+CAND_0837,9,associate,"aws, react, excel, git, machine learning, docker, azure","Worked as developer for 9 years with expertise in aws, react, excel",developer,0
+CAND_0838,12,bachelor,"machine learning, python, scrum, aws, linux, nodejs","Worked as analyst for 12 years with expertise in machine learning, python, scrum",analyst,1
+CAND_0839,0,phd,"git, scrum","Worked as manager for 0 years with expertise in git, scrum",manager,0
+CAND_0840,15,phd,"project management, javascript, linux, leadership","Worked as consultant for 15 years with expertise in project management, javascript, linux",consultant,1
+CAND_0841,12,associate,"aws, javascript, linux, python, react","Worked as manager for 12 years with expertise in aws, javascript, linux",manager,1
+CAND_0842,10,master,"agile, communication, scrum, machine learning, statistics, java, azure, git","Worked as designer for 10 years with expertise in agile, communication, scrum",designer,1
+CAND_0843,14,associate,"kubernetes, statistics, nodejs, machine learning, git, data analysis","Worked as analyst for 14 years with expertise in kubernetes, statistics, nodejs",analyst,0
+CAND_0844,1,bachelor,"linux, react, azure, statistics, python, scrum, leadership","Worked as manager for 1 years with expertise in linux, react, azure",manager,1
+CAND_0845,19,high_school,"sql, statistics, agile","Worked as manager for 19 years with expertise in sql, statistics, agile",manager,0
+CAND_0846,7,phd,"nodejs, linux, sql, python, react, excel, aws","Worked as designer for 7 years with expertise in nodejs, linux, sql",designer,1
+CAND_0847,15,phd,"project management, scrum, leadership","Worked as analyst for 15 years with expertise in project management, scrum, leadership",analyst,1
+CAND_0848,12,high_school,"agile, data analysis, leadership, communication, python, nodejs, react","Worked as developer for 12 years with expertise in agile, data analysis, leadership",developer,1
+CAND_0849,1,high_school,"nodejs, excel, kubernetes, project management, azure","Worked as manager for 1 years with expertise in nodejs, excel, kubernetes",manager,0
+CAND_0850,19,bachelor,"git, leadership, statistics, docker, sql, agile","Worked as designer for 19 years with expertise in git, leadership, statistics",designer,1
+CAND_0851,18,associate,"excel, javascript, leadership, docker, linux, java","Worked as designer for 18 years with expertise in excel, javascript, leadership",designer,1
+CAND_0852,16,high_school,"git, kubernetes, azure","Worked as analyst for 16 years with expertise in git, kubernetes, azure",analyst,0
+CAND_0853,14,bachelor,"leadership, react, sql, java","Worked as developer for 14 years with expertise in leadership, react, sql",developer,1
+CAND_0854,11,associate,"java, azure, excel, data analysis, aws, machine learning, teamwork, nodejs","Worked as developer for 11 years with expertise in java, azure, excel",developer,1
+CAND_0855,14,associate,"scrum, git, agile, project management, sql, data analysis, azure, machine learning","Worked as designer for 14 years with expertise in scrum, git, agile",designer,1
+CAND_0856,3,high_school,"git, teamwork, scrum, javascript, nodejs, excel, aws, linux","Worked as manager for 3 years with expertise in git, teamwork, scrum",manager,0
+CAND_0857,16,master,"linux, javascript","Worked as consultant for 16 years with expertise in linux, javascript",consultant,1
+CAND_0858,17,master,"javascript, react, communication, kubernetes, docker, teamwork","Worked as consultant for 17 years with expertise in javascript, react, communication",consultant,1
+CAND_0859,3,phd,"azure, project management, sql, python, react, linux, leadership","Worked as consultant for 3 years with expertise in azure, project management, sql",consultant,1
+CAND_0860,19,high_school,"statistics, react, javascript, leadership, excel, aws","Worked as developer for 19 years with expertise in statistics, react, javascript",developer,1
+CAND_0861,6,high_school,"nodejs, statistics","Worked as developer for 6 years with expertise in nodejs, statistics",developer,0
+CAND_0862,3,bachelor,"linux, docker, leadership, java","Worked as manager for 3 years with expertise in linux, docker, leadership",manager,1
+CAND_0863,0,associate,"azure, project management, excel","Worked as analyst for 0 years with expertise in azure, project management, excel",analyst,0
+CAND_0864,16,high_school,"kubernetes, communication, linux, nodejs","Worked as developer for 16 years with expertise in kubernetes, communication, linux",developer,0
+CAND_0865,3,bachelor,"azure, scrum, docker, agile, teamwork, machine learning","Worked as designer for 3 years with expertise in azure, scrum, docker",designer,1
+CAND_0866,12,high_school,"react, teamwork","Worked as analyst for 12 years with expertise in react, teamwork",analyst,0
+CAND_0867,7,master,"react, git, leadership, python, machine learning, nodejs, docker","Worked as designer for 7 years with expertise in react, git, leadership",designer,1
+CAND_0868,11,phd,"kubernetes, teamwork, machine learning, communication, git, scrum, aws, agile","Worked as manager for 11 years with expertise in kubernetes, teamwork, machine learning",manager,1
+CAND_0869,4,associate,"machine learning, excel, agile, nodejs, scrum, linux","Worked as analyst for 4 years with expertise in machine learning, excel, agile",analyst,0
+CAND_0870,1,bachelor,"data analysis, agile, javascript, project management, linux, sql, machine learning, scrum","Worked as analyst for 1 years with expertise in data analysis, agile, javascript",analyst,1
+CAND_0871,5,high_school,"scrum, sql","Worked as analyst for 5 years with expertise in scrum, sql",analyst,0
+CAND_0872,3,bachelor,"excel, teamwork","Worked as analyst for 3 years with expertise in excel, teamwork",analyst,1
+CAND_0873,16,associate,"nodejs, leadership, statistics","Worked as consultant for 16 years with expertise in nodejs, leadership, statistics",consultant,0
+CAND_0874,8,phd,"aws, javascript, data analysis, machine learning","Worked as manager for 8 years with expertise in aws, javascript, data analysis",manager,1
+CAND_0875,15,phd,"statistics, sql, agile, python, project management, java, aws, nodejs","Worked as manager for 15 years with expertise in statistics, sql, agile",manager,1
+CAND_0876,13,phd,"scrum, sql","Worked as designer for 13 years with expertise in scrum, sql",designer,1
+CAND_0877,3,phd,"communication, agile, excel, python, java","Worked as designer for 3 years with expertise in communication, agile, excel",designer,1
+CAND_0878,17,master,"data analysis, excel, javascript","Worked as developer for 17 years with expertise in data analysis, excel, javascript",developer,1
+CAND_0879,14,master,"nodejs, javascript, project management, data analysis, java, communication","Worked as designer for 14 years with expertise in nodejs, javascript, project management",designer,1
+CAND_0880,15,phd,"data analysis, machine learning, excel, linux","Worked as developer for 15 years with expertise in data analysis, machine learning, excel",developer,1
+CAND_0881,17,high_school,"kubernetes, leadership, react, communication, sql, azure, aws, javascript","Worked as designer for 17 years with expertise in kubernetes, leadership, react",designer,1
+CAND_0882,2,master,"scrum, agile, excel","Worked as manager for 2 years with expertise in scrum, agile, excel",manager,0
+CAND_0883,9,high_school,"react, excel, leadership, project management, statistics, docker, scrum, azure","Worked as designer for 9 years with expertise in react, excel, leadership",designer,1
+CAND_0884,4,associate,"excel, javascript, java, nodejs, leadership","Worked as manager for 4 years with expertise in excel, javascript, java",manager,1
+CAND_0885,14,master,"sql, linux, machine learning, communication","Worked as consultant for 14 years with expertise in sql, linux, machine learning",consultant,1
+CAND_0886,0,associate,"statistics, project management, react, azure, excel, scrum, machine learning, nodejs","Worked as consultant for 0 years with expertise in statistics, project management, react",consultant,0
+CAND_0887,11,master,"excel, nodejs, aws","Worked as designer for 11 years with expertise in excel, nodejs, aws",designer,1
+CAND_0888,11,master,"linux, react, kubernetes, sql, machine learning, excel, azure, nodejs","Worked as consultant for 11 years with expertise in linux, react, kubernetes",consultant,1
+CAND_0889,11,high_school,"docker, excel, react","Worked as consultant for 11 years with expertise in docker, excel, react",consultant,0
+CAND_0890,11,associate,"statistics, aws, git","Worked as developer for 11 years with expertise in statistics, aws, git",developer,0
+CAND_0891,16,high_school,"java, machine learning, javascript, sql","Worked as manager for 16 years with expertise in java, machine learning, javascript",manager,0
+CAND_0892,5,master,"leadership, excel","Worked as analyst for 5 years with expertise in leadership, excel",analyst,1
+CAND_0893,14,master,"linux, nodejs, statistics, agile, python","Worked as developer for 14 years with expertise in linux, nodejs, statistics",developer,1
+CAND_0894,1,associate,"azure, javascript","Worked as consultant for 1 years with expertise in azure, javascript",consultant,0
+CAND_0895,3,bachelor,"scrum, nodejs, project management, excel, leadership, react, statistics, sql","Worked as developer for 3 years with expertise in scrum, nodejs, project management",developer,1
+CAND_0896,5,high_school,"data analysis, communication, machine learning","Worked as consultant for 5 years with expertise in data analysis, communication, machine learning",consultant,0
+CAND_0897,15,bachelor,"nodejs, javascript, data analysis","Worked as analyst for 15 years with expertise in nodejs, javascript, data analysis",analyst,1
+CAND_0898,5,associate,"teamwork, aws, python, linux, communication","Worked as developer for 5 years with expertise in teamwork, aws, python",developer,1
+CAND_0899,4,bachelor,"git, machine learning, docker, communication, excel, react","Worked as consultant for 4 years with expertise in git, machine learning, docker",consultant,1
+CAND_0900,0,phd,"statistics, azure, linux, agile, excel, leadership, java, data analysis","Worked as developer for 0 years with expertise in statistics, azure, linux",developer,1
+CAND_0901,15,associate,"python, nodejs, sql","Worked as developer for 15 years with expertise in python, nodejs, sql",developer,0
+CAND_0902,5,phd,"project management, excel, sql, docker","Worked as manager for 5 years with expertise in project management, excel, sql",manager,1
+CAND_0903,0,associate,"statistics, javascript, project management, java","Worked as analyst for 0 years with expertise in statistics, javascript, project management",analyst,0
+CAND_0904,10,associate,"docker, nodejs","Worked as manager for 10 years with expertise in docker, nodejs",manager,0
+CAND_0905,4,phd,"project management, nodejs, azure, git, data analysis, python, excel, javascript","Worked as analyst for 4 years with expertise in project management, nodejs, azure",analyst,1
+CAND_0906,7,bachelor,"machine learning, scrum, java, docker, statistics, nodejs, agile","Worked as manager for 7 years with expertise in machine learning, scrum, java",manager,1
+CAND_0907,4,master,"machine learning, nodejs, scrum, communication, excel, git, react, linux","Worked as analyst for 4 years with expertise in machine learning, nodejs, scrum",analyst,1
+CAND_0908,15,associate,"leadership, react","Worked as manager for 15 years with expertise in leadership, react",manager,0
+CAND_0909,11,master,"machine learning, leadership, agile, project management, teamwork, communication, react","Worked as developer for 11 years with expertise in machine learning, leadership, agile",developer,1
+CAND_0910,4,master,"java, teamwork, nodejs, react, scrum","Worked as manager for 4 years with expertise in java, teamwork, nodejs",manager,1
+CAND_0911,12,bachelor,"data analysis, machine learning, agile, communication, sql","Worked as manager for 12 years with expertise in data analysis, machine learning, agile",manager,1
+CAND_0912,4,high_school,"azure, aws, agile, statistics, javascript","Worked as consultant for 4 years with expertise in azure, aws, agile",consultant,0
+CAND_0913,13,master,"scrum, java, linux, data analysis, agile, machine learning, kubernetes","Worked as manager for 13 years with expertise in scrum, java, linux",manager,1
+CAND_0914,13,high_school,"python, leadership, excel, statistics, data analysis, react","Worked as consultant for 13 years with expertise in python, leadership, excel",consultant,1
+CAND_0915,16,associate,"teamwork, leadership, java, react, agile","Worked as developer for 16 years with expertise in teamwork, leadership, java",developer,1
+CAND_0916,4,phd,"project management, data analysis, scrum","Worked as developer for 4 years with expertise in project management, data analysis, scrum",developer,1
+CAND_0917,12,bachelor,"leadership, communication, react, sql, azure, aws, java","Worked as analyst for 12 years with expertise in leadership, communication, react",analyst,1
+CAND_0918,12,associate,"scrum, javascript, communication","Worked as analyst for 12 years with expertise in scrum, javascript, communication",analyst,0
+CAND_0919,16,high_school,"nodejs, sql, scrum, linux, statistics, communication, python, aws","Worked as consultant for 16 years with expertise in nodejs, sql, scrum",consultant,1
+CAND_0920,3,high_school,"scrum, azure, communication, docker, nodejs, linux, agile, git","Worked as manager for 3 years with expertise in scrum, azure, communication",manager,0
+CAND_0921,8,high_school,"leadership, docker, python, teamwork, sql, aws","Worked as consultant for 8 years with expertise in leadership, docker, python",consultant,1
+CAND_0922,15,master,"leadership, nodejs, python, aws, data analysis, linux, azure","Worked as analyst for 15 years with expertise in leadership, nodejs, python",analyst,1
+CAND_0923,17,high_school,"sql, kubernetes","Worked as developer for 17 years with expertise in sql, kubernetes",developer,0
+CAND_0924,11,bachelor,"docker, leadership, javascript, excel, project management, python, sql, linux","Worked as designer for 11 years with expertise in docker, leadership, javascript",designer,1
+CAND_0925,4,high_school,"docker, sql, project management, java, nodejs, teamwork, statistics, python","Worked as consultant for 4 years with expertise in docker, sql, project management",consultant,1
+CAND_0926,6,master,"machine learning, teamwork, java, data analysis, azure, linux, scrum, nodejs","Worked as consultant for 6 years with expertise in machine learning, teamwork, java",consultant,1
+CAND_0927,12,phd,"statistics, aws, excel, react, kubernetes, machine learning, docker, git","Worked as developer for 12 years with expertise in statistics, aws, excel",developer,1
+CAND_0928,10,associate,"machine learning, project management","Worked as analyst for 10 years with expertise in machine learning, project management",analyst,0
+CAND_0929,17,master,"python, statistics, nodejs, excel, azure, linux, java, javascript","Worked as designer for 17 years with expertise in python, statistics, nodejs",designer,1
+CAND_0930,7,phd,"react, excel, machine learning, git, azure, java","Worked as consultant for 7 years with expertise in react, excel, machine learning",consultant,1
+CAND_0931,8,master,"linux, scrum, project management, data analysis, kubernetes, python","Worked as consultant for 8 years with expertise in linux, scrum, project management",consultant,1
+CAND_0932,13,bachelor,"scrum, excel, statistics, agile, azure, data analysis","Worked as manager for 13 years with expertise in scrum, excel, statistics",manager,1
+CAND_0933,3,master,"react, excel, project management, azure, communication, linux, teamwork, sql","Worked as developer for 3 years with expertise in react, excel, project management",developer,1
+CAND_0934,19,high_school,"java, nodejs, project management, react, javascript","Worked as designer for 19 years with expertise in java, nodejs, project management",designer,1
+CAND_0935,9,high_school,"leadership, git, nodejs","Worked as consultant for 9 years with expertise in leadership, git, nodejs",consultant,0
+CAND_0936,7,phd,"teamwork, azure, python","Worked as analyst for 7 years with expertise in teamwork, azure, python",analyst,1
+CAND_0937,1,phd,"agile, docker, kubernetes","Worked as developer for 1 years with expertise in agile, docker, kubernetes",developer,0
+CAND_0938,17,phd,"sql, git, data analysis, kubernetes, react, docker, java, leadership","Worked as designer for 17 years with expertise in sql, git, data analysis",designer,1
+CAND_0939,3,associate,"git, javascript, docker, azure","Worked as developer for 3 years with expertise in git, javascript, docker",developer,0
+CAND_0940,3,associate,"nodejs, azure, teamwork, communication, javascript, machine learning, data analysis","Worked as consultant for 3 years with expertise in nodejs, azure, teamwork",consultant,0
+CAND_0941,19,associate,"linux, teamwork, docker","Worked as analyst for 19 years with expertise in linux, teamwork, docker",analyst,0
+CAND_0942,7,bachelor,"azure, statistics","Worked as analyst for 7 years with expertise in azure, statistics",analyst,1
+CAND_0943,9,bachelor,"leadership, agile, teamwork, project management, git, aws, java, machine learning","Worked as analyst for 9 years with expertise in leadership, agile, teamwork",analyst,1
+CAND_0944,14,phd,"javascript, agile, leadership","Worked as analyst for 14 years with expertise in javascript, agile, leadership",analyst,1
+CAND_0945,0,bachelor,"excel, java, javascript, kubernetes","Worked as consultant for 0 years with expertise in excel, java, javascript",consultant,0
+CAND_0946,9,associate,"agile, teamwork","Worked as analyst for 9 years with expertise in agile, teamwork",analyst,0
+CAND_0947,4,bachelor,"leadership, python, agile, sql, statistics","Worked as consultant for 4 years with expertise in leadership, python, agile",consultant,1
+CAND_0948,16,bachelor,"linux, teamwork, javascript, statistics, python, kubernetes, azure, communication","Worked as manager for 16 years with expertise in linux, teamwork, javascript",manager,1
+CAND_0949,16,associate,"leadership, docker, python, agile, excel","Worked as consultant for 16 years with expertise in leadership, docker, python",consultant,1
+CAND_0950,17,master,"leadership, java, react, excel, git, teamwork, machine learning","Worked as developer for 17 years with expertise in leadership, java, react",developer,1
+CAND_0951,11,bachelor,"scrum, react, project management, aws, git, agile, excel","Worked as consultant for 11 years with expertise in scrum, react, project management",consultant,1
+CAND_0952,11,phd,"communication, data analysis","Worked as analyst for 11 years with expertise in communication, data analysis",analyst,1
+CAND_0953,1,bachelor,"sql, teamwork, machine learning, scrum","Worked as consultant for 1 years with expertise in sql, teamwork, machine learning",consultant,0
+CAND_0954,8,high_school,"nodejs, excel, communication, docker, javascript, machine learning, scrum","Worked as manager for 8 years with expertise in nodejs, excel, communication",manager,0
+CAND_0955,8,master,"sql, java, azure, machine learning, statistics","Worked as manager for 8 years with expertise in sql, java, azure",manager,1
+CAND_0956,15,phd,"machine learning, java","Worked as designer for 15 years with expertise in machine learning, java",designer,1
+CAND_0957,16,associate,"java, nodejs, leadership, kubernetes, agile, communication","Worked as manager for 16 years with expertise in java, nodejs, leadership",manager,1
+CAND_0958,15,high_school,"data analysis, python, excel, machine learning, git, scrum, nodejs, azure","Worked as consultant for 15 years with expertise in data analysis, python, excel",consultant,1
+CAND_0959,13,bachelor,"machine learning, teamwork, javascript, sql","Worked as analyst for 13 years with expertise in machine learning, teamwork, javascript",analyst,1
+CAND_0960,19,associate,"teamwork, machine learning","Worked as designer for 19 years with expertise in teamwork, machine learning",designer,0
+CAND_0961,0,phd,"docker, git, project management, statistics, agile","Worked as developer for 0 years with expertise in docker, git, project management",developer,1
+CAND_0962,3,bachelor,"javascript, agile, leadership, communication","Worked as developer for 3 years with expertise in javascript, agile, leadership",developer,1
+CAND_0963,14,associate,"git, python, azure","Worked as analyst for 14 years with expertise in git, python, azure",analyst,0
+CAND_0964,14,phd,"javascript, nodejs, react","Worked as consultant for 14 years with expertise in javascript, nodejs, react",consultant,1
+CAND_0965,17,bachelor,"git, machine learning, agile, data analysis","Worked as analyst for 17 years with expertise in git, machine learning, agile",analyst,1
+CAND_0966,17,master,"machine learning, aws","Worked as consultant for 17 years with expertise in machine learning, aws",consultant,1
+CAND_0967,16,master,"nodejs, statistics, kubernetes, linux, project management, scrum, agile","Worked as designer for 16 years with expertise in nodejs, statistics, kubernetes",designer,1
+CAND_0968,16,phd,"machine learning, excel, docker, project management, teamwork","Worked as designer for 16 years with expertise in machine learning, excel, docker",designer,1
+CAND_0969,8,associate,"git, react, data analysis","Worked as manager for 8 years with expertise in git, react, data analysis",manager,0
+CAND_0970,1,high_school,"docker, react, linux, statistics","Worked as developer for 1 years with expertise in docker, react, linux",developer,0
+CAND_0971,1,bachelor,"scrum, communication, leadership, teamwork, statistics","Worked as manager for 1 years with expertise in scrum, communication, leadership",manager,1
+CAND_0972,9,phd,"teamwork, sql, javascript","Worked as designer for 9 years with expertise in teamwork, sql, javascript",designer,1
+CAND_0973,6,phd,"nodejs, linux, statistics, sql, aws","Worked as designer for 6 years with expertise in nodejs, linux, statistics",designer,1
+CAND_0974,2,bachelor,"python, git, kubernetes, azure","Worked as designer for 2 years with expertise in python, git, kubernetes",designer,0
+CAND_0975,13,associate,"linux, data analysis, javascript","Worked as designer for 13 years with expertise in linux, data analysis, javascript",designer,0
+CAND_0976,5,bachelor,"scrum, azure, python, excel, statistics, react, teamwork","Worked as consultant for 5 years with expertise in scrum, azure, python",consultant,1
+CAND_0977,8,phd,"sql, react, teamwork, javascript","Worked as manager for 8 years with expertise in sql, react, teamwork",manager,1
+CAND_0978,16,master,"teamwork, agile, nodejs","Worked as designer for 16 years with expertise in teamwork, agile, nodejs",designer,1
+CAND_0979,2,high_school,"javascript, docker, nodejs, teamwork, react, java, machine learning, python","Worked as developer for 2 years with expertise in javascript, docker, nodejs",developer,0
+CAND_0980,7,associate,"linux, excel, git, azure, agile, javascript","Worked as consultant for 7 years with expertise in linux, excel, git",consultant,0
+CAND_0981,4,bachelor,"data analysis, javascript, leadership, project management, machine learning, linux, scrum","Worked as consultant for 4 years with expertise in data analysis, javascript, leadership",consultant,1
+CAND_0982,9,phd,"communication, agile","Worked as designer for 9 years with expertise in communication, agile",designer,1
+CAND_0983,2,master,"project management, java, data analysis, react, communication","Worked as consultant for 2 years with expertise in project management, java, data analysis",consultant,1
+CAND_0984,18,high_school,"aws, machine learning, agile","Worked as analyst for 18 years with expertise in aws, machine learning, agile",analyst,0
+CAND_0985,19,associate,"project management, excel, machine learning, linux","Worked as manager for 19 years with expertise in project management, excel, machine learning",manager,0
+CAND_0986,10,master,"git, nodejs, scrum, java, linux, communication, javascript, docker","Worked as designer for 10 years with expertise in git, nodejs, scrum",designer,1
+CAND_0987,15,master,"teamwork, nodejs, leadership, excel, docker, sql","Worked as manager for 15 years with expertise in teamwork, nodejs, leadership",manager,1
+CAND_0988,9,associate,"aws, sql, excel, teamwork","Worked as manager for 9 years with expertise in aws, sql, excel",manager,0
+CAND_0989,19,master,"javascript, react, aws, excel","Worked as manager for 19 years with expertise in javascript, react, aws",manager,1
+CAND_0990,12,master,"nodejs, agile, git, communication","Worked as designer for 12 years with expertise in nodejs, agile, git",designer,1
+CAND_0991,2,master,"nodejs, sql, docker, statistics, python","Worked as designer for 2 years with expertise in nodejs, sql, docker",designer,1
+CAND_0992,15,bachelor,"communication, aws, azure, nodejs, statistics, machine learning, linux, data analysis","Worked as consultant for 15 years with expertise in communication, aws, azure",consultant,1
+CAND_0993,5,associate,"linux, kubernetes, data analysis, docker, agile, excel","Worked as manager for 5 years with expertise in linux, kubernetes, data analysis",manager,0
+CAND_0994,15,bachelor,"scrum, javascript, machine learning, linux, communication, sql, excel, data analysis","Worked as designer for 15 years with expertise in scrum, javascript, machine learning",designer,1
+CAND_0995,19,bachelor,"data analysis, nodejs, communication, javascript, docker, teamwork, kubernetes","Worked as analyst for 19 years with expertise in data analysis, nodejs, communication",analyst,1
+CAND_0996,9,phd,"aws, communication, javascript, sql","Worked as manager for 9 years with expertise in aws, communication, javascript",manager,1
+CAND_0997,2,phd,"nodejs, teamwork, javascript, aws, statistics, azure","Worked as analyst for 2 years with expertise in nodejs, teamwork, javascript",analyst,0
+CAND_0998,4,high_school,"leadership, excel, communication","Worked as manager for 4 years with expertise in leadership, excel, communication",manager,0
+CAND_0999,15,bachelor,"teamwork, communication, linux, git, project management, java","Worked as developer for 15 years with expertise in teamwork, communication, linux",developer,1
+CAND_1000,9,high_school,"statistics, leadership, javascript","Worked as designer for 9 years with expertise in statistics, leadership, javascript",designer,0

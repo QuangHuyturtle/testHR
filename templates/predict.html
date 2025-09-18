@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Single Candidate Prediction</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Candidate ID</label>
+                        <input type="text" class="form-control" name="candidate_id" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Years of Experience</label>
+                        <input type="number" class="form-control" name="years_experience" min="0" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Education Level</label>
+                        <select class="form-select" name="education_level" required>
+                            <option value="">Select Education</option>
+                            <option value="high_school">High School</option>
+                            <option value="bachelor">Bachelor</option>
+                            <option value="master">Master</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Skills</label>
+                        <textarea class="form-control" name="skills" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Experience Description</label>
+                        <textarea class="form-control" name="experience_description" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Position Applied</label>
+                        <input type="text" class="form-control" name="position_applied" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        {% if result %}
+        <div class="card">
+            <div class="card-body">
+                <h5>Prediction Result</h5>
+                <div class="alert alert-{{ 'success' if result.prediction == 'Suitable' else 'warning' }}">
+                    <h4>{{ result.prediction }}</h4>
+                    <p><strong>Confidence:</strong> {{ (result.confidence * 100)|round(1) }}%</p>
+                    <p><strong>Recommendation:</strong> {{ result.recommendation }}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>HR Decision Support System</h1>
+        <p>Welcome to the HR Decision Support System Dashboard</p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Train Model</h5>
+                <p class="card-text">Train the AI model with sample data</p>
+                <a href="/train" class="btn btn-primary">Go to Training</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Single Prediction</h5>
+                <p class="card-text">Predict for a single candidate</p>
+                <a href="/predict" class="btn btn-success">Make Prediction</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">System Status</h5>
+                <p class="card-text">Check system health</p>
+                <a href="/api/status" class="btn btn-info">View Status</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
