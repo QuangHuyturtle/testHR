@@ -22,3 +22,89 @@ weighted avg       0.95      0.94      0.94       200
 2025-09-18 09:45:12,780 - INFO - Prediction for TEST_002: Suitable (confidence: 0.947)
 2025-09-18 09:45:12,781 - INFO - Extracting features from candidate data...
 2025-09-18 09:45:12,803 - INFO - Prediction for TEST_003: Suitable (confidence: 0.763)
+2025-09-18 09:45:18,031 - INFO - Model loaded successfully
+2025-09-18 09:45:18,032 - INFO - HR Decision Support System initialized
+2025-09-18 09:45:18,096 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 09:45:18,096 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 09:45:18,098 - INFO -  * Restarting with stat
+2025-09-18 09:45:19,979 - INFO - Model loaded successfully
+2025-09-18 09:45:19,979 - INFO - HR Decision Support System initialized
+2025-09-18 09:45:19,988 - WARNING -  * Debugger is active!
+2025-09-18 09:45:19,993 - INFO -  * Debugger PIN: 643-831-893
+2025-09-18 09:45:23,271 - INFO - 127.0.0.1 - - [18/Sep/2025 09:45:23] "GET / HTTP/1.1" 200 -
+2025-09-18 09:45:23,301 - INFO - 127.0.0.1 - - [18/Sep/2025 09:45:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-18 09:45:25,801 - INFO - 127.0.0.1 - - [18/Sep/2025 09:45:25] "GET / HTTP/1.1" 200 -
+2025-09-18 09:47:26,057 - INFO - 127.0.0.1 - - [18/Sep/2025 09:47:26] "GET / HTTP/1.1" 200 -
+2025-09-18 09:47:47,102 - INFO - 127.0.0.1 - - [18/Sep/2025 09:47:47] "GET /train HTTP/1.1" 200 -
+2025-09-18 09:47:48,300 - INFO - Starting model training...
+2025-09-18 09:47:48,300 - INFO - Creating sample data with 1000 samples...
+2025-09-18 09:47:48,420 - INFO - Sample data saved to data\sample_candidates.csv
+2025-09-18 09:47:48,420 - INFO - Extracting features from candidate data...
+2025-09-18 09:47:50,251 - INFO - Model trained successfully!
+2025-09-18 09:47:50,251 - INFO - Accuracy: 0.945
+2025-09-18 09:47:50,257 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.81      0.90        59
+           1       0.93      1.00      0.96       141
+
+    accuracy                           0.94       200
+   macro avg       0.96      0.91      0.93       200
+weighted avg       0.95      0.94      0.94       200
+
+2025-09-18 09:47:50,267 - INFO - Model saved successfully
+2025-09-18 09:47:50,268 - INFO - 127.0.0.1 - - [18/Sep/2025 09:47:50] "POST /train HTTP/1.1" 200 -
+2025-09-18 09:47:58,810 - INFO - 127.0.0.1 - - [18/Sep/2025 09:47:58] "GET /predict HTTP/1.1" 200 -
+2025-09-18 09:48:34,171 - INFO - Extracting features from candidate data...
+2025-09-18 09:48:34,192 - INFO - Prediction for TEST_001: Suitable (confidence: 0.846)
+2025-09-18 09:48:34,193 - INFO - 127.0.0.1 - - [18/Sep/2025 09:48:34] "POST /predict HTTP/1.1" 200 -
+2025-09-18 09:48:43,485 - INFO - 127.0.0.1 - - [18/Sep/2025 09:48:43] "GET /api/status HTTP/1.1" 200 -
+2025-09-18 09:49:03,638 - INFO - 127.0.0.1 - - [18/Sep/2025 09:49:03] "GET /api/status HTTP/1.1" 200 -
+2025-09-18 09:50:56,560 - INFO - Extracting features from candidate data...
+2025-09-18 09:50:56,586 - INFO - Prediction for TEST_002: Suitable (confidence: 0.763)
+2025-09-18 09:50:56,587 - INFO - 127.0.0.1 - - [18/Sep/2025 09:50:56] "POST /predict HTTP/1.1" 200 -
+2025-09-18 09:51:06,875 - INFO - Extracting features from candidate data...
+2025-09-18 09:51:06,895 - INFO - Prediction for TEST_002: Suitable (confidence: 0.763)
+2025-09-18 09:51:06,896 - INFO - 127.0.0.1 - - [18/Sep/2025 09:51:06] "POST /predict HTTP/1.1" 200 -
+2025-09-18 09:51:34,176 - INFO - 127.0.0.1 - - [18/Sep/2025 09:51:34] "GET / HTTP/1.1" 200 -
+2025-09-18 09:51:38,642 - INFO - 127.0.0.1 - - [18/Sep/2025 09:51:38] "GET /predict HTTP/1.1" 200 -
+2025-09-18 09:52:25,195 - INFO - Extracting features from candidate data...
+2025-09-18 09:52:25,261 - INFO - 127.0.0.1 - - [18/Sep/2025 09:52:25] "POST /predict HTTP/1.1" 200 -
+2025-09-18 13:56:19,553 - INFO - Model loaded successfully
+2025-09-18 13:56:19,553 - INFO - HR Decision Support System initialized
+2025-09-18 13:56:19,602 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 13:56:19,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 13:56:19,614 - INFO -  * Restarting with stat
+2025-09-18 13:56:23,524 - INFO - Model loaded successfully
+2025-09-18 13:56:23,524 - INFO - HR Decision Support System initialized
+2025-09-18 13:56:23,535 - WARNING -  * Debugger is active!
+2025-09-18 13:56:23,539 - INFO -  * Debugger PIN: 426-115-216
+2025-09-18 13:56:26,640 - INFO - 127.0.0.1 - - [18/Sep/2025 13:56:26] "GET / HTTP/1.1" 200 -
+2025-09-18 13:56:26,717 - INFO - 127.0.0.1 - - [18/Sep/2025 13:56:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-18 13:59:54,239 - INFO -  * Detected change in 'D:\\testHR\\app.py', reloading
+2025-09-18 13:59:54,679 - INFO -  * Restarting with stat
+2025-09-18 14:00:01,803 - INFO - Model loaded successfully
+2025-09-18 14:00:01,804 - INFO - HR Decision Support System initialized
+2025-09-18 14:00:01,824 - WARNING -  * Debugger is active!
+2025-09-18 14:00:01,828 - INFO -  * Debugger PIN: 426-115-216
+2025-09-18 14:06:47,885 - INFO -  * Detected change in 'D:\\testHR\\hr_dss_main.py', reloading
+2025-09-18 14:06:48,556 - INFO -  * Restarting with stat
+2025-09-18 14:10:18,625 - INFO - 📂 Đang tải mô hình từ file...
+2025-09-18 14:10:18,631 - INFO - ✅ Tải mô hình thành công!
+2025-09-18 14:10:18,631 - INFO - 🚀 Hệ thống Hỗ trợ Ra quyết định Tuyển dụng đã được khởi tạo
+2025-09-18 14:10:18,650 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:10:18,650 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 14:10:18,652 - INFO -  * Restarting with stat
+2025-09-18 14:10:20,520 - INFO - 📂 Đang tải mô hình từ file...
+2025-09-18 14:10:20,526 - INFO - ✅ Tải mô hình thành công!
+2025-09-18 14:10:20,526 - INFO - 🚀 Hệ thống Hỗ trợ Ra quyết định Tuyển dụng đã được khởi tạo
+2025-09-18 14:10:20,541 - WARNING -  * Debugger is active!
+2025-09-18 14:10:20,544 - INFO -  * Debugger PIN: 426-115-216
+2025-09-18 14:10:20,622 - INFO - 127.0.0.1 - - [18/Sep/2025 14:10:20] "GET / HTTP/1.1" 200 -
+2025-09-18 14:10:45,373 - INFO - 127.0.0.1 - - [18/Sep/2025 14:10:45] "GET /predict HTTP/1.1" 200 -
+2025-09-18 14:10:47,963 - INFO - 127.0.0.1 - - [18/Sep/2025 14:10:47] "GET /train HTTP/1.1" 200 -
+2025-09-18 14:10:48,618 - INFO - 127.0.0.1 - - [18/Sep/2025 14:10:48] "GET / HTTP/1.1" 200 -
+2025-09-18 14:10:49,125 - INFO - 127.0.0.1 - - [18/Sep/2025 14:10:49] "GET / HTTP/1.1" 200 -

@@ -1,0 +1,60 @@
+<!-- templates/batch.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-info mb-4">
+            <i class="fas fa-users me-3"></i>Dự đoán Hàng loạt
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">Tải lên File CSV</h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <i class="fas fa-file-csv me-2"></i>Chọn file CSV chứa danh sách ứng viên
+                        </label>
+                        <input type="file" class="form-control" name="file" accept=".csv" required>
+                        <div class="form-text">File CSV phải có các cột: candidate_id, years_experience, education_level, skills, experience_description, position_applied</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-info btn-lg">
+                        <i class="fas fa-upload me-2"></i>Tải lên và Xử lý
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-dark">
+                <h6 class="mb-0">Định dạng File CSV</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Các cột bắt buộc:</strong></p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success me-2"></i>candidate_id</li>
+                    <li><i class="fas fa-check text-success me-2"></i>years_experience</li>
+                    <li><i class="fas fa-check text-success me-2"></i>education_level</li>
+                    <li><i class="fas fa-check text-success me-2"></i>skills</li>
+                    <li><i class="fas fa-check text-success me-2"></i>experience_description</li>
+                    <li><i class="fas fa-check text-success me-2"></i>position_applied</li>
+                </ul>
+                
+                <div class="alert alert-warning mt-3">
+                    <small><strong>Lưu ý:</strong> Đảm bảo mô hình đã được huấn luyện trước khi xử lý hàng loạt.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

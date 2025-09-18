@@ -1,50 +1,67 @@
+<!-- templates/predict.html -->
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Single Candidate Prediction</h1>
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-success mb-4">
+            <i class="fas fa-user-check me-3"></i>Dự đoán Ứng viên
+        </h1>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-6">
-        <div class="card">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">Thông tin Ứng viên</h5>
+            </div>
             <div class="card-body">
                 <form method="POST">
                     <div class="mb-3">
-                        <label class="form-label">Candidate ID</label>
-                        <input type="text" class="form-control" name="candidate_id" required>
+                        <label class="form-label"><i class="fas fa-id-card me-2"></i>Mã Ứng viên</label>
+                        <input type="text" class="form-control" name="candidate_id" placeholder="Ví dụ: UV_001" required>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Years of Experience</label>
-                        <input type="number" class="form-control" name="years_experience" min="0" required>
+                        <label class="form-label"><i class="fas fa-calendar-alt me-2"></i>Số năm Kinh nghiệm</label>
+                        <input type="number" class="form-control" name="years_experience" min="0" max="50" placeholder="Ví dụ: 5" required>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Education Level</label>
+                        <label class="form-label"><i class="fas fa-graduation-cap me-2"></i>Trình độ Học vấn</label>
                         <select class="form-select" name="education_level" required>
-                            <option value="">Select Education</option>
-                            <option value="high_school">High School</option>
-                            <option value="bachelor">Bachelor</option>
-                            <option value="master">Master</option>
-                            <option value="phd">PhD</option>
+                            <option value="">Chọn trình độ học vấn</option>
+                            <option value="high_school">Tốt nghiệp THPT</option>
+                            <option value="associate">Cao đẳng</option>
+                            <option value="bachelor">Cử nhân</option>
+                            <option value="master">Thạc sĩ</option>
+                            <option value="phd">Tiến sĩ</option>
                         </select>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Skills</label>
-                        <textarea class="form-control" name="skills" rows="3" required></textarea>
+                        <label class="form-label"><i class="fas fa-tools me-2"></i>Kỹ năng</label>
+                        <textarea class="form-control" name="skills" rows="3" 
+                                  placeholder="Ví dụ: python, machine learning, sql, teamwork, leadership" required></textarea>
+                        <div class="form-text">Phân cách các kỹ năng bằng dấu phẩy</div>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Experience Description</label>
-                        <textarea class="form-control" name="experience_description" rows="4" required></textarea>
+                        <label class="form-label"><i class="fas fa-briefcase me-2"></i>Mô tả Kinh nghiệm</label>
+                        <textarea class="form-control" name="experience_description" rows="4" 
+                                  placeholder="Mô tả chi tiết về kinh nghiệm làm việc của ứng viên..." required></textarea>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Position Applied</label>
-                        <input type="text" class="form-control" name="position_applied" required>
+                        <label class="form-label"><i class="fas fa-user-tie me-2"></i>Vị trí Ứng tuyển</label>
+                        <input type="text" class="form-control" name="position_applied" 
+                               placeholder="Ví dụ: Data Analyst, Software Developer" required>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Predict</button>
+                    <button type="submit" class="btn btn-success btn-lg w-100">
+                        <i class="fas fa-search me-2"></i>Thực hiện Dự đoán
+                    </button>
                 </form>
             </div>
         </div>
@@ -52,13 +69,84 @@
     
     <div class="col-md-6">
         {% if result %}
-        <div class="card">
+        <div class="card shadow">
+            <div class="card-header {{ 'bg-success' if result.prediction == 'Suitable' else 'bg-warning' }} text-white">
+                <h5 class="mb-0">Kết quả Dự đoán</h5>
+            </div>
             <div class="card-body">
-                <h5>Prediction Result</h5>
                 <div class="alert alert-{{ 'success' if result.prediction == 'Suitable' else 'warning' }}">
-                    <h4>{{ result.prediction }}</h4>
-                    <p><strong>Confidence:</strong> {{ (result.confidence * 100)|round(1) }}%</p>
-                    <p><strong>Recommendation:</strong> {{ result.recommendation }}</p>
+                    <h4 class="alert-heading">
+                        {% if result.prediction == 'Suitable' %}
+                            <i class="fas fa-check-circle me-2"></i>Phù hợp
+                        {% else %}
+                            <i class="fas fa-times-circle me-2"></i>Chưa phù hợp
+                        {% endif %}
+                    </h4>
+                    <hr>
+                    <p class="mb-2">
+                        <strong><i class="fas fa-percentage me-2"></i>Độ tin cậy:</strong> 
+                        {{ (result.confidence * 100)|round(1) }}%
+                    </p>
+                    <p class="mb-2">
+                        <strong><i class="fas fa-chart-line me-2"></i>Xác suất phù hợp:</strong> 
+                        {{ (result.probability_suitable * 100)|round(1) }}%
+                    </p>
+                    <p class="mb-0">
+                        <strong><i class="fas fa-lightbulb me-2"></i>Khuyến nghị:</strong>
+                        {% if result.recommendation == 'Highly recommended for interview' %}
+                            Rất khuyến khích phỏng vấn
+                        {% elif result.recommendation == 'Recommended for interview' %}
+                            Khuyến khích phỏng vấn
+                        {% elif result.recommendation == 'Consider for interview with caution' %}
+                            Cân nhắc phỏng vấn thận trọng
+                        {% elif result.recommendation == 'Not recommended' %}
+                            Không khuyến khích
+                        {% else %}
+                            Cần đánh giá thêm
+                        {% endif %}
+                    </p>
+                </div>
+                
+                <!-- Candidate Info Summary -->
+                <div class="mt-3">
+                    <h6>Tóm tắt Ứng viên:</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Mã:</strong> {{ candidate.candidate_id }}</li>
+                        <li><strong>Kinh nghiệm:</strong> {{ candidate.years_experience }} năm</li>
+                        <li><strong>Học vấn:</strong> 
+                            {% if candidate.education_level == 'high_school' %}Tốt nghiệp THPT
+                            {% elif candidate.education_level == 'associate' %}Cao đẳng
+                            {% elif candidate.education_level == 'bachelor' %}Cử nhân
+                            {% elif candidate.education_level == 'master' %}Thạc sĩ
+                            {% elif candidate.education_level == 'phd' %}Tiến sĩ
+                            {% endif %}
+                        </li>
+                        <li><strong>Vị trí:</strong> {{ candidate.position_applied }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">Hướng dẫn</h5>
+            </div>
+            <div class="card-body">
+                <h6>Cách sử dụng:</h6>
+                <ol>
+                    <li>Điền đầy đủ thông tin ứng viên vào form bên trái</li>
+                    <li>Nhấn "Thực hiện Dự đoán"</li>
+                    <li>Kết quả sẽ hiển thị ở đây với các thông tin:
+                        <ul>
+                            <li>Kết quả: Phù hợp / Chưa phù hợp</li>
+                            <li>Độ tin cậy của dự đoán</li>
+                            <li>Khuyến nghị cụ thể</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="alert alert-warning mt-3">
+                    <strong>Lưu ý:</strong> Hãy đảm bảo mô hình đã được huấn luyện trước khi thực hiện dự đoán.
                 </div>
             </div>
         </div>

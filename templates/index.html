@@ -1,41 +1,68 @@
+<!-- templates/index.html -->
 {% extends "base.html" %}
 
 {% block content %}
 <div class="row">
     <div class="col-12">
-        <h1>HR Decision Support System</h1>
-        <p>Welcome to the HR Decision Support System Dashboard</p>
+        <h1 class="text-primary mb-3">Hệ thống Hỗ trợ Ra quyết định Tuyển dụng</h1>
+        <p class="lead">Chào mừng bạn đến với bảng điều khiển Hệ thống Hỗ trợ Ra quyết định Tuyển dụng</p>
+        <hr class="mb-4">
     </div>
 </div>
 
 <div class="row mt-4">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Train Model</h5>
-                <p class="card-text">Train the AI model with sample data</p>
-                <a href="/train" class="btn btn-primary">Go to Training</a>
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-primary">
+                    <i class="fas fa-brain me-2"></i>Huấn luyện Mô hình
+                </h5>
+                <p class="card-text">Huấn luyện mô hình AI với dữ liệu mẫu</p>
+                <div class="mt-auto">
+                    <a href="/train" class="btn btn-primary">Bắt đầu Huấn luyện</a>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Single Prediction</h5>
-                <p class="card-text">Predict for a single candidate</p>
-                <a href="/predict" class="btn btn-success">Make Prediction</a>
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-success">
+                    <i class="fas fa-user-check me-2"></i>Dự đoán Ứng viên
+                </h5>
+                <p class="card-text">Dự đoán độ phù hợp cho một ứng viên</p>
+                <div class="mt-auto">
+                    <a href="/predict" class="btn btn-success">Thực hiện Dự đoán</a>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">System Status</h5>
-                <p class="card-text">Check system health</p>
-                <a href="/api/status" class="btn btn-info">View Status</a>
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-info">
+                    <i class="fas fa-heartbeat me-2"></i>Trạng thái Hệ thống
+                </h5>
+                <p class="card-text">Kiểm tra tình trạng hoạt động của hệ thống</p>
+                <div class="mt-auto">
+                    <a href="/api/status" class="btn btn-info">Xem Trạng thái</a>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="alert alert-info">
+            <h4 class="alert-heading">Hướng dẫn sử dụng:</h4>
+            <ol>
+                <li><strong>Bước 1:</strong> Huấn luyện mô hình bằng cách nhấp vào "Bắt đầu Huấn luyện"</li>
+                <li><strong>Bước 2:</strong> Sử dụng "Dự đoán Ứng viên" để đánh giá ứng viên mới</li>
+                <li><strong>Bước 3:</strong> Kiểm tra "Trạng thái Hệ thống" để đảm bảo mọi thứ hoạt động tốt</li>
+            </ol>
         </div>
     </div>
 </div>

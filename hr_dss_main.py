@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-HR Decision Support System - Main Application
-Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự
+HR Decision Support System - Main Application (Vietnamese Version)
+Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự - Phiên bản tiếng Việt
 
 Author: Student
 Date: 2025
@@ -39,8 +39,10 @@ try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
 except LookupError:
+    print("Đang tải dữ liệu NLTK...")
     nltk.download('punkt')
     nltk.download('stopwords')
+    print("✓ Tải dữ liệu NLTK hoàn tất")
 
 # Setup logging
 os.makedirs('logs', exist_ok=True)
@@ -49,7 +51,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('logs/hr_dss.log'),
+        logging.FileHandler('logs/hr_dss.log', encoding='utf-8'),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -85,7 +87,7 @@ class HRDecisionSupportSystem:
         # Load model if exists
         self.load_model()
         
-        logger.info("HR Decision Support System initialized")
+        logger.info("🚀 Hệ thống Hỗ trợ Ra quyết định Tuyển dụng đã được khởi tạo")
     
     def preprocess_text(self, text):
         """
@@ -128,7 +130,7 @@ class HRDecisionSupportSystem:
         Returns:
             pd.DataFrame: Dữ liệu đã trích xuất đặc trưng
         """
-        logger.info("Extracting features from candidate data...")
+        logger.info("📊 Đang trích xuất đặc trưng từ dữ liệu ứng viên...")
         
         # Tạo bản sao để không ảnh hưởng dữ liệu gốc
         processed_df = df.copy()
@@ -159,6 +161,7 @@ class HRDecisionSupportSystem:
         processed_df['num_skills'] = processed_df['skills'].str.count(',') + 1
         processed_df['num_skills'] = processed_df['num_skills'].fillna(0)
         
+        logger.info("✓ Trích xuất đặc trưng hoàn tất")
         return processed_df
     
     def create_sample_data(self, num_samples=1000):
@@ -171,7 +174,7 @@ class HRDecisionSupportSystem:
         Returns:
             pd.DataFrame: Dữ liệu mẫu
         """
-        logger.info(f"Creating sample data with {num_samples} samples...")
+        logger.info(f"🎲 Tạo dữ liệu mẫu với {num_samples} mẫu...")
         
         np.random.seed(42)
         
@@ -228,29 +231,29 @@ class HRDecisionSupportSystem:
         # Save sample data
         sample_file = self.data_path / 'sample_candidates.csv'
         df.to_csv(sample_file, index=False)
-        logger.info(f"Sample data saved to {sample_file}")
+        logger.info(f"✓ Dữ liệu mẫu đã lưu tại {sample_file}")
         
         return df
     
     def train_model(self, df=None):
         """
-        Training mô hình phân loại
-        
-        Args:
-            df (pd.DataFrame): Dữ liệu training (None để dùng sample data)
+        Training mô hình phân loại với thông báo tiếng Việt
         """
-        logger.info("Starting model training...")
+        logger.info("🧠 Bắt đầu huấn luyện mô hình...")
         
         if df is None:
+            logger.info("📦 Tạo dữ liệu mẫu...")
             df = self.create_sample_data()
         
         # Extract features
+        logger.info("🔧 Trích xuất đặc trưng từ dữ liệu...")
         processed_df = self.extract_features(df)
         
         # Prepare text features
         if self.vectorizer is None:
             self.vectorizer = TfidfVectorizer(max_features=1000, stop_words='english')
         
+        logger.info("📝 Xử lý đặc trưng văn bản...")
         text_features = self.vectorizer.fit_transform(processed_df['combined_text'])
         
         # Prepare numerical features
@@ -260,6 +263,7 @@ class HRDecisionSupportSystem:
         if self.scaler is None:
             self.scaler = StandardScaler()
         
+        logger.info("📏 Chuẩn hóa đặc trưng số...")
         numerical_features = self.scaler.fit_transform(processed_df[numerical_cols])
         
         # Combine features
@@ -270,12 +274,20 @@ class HRDecisionSupportSystem:
         # Target variable
         y = processed_df['suitable']
         
+        logger.info(f"📊 Tổng số mẫu: {len(X)}")
+        logger.info(f"🎯 Số đặc trưng: {X.shape[1]}")
+        logger.info(f"⚖️ Phân phối nhãn - Phù hợp: {y.sum()}, Chưa phù hợp: {len(y) - y.sum()}")
+        
         # Split data
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42, stratify=y
         )
         
+        logger.info(f"🔨 Dữ liệu huấn luyện: {len(X_train)} mẫu")
+        logger.info(f"🔍 Dữ liệu kiểm thử: {len(X_test)} mẫu")
+        
         # Train model
+        logger.info("🌲 Bắt đầu huấn luyện mô hình Random Forest...")
         self.model = RandomForestClassifier(
             n_estimators=100,
             max_depth=10,
@@ -286,30 +298,32 @@ class HRDecisionSupportSystem:
         self.model.fit(X_train, y_train)
         
         # Evaluate model
+        logger.info("📈 Đánh giá hiệu suất mô hình...")
         y_pred = self.model.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
         
-        logger.info(f"Model trained successfully!")
-        logger.info(f"Accuracy: {accuracy:.3f}")
-        logger.info(f"Classification Report:\n{classification_report(y_test, y_pred)}")
+        logger.info(f"🎉 Huấn luyện mô hình hoàn tất!")
+        logger.info(f"🏆 Độ chính xác: {accuracy:.3f}")
+        logger.info(f"📋 Báo cáo phân loại:\n{classification_report(y_test, y_pred)}")
         
         # Save model
+        logger.info("💾 Lưu mô hình...")
         self.save_model()
         
         return accuracy
     
     def predict_candidate(self, candidate_data):
         """
-        Dự đoán độ phù hợp của ứng viên
+        Dự đoán độ phù hợp của ứng viên với thông báo tiếng Việt
         
         Args:
             candidate_data (dict): Thông tin ứng viên
             
         Returns:
-            dict: Kết quả dự đoán
+            dict: Kết quả dự đoán bằng tiếng Việt
         """
         if self.model is None:
-            raise ValueError("Model chưa được training. Hãy chạy train_model() trước.")
+            raise ValueError("❌ Mô hình chưa được huấn luyện. Hãy chạy train_model() trước.")
         
         # Convert to DataFrame
         df = pd.DataFrame([candidate_data])
@@ -331,27 +345,24 @@ class HRDecisionSupportSystem:
         probability = self.model.predict_proba(X)[0]
         
         result = {
-            'candidate_id': candidate_data.get('candidate_id', 'Unknown'),
+            'candidate_id': candidate_data.get('candidate_id', 'Không xác định'),
             'prediction': 'Suitable' if prediction == 1 else 'Not Suitable',
+            'prediction_vietnamese': 'Phù hợp' if prediction == 1 else 'Chưa phù hợp',
             'confidence': max(probability),
             'probability_suitable': probability[1] if len(probability) > 1 else probability[0],
-            'recommendation': self.get_recommendation(prediction, max(probability))
+            'recommendation': self.get_recommendation(prediction, max(probability)),
+            'recommendation_vietnamese': self.get_recommendation_vietnamese(prediction, max(probability)),
+            'education_display': self.get_education_vietnamese(candidate_data.get('education_level', '')),
+            'summary': self.generate_candidate_summary_vietnamese(candidate_data, prediction, max(probability))
         }
         
-        logger.info(f"Prediction for {result['candidate_id']}: {result['prediction']} (confidence: {result['confidence']:.3f})")
+        logger.info(f"🎯 Dự đoán cho {result['candidate_id']}: {result['prediction_vietnamese']} (độ tin cậy: {result['confidence']:.3f})")
         
         return result
     
     def get_recommendation(self, prediction, confidence):
         """
-        Đưa ra khuyến nghị dựa trên dự đoán
-        
-        Args:
-            prediction (int): Kết quả dự đoán (0 hoặc 1)
-            confidence (float): Độ tin cậy
-            
-        Returns:
-            str: Khuyến nghị
+        Đưa ra khuyến nghị dựa trên dự đoán (English)
         """
         if prediction == 1:
             if confidence > 0.8:
@@ -366,6 +377,63 @@ class HRDecisionSupportSystem:
             else:
                 return "Need further evaluation"
     
+    def get_recommendation_vietnamese(self, prediction, confidence):
+        """
+        Đưa ra khuyến nghị bằng tiếng Việt dựa trên dự đoán
+        
+        Args:
+            prediction (int): Kết quả dự đoán (0 hoặc 1)
+            confidence (float): Độ tin cậy
+            
+        Returns:
+            str: Khuyến nghị bằng tiếng Việt
+        """
+        if prediction == 1:
+            if confidence > 0.8:
+                return "Rất khuyến khích mời phỏng vấn"
+            elif confidence > 0.6:
+                return "Khuyến khích mời phỏng vấn"
+            else:
+                return "Cân nhắc mời phỏng vấn với thái độ thận trọng"
+        else:
+            if confidence > 0.8:
+                return "Không khuyến khích"
+            else:
+                return "Cần đánh giá thêm"
+
+    def get_education_vietnamese(self, education_level):
+        """Chuyển đổi trình độ học vấn sang tiếng Việt"""
+        education_mapping = {
+            'high_school': 'Tốt nghiệp THPT',
+            'associate': 'Cao đẳng', 
+            'bachelor': 'Cử nhân',
+            'master': 'Thạc sĩ',
+            'phd': 'Tiến sĩ'
+        }
+        return education_mapping.get(education_level, 'Không xác định')
+
+    def generate_candidate_summary_vietnamese(self, candidate_data, prediction, confidence):
+        """Tạo tóm tắt ứng viên bằng tiếng Việt"""
+        years_exp = candidate_data.get('years_experience', 0)
+        education = self.get_education_vietnamese(candidate_data.get('education_level', ''))
+        skills_count = len(candidate_data.get('skills', '').split(','))
+        
+        summary = f"Ứng viên có {years_exp} năm kinh nghiệm, trình độ {education}, "
+        summary += f"sở hữu {skills_count} kỹ năng chính. "
+        
+        if prediction == 1:
+            if confidence > 0.8:
+                summary += "Đây là ứng viên tiềm năng cao, rất phù hợp với vị trí ứng tuyển."
+            else:
+                summary += "Ứng viên có tiềm năng tốt, phù hợp với vị trí ứng tuyển."
+        else:
+            if confidence > 0.8:
+                summary += "Ứng viên chưa đáp ứng đủ yêu cầu cho vị trí này."
+            else:
+                summary += "Ứng viên cần được đánh giá kỹ hơn để đưa ra quyết định cuối cùng."
+        
+        return summary
+    
     def batch_predict(self, csv_file):
         """
         Dự đoán hàng loạt từ file CSV
@@ -376,32 +444,41 @@ class HRDecisionSupportSystem:
         Returns:
             pd.DataFrame: Kết quả dự đoán
         """
-        logger.info(f"Processing batch prediction from {csv_file}")
+        logger.info(f"📁 Xử lý dự đoán hàng loạt từ file {csv_file}")
         
         df = pd.read_csv(csv_file)
         results = []
+        
+        total_candidates = len(df)
+        logger.info(f"👥 Tổng số ứng viên cần xử lý: {total_candidates}")
         
         for idx, row in df.iterrows():
             candidate_data = row.to_dict()
             try:
                 result = self.predict_candidate(candidate_data)
                 results.append(result)
+                
+                if (idx + 1) % 10 == 0:
+                    logger.info(f"⏳ Đã xử lý {idx + 1}/{total_candidates} ứng viên")
+                    
             except Exception as e:
-                logger.error(f"Error predicting candidate {candidate_data.get('candidate_id', idx)}: {e}")
+                logger.error(f"❌ Lỗi dự đoán ứng viên {candidate_data.get('candidate_id', idx)}: {e}")
                 results.append({
                     'candidate_id': candidate_data.get('candidate_id', f'CAND_{idx}'),
                     'prediction': 'Error',
+                    'prediction_vietnamese': 'Lỗi',
                     'confidence': 0.0,
                     'probability_suitable': 0.0,
-                    'recommendation': 'Processing error'
+                    'recommendation': 'Processing error',
+                    'recommendation_vietnamese': 'Lỗi xử lý'
                 })
         
         results_df = pd.DataFrame(results)
         
         # Save results
-        output_file = self.data_path / f'predictions_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
-        results_df.to_csv(output_file, index=False)
-        logger.info(f"Batch prediction results saved to {output_file}")
+        output_file = self.data_path / f'ket_qua_du_doan_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+        results_df.to_csv(output_file, index=False, encoding='utf-8-sig')
+        logger.info(f"💾 Kết quả dự đoán hàng loạt đã lưu tại {output_file}")
         
         return results_df
     
@@ -424,17 +501,19 @@ class HRDecisionSupportSystem:
             with open(self.model_path / 'feature_columns.json', 'w') as f:
                 json.dump(self.feature_columns, f)
             
-            logger.info("Model saved successfully")
+            logger.info("✅ Mô hình đã lưu thành công")
             
         except Exception as e:
-            logger.error(f"Error saving model: {e}")
+            logger.error(f"❌ Lỗi lưu mô hình: {e}")
     
     def load_model(self):
         """
-        Load mô hình đã lưu
+        Load mô hình đã lưu với thông báo tiếng Việt
         """
         try:
             if (self.model_path / 'rf_model.pkl').exists():
+                logger.info("📂 Đang tải mô hình từ file...")
+                
                 with open(self.model_path / 'rf_model.pkl', 'rb') as f:
                     self.model = pickle.load(f)
                 
@@ -447,25 +526,19 @@ class HRDecisionSupportSystem:
                 with open(self.model_path / 'feature_columns.json', 'r') as f:
                     self.feature_columns = json.load(f)
                 
-                logger.info("Model loaded successfully")
+                logger.info("✅ Tải mô hình thành công!")
                 return True
                 
         except Exception as e:
-            logger.warning(f"Could not load model: {e}")
+            logger.warning(f"⚠️ Không thể tải mô hình: {e}")
             return False
     
     def generate_report(self, results_df=None):
         """
-        Tạo báo cáo tổng hợp
-        
-        Args:
-            results_df (pd.DataFrame): Kết quả dự đoán
-            
-        Returns:
-            dict: Báo cáo tổng hợp
+        Tạo báo cáo tổng hợp bằng tiếng Việt
         """
         if results_df is None:
-            logger.warning("No results data provided for report")
+            logger.warning("⚠️ Không có dữ liệu kết quả để tạo báo cáo")
             return {}
         
         total_candidates = len(results_df)
@@ -475,21 +548,23 @@ class HRDecisionSupportSystem:
         report = {
             'total_candidates': total_candidates,
             'suitable_candidates': suitable_candidates,
+            'unsuitable_candidates': total_candidates - suitable_candidates,
             'suitable_percentage': (suitable_candidates / total_candidates * 100) if total_candidates > 0 else 0,
             'average_confidence': avg_confidence,
             'high_confidence_suitable': len(results_df[
                 (results_df['prediction'] == 'Suitable') & 
                 (results_df['confidence'] > 0.8)
             ]),
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+            'summary': f"Đã xử lý {total_candidates} ứng viên, trong đó {suitable_candidates} ứng viên phù hợp ({(suitable_candidates / total_candidates * 100):.1f}%)" if total_candidates > 0 else "Không có dữ liệu để xử lý"
         }
         
         # Save report
-        report_file = self.data_path / f'report_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
-        with open(report_file, 'w') as f:
-            json.dump(report, f, indent=2)
+        report_file = self.data_path / f'bao_cao_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+        with open(report_file, 'w', encoding='utf-8') as f:
+            json.dump(report, f, indent=2, ensure_ascii=False)
         
-        logger.info(f"Report generated and saved to {report_file}")
+        logger.info(f"📊 Báo cáo đã được tạo và lưu tại {report_file}")
         return report
 
 
@@ -497,14 +572,14 @@ def main():
     """
     Hàm main để chạy ứng dụng
     """
-    parser = argparse.ArgumentParser(description='HR Decision Support System')
+    parser = argparse.ArgumentParser(description='Hệ thống Hỗ trợ Ra quyết định Tuyển dụng')
     parser.add_argument('--mode', choices=['train', 'predict', 'batch', 'demo'], 
-                       default='demo', help='Chế độ chạy')
-    parser.add_argument('--input', type=str, help='File input cho batch prediction')
+                       default='demo', help='Chế độ chạy hệ thống')
+    parser.add_argument('--input', type=str, help='File đầu vào cho dự đoán hàng loạt')
     parser.add_argument('--model-path', type=str, default='models/', 
-                       help='Đường dẫn thư mục model')
+                       help='Đường dẫn thư mục mô hình')
     parser.add_argument('--data-path', type=str, default='data/', 
-                       help='Đường dẫn thư mục data')
+                       help='Đường dẫn thư mục dữ liệu')
     
     args = parser.parse_args()
     
@@ -512,71 +587,43 @@ def main():
     hr_system = HRDecisionSupportSystem(args.model_path, args.data_path)
     
     if args.mode == 'train':
-        logger.info("Training mode selected")
+        logger.info("🧠 Chế độ huấn luyện được chọn")
         accuracy = hr_system.train_model()
-        print(f"Model training completed with accuracy: {accuracy:.3f}")
+        print(f"🎉 Huấn luyện mô hình hoàn tất với độ chính xác: {accuracy:.3f}")
     
     elif args.mode == 'predict':
-        logger.info("Single prediction mode")
+        logger.info("🎯 Chế độ dự đoán đơn")
         # Example candidate
         candidate = {
             'candidate_id': 'DEMO_001',
             'years_experience': 5,
             'education_level': 'bachelor',
             'skills': 'python, machine learning, sql, data analysis, teamwork',
-            'experience_description': 'Experienced data analyst with strong programming skills',
+            'experience_description': 'Chuyên gia phân tích dữ liệu có kinh nghiệm với kỹ năng lập trình mạnh',
             'position_applied': 'analyst'
         }
         
         result = hr_system.predict_candidate(candidate)
-        print(json.dumps(result, indent=2))
+        print("📋 Kết quả dự đoán:")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
     
     elif args.mode == 'batch':
         if not args.input:
-            print("Error: --input file required for batch mode")
+            print("❌ Lỗi: Cần file --input cho chế độ dự đoán hàng loạt")
             return
         
-        logger.info(f"Batch prediction mode for file: {args.input}")
+        logger.info(f"👥 Chế độ dự đoán hàng loạt cho file: {args.input}")
         results = hr_system.batch_predict(args.input)
         report = hr_system.generate_report(results)
-        print("Batch prediction completed")
-        print(json.dumps(report, indent=2))
+        print("✅ Dự đoán hàng loạt hoàn tất")
+        print("📊 Báo cáo tổng hợp:")
+        print(json.dumps(report, indent=2, ensure_ascii=False))
     
     else:  # demo mode
-        logger.info("Demo mode - Training and testing")
+        logger.info("🎮 Chế độ demo - Huấn luyện và kiểm thử")
         
         # Train model
         accuracy = hr_system.train_model()
-        print(f"Model trained with accuracy: {accuracy:.3f}")
+        print(f"🎉 Mô hình đã được huấn luyện với độ chính xác: {accuracy:.3f}")
         
-        # Demo predictions
-        demo_candidates = [
-            {
-                'candidate_id': 'DEMO_001',
-                'years_experience': 8,
-                'education_level': 'master',
-                'skills': 'python, machine learning, leadership, project management, sql',
-                'experience_description': 'Senior data scientist with team leadership experience',
-                'position_applied': 'manager'
-            },
-            {
-                'candidate_id': 'DEMO_002', 
-                'years_experience': 1,
-                'education_level': 'bachelor',
-                'skills': 'excel, communication',
-                'experience_description': 'Recent graduate with basic skills',
-                'position_applied': 'analyst'
-            }
-        ]
         
-        print("\n=== Demo Predictions ===")
-        for candidate in demo_candidates:
-            result = hr_system.predict_candidate(candidate)
-            print(f"\nCandidate: {result['candidate_id']}")
-            print(f"Decision: {result['prediction']}")
-            print(f"Confidence: {result['confidence']:.3f}")
-            print(f"Recommendation: {result['recommendation']}")
-
-
-if __name__ == "__main__":
-    main()
