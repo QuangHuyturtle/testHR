@@ -6,7 +6,7 @@ from datetime import datetime
 from werkzeug.utils import secure_filename
 
 # Import HR DSS system
-from hr_dss_main import HRDecisionSupportSystem
+from hr_dss_main import HRDecisionSupportSystemEnhanced as HRDecisionSupportSystem
 
 app = Flask(__name__)
 app.secret_key = 'hr_dss_demo_key_vietnamese_2025'

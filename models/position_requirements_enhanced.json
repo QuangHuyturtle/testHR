@@ -1,0 +1,114 @@
+{
+  "senior_data_scientist": {
+    "min_years": 5,
+    "min_education": "bachelor"
+  },
+  "senior_developer": {
+    "min_years": 5,
+    "min_education": "bachelor"
+  },
+  "senior_analyst": {
+    "min_years": 5,
+    "min_education": "bachelor"
+  },
+  "lead": {
+    "min_years": 4,
+    "min_education": "bachelor"
+  },
+  "manager": {
+    "min_years": 3,
+    "min_education": "bachelor"
+  },
+  "director": {
+    "min_years": 7,
+    "min_education": "master"
+  },
+  "principal_engineer": {
+    "min_years": 8,
+    "min_education": "bachelor"
+  },
+  "data_scientist": {
+    "min_years": 2,
+    "min_education": "bachelor"
+  },
+  "web_developer": {
+    "min_years": 2,
+    "min_education": "bachelor"
+  },
+  "software_developer": {
+    "min_years": 2,
+    "min_education": "bachelor"
+  },
+  "fullstack_developer": {
+    "min_years": 3,
+    "min_education": "bachelor"
+  },
+  "devops_engineer": {
+    "min_years": 3,
+    "min_education": "bachelor"
+  },
+  "product_manager": {
+    "min_years": 3,
+    "min_education": "bachelor"
+  },
+  "project_manager": {
+    "min_years": 2,
+    "min_education": "bachelor"
+  },
+  "junior_developer": {
+    "min_years": 0,
+    "min_education": "bachelor"
+  },
+  "junior_analyst": {
+    "min_years": 0,
+    "min_education": "bachelor"
+  },
+  "frontend_developer": {
+    "min_years": 1,
+    "min_education": "associate"
+  },
+  "backend_developer": {
+    "min_years": 1,
+    "min_education": "bachelor"
+  },
+  "data_analyst": {
+    "min_years": 1,
+    "min_education": "bachelor"
+  },
+  "qa_engineer": {
+    "min_years": 1,
+    "min_education": "bachelor"
+  },
+  "ui_ux_designer": {
+    "min_years": 1,
+    "min_education": "associate"
+  },
+  "graphic_designer": {
+    "min_years": 1,
+    "min_education": "associate"
+  },
+  "intern": {
+    "min_years": 0,
+    "min_education": "high_school"
+  },
+  "fresher": {
+    "min_years": 0,
+    "min_education": "bachelor"
+  },
+  "coordinator": {
+    "min_years": 0,
+    "min_education": "associate"
+  },
+  "designer": {
+    "min_years": 0,
+    "min_education": "associate"
+  },
+  "analyst": {
+    "min_years": 1,
+    "min_education": "bachelor"
+  },
+  "developer": {
+    "min_years": 1,
+    "min_education": "bachelor"
+  }
+}

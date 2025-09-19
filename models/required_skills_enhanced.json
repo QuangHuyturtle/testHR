@@ -1,0 +1,390 @@
+{
+  "data_scientist": {
+    "required": [
+      "sql",
+      "python"
+    ],
+    "preferred": [
+      "machine learning",
+      "statistics",
+      "pandas",
+      "numpy",
+      "scipy"
+    ],
+    "bonus": [
+      "deep learning",
+      "tensorflow",
+      "pytorch",
+      "spark",
+      "hadoop"
+    ]
+  },
+  "data_analyst": {
+    "required": [
+      "sql",
+      "excel"
+    ],
+    "preferred": [
+      "python",
+      "r",
+      "tableau",
+      "powerbi",
+      "statistics"
+    ],
+    "bonus": [
+      "machine learning",
+      "data visualization",
+      "pandas"
+    ]
+  },
+  "business_analyst": {
+    "required": [
+      "excel",
+      "sql"
+    ],
+    "preferred": [
+      "powerbi",
+      "tableau",
+      "business intelligence",
+      "requirements analysis"
+    ],
+    "bonus": [
+      "python",
+      "r",
+      "process modeling",
+      "agile"
+    ]
+  },
+  "web_developer": {
+    "required": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "preferred": [
+      "react",
+      "vue",
+      "angular",
+      "nodejs",
+      "php"
+    ],
+    "bonus": [
+      "typescript",
+      "webpack",
+      "sass",
+      "mongodb",
+      "postgresql"
+    ]
+  },
+  "frontend_developer": {
+    "required": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "preferred": [
+      "react",
+      "vue",
+      "angular",
+      "responsive design"
+    ],
+    "bonus": [
+      "typescript",
+      "sass",
+      "webpack",
+      "figma",
+      "ui/ux"
+    ]
+  },
+  "backend_developer": {
+    "required": [
+      "sql",
+      "api"
+    ],
+    "preferred": [
+      "nodejs",
+      "python",
+      "java",
+      "php",
+      "c#",
+      "go"
+    ],
+    "bonus": [
+      "microservices",
+      "docker",
+      "kubernetes",
+      "aws",
+      "azure"
+    ]
+  },
+  "fullstack_developer": {
+    "required": [
+      "html",
+      "css",
+      "javascript",
+      "sql"
+    ],
+    "preferred": [
+      "react",
+      "nodejs",
+      "python",
+      "mongodb",
+      "postgresql"
+    ],
+    "bonus": [
+      "docker",
+      "aws",
+      "microservices",
+      "devops"
+    ]
+  },
+  "software_developer": {
+    "required": [
+      "programming"
+    ],
+    "preferred": [
+      "python",
+      "java",
+      "javascript",
+      "c#",
+      "c++"
+    ],
+    "bonus": [
+      "git",
+      "agile",
+      "testing",
+      "ci/cd",
+      "docker"
+    ]
+  },
+  "mobile_developer": {
+    "required": [
+      "mobile"
+    ],
+    "preferred": [
+      "react native",
+      "flutter",
+      "swift",
+      "kotlin",
+      "java"
+    ],
+    "bonus": [
+      "firebase",
+      "push notifications",
+      "app store",
+      "google play"
+    ]
+  },
+  "devops_engineer": {
+    "required": [
+      "linux",
+      "docker"
+    ],
+    "preferred": [
+      "kubernetes",
+      "aws",
+      "azure",
+      "terraform",
+      "ansible"
+    ],
+    "bonus": [
+      "monitoring",
+      "jenkins",
+      "gitlab ci",
+      "prometheus",
+      "grafana"
+    ]
+  },
+  "system_administrator": {
+    "required": [
+      "linux",
+      "windows"
+    ],
+    "preferred": [
+      "networking",
+      "security",
+      "bash",
+      "powershell"
+    ],
+    "bonus": [
+      "vmware",
+      "hyper-v",
+      "active directory",
+      "monitoring"
+    ]
+  },
+  "ui_ux_designer": {
+    "required": [
+      "design",
+      "ui/ux"
+    ],
+    "preferred": [
+      "figma",
+      "sketch",
+      "adobe creative suite",
+      "prototyping"
+    ],
+    "bonus": [
+      "user research",
+      "wireframing",
+      "html",
+      "css"
+    ]
+  },
+  "graphic_designer": {
+    "required": [
+      "design",
+      "adobe creative suite"
+    ],
+    "preferred": [
+      "photoshop",
+      "illustrator",
+      "indesign",
+      "branding"
+    ],
+    "bonus": [
+      "web design",
+      "print design",
+      "typography",
+      "color theory"
+    ]
+  },
+  "digital_marketer": {
+    "required": [
+      "digital marketing"
+    ],
+    "preferred": [
+      "google ads",
+      "facebook ads",
+      "seo",
+      "sem",
+      "analytics"
+    ],
+    "bonus": [
+      "content marketing",
+      "email marketing",
+      "social media",
+      "conversion optimization"
+    ]
+  },
+  "content_creator": {
+    "required": [
+      "content writing",
+      "communication"
+    ],
+    "preferred": [
+      "seo",
+      "social media",
+      "copywriting",
+      "content strategy"
+    ],
+    "bonus": [
+      "video editing",
+      "graphic design",
+      "analytics",
+      "wordpress"
+    ]
+  },
+  "project_manager": {
+    "required": [
+      "project management"
+    ],
+    "preferred": [
+      "agile",
+      "scrum",
+      "pmp",
+      "leadership",
+      "communication"
+    ],
+    "bonus": [
+      "jira",
+      "confluence",
+      "risk management",
+      "stakeholder management"
+    ]
+  },
+  "product_manager": {
+    "required": [
+      "product management",
+      "communication"
+    ],
+    "preferred": [
+      "agile",
+      "user research",
+      "analytics",
+      "roadmap planning"
+    ],
+    "bonus": [
+      "technical skills",
+      "sql",
+      "wireframing",
+      "a/b testing"
+    ]
+  },
+  "qa_engineer": {
+    "required": [
+      "testing",
+      "quality assurance"
+    ],
+    "preferred": [
+      "automation testing",
+      "selenium",
+      "manual testing",
+      "bug tracking"
+    ],
+    "bonus": [
+      "api testing",
+      "performance testing",
+      "security testing",
+      "ci/cd"
+    ]
+  },
+  "analyst": {
+    "required": [
+      "excel",
+      "data analysis"
+    ],
+    "preferred": [
+      "sql",
+      "statistics",
+      "reporting"
+    ],
+    "bonus": [
+      "python",
+      "r",
+      "tableau",
+      "powerbi"
+    ]
+  },
+  "developer": {
+    "required": [
+      "programming"
+    ],
+    "preferred": [
+      "python",
+      "java",
+      "javascript",
+      "sql"
+    ],
+    "bonus": [
+      "git",
+      "agile",
+      "testing"
+    ]
+  },
+  "designer": {
+    "required": [
+      "design"
+    ],
+    "preferred": [
+      "adobe creative suite",
+      "figma",
+      "ui/ux"
+    ],
+    "bonus": [
+      "html",
+      "css",
+      "prototyping"
+    ]
+  }
+}
