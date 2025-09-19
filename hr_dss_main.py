@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-HR Decision Support System - Main Application (Vietnamese Version)
-Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự - Phiên bản tiếng Việt
+HR Decision Support System - Main Application (Vietnamese Version) - Updated
+Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự - Phiên bản cải thiện
 
-Author: Student
+Author: Student  
 Date: 2025
 Course: Hệ hỗ trợ ra quyết định, Hệ điều hành và lập trình Linux
 """
@@ -59,7 +59,7 @@ logger = logging.getLogger(__name__)
 
 class HRDecisionSupportSystem:
     """
-    Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự
+    Hệ thống hỗ trợ ra quyết định tuyển dụng nhân sự - Phiên bản cải thiện
     """
     
     def __init__(self, model_path="models/", data_path="data/"):
@@ -84,20 +84,181 @@ class HRDecisionSupportSystem:
         self.label_encoder = None
         self.feature_columns = None
         
+        # Load position requirements
+        self.position_requirements = self.get_position_requirements()
+        
         # Load model if exists
         self.load_model()
         
-        logger.info("🚀 Hệ thống Hỗ trợ Ra quyết định Tuyển dụng đã được khởi tạo")
+        logger.info("🚀 Hệ thống Hỗ trợ Ra quyết định Tuyển dụng đã được khởi tạo (Phiên bản cải thiện)")
+
+    def get_position_requirements(self):
+        """
+        Định nghĩa yêu cầu kinh nghiệm tối thiểu cho từng loại vị trí
+        """
+        return {
+            # Vị trí cấp cao - yêu cầu kinh nghiệm cao
+            'senior_developer': {'min_years': 5, 'min_education': 'bachelor'},
+            'senior_analyst': {'min_years': 5, 'min_education': 'bachelor'}, 
+            'data_scientist': {'min_years': 3, 'min_education': 'bachelor'},
+            'scientist': {'min_years': 3, 'min_education': 'bachelor'},
+            'lead': {'min_years': 4, 'min_education': 'bachelor'},
+            'manager': {'min_years': 3, 'min_education': 'bachelor'},
+            'director': {'min_years': 7, 'min_education': 'master'},
+            
+            # Vị trí trung cấp
+            'developer': {'min_years': 1, 'min_education': 'bachelor'},
+            'analyst': {'min_years': 1, 'min_education': 'bachelor'},
+            'consultant': {'min_years': 2, 'min_education': 'bachelor'},
+            'specialist': {'min_years': 2, 'min_education': 'bachelor'},
+            'engineer': {'min_years': 1, 'min_education': 'bachelor'},
+            
+            # Vị trí cơ bản - có thể chấp nhận ít kinh nghiệm hơn
+            'junior_developer': {'min_years': 0, 'min_education': 'bachelor'},
+            'junior_analyst': {'min_years': 0, 'min_education': 'bachelor'},
+            'intern': {'min_years': 0, 'min_education': 'high_school'},
+            'fresher': {'min_years': 0, 'min_education': 'bachelor'},
+            'coordinator': {'min_years': 0, 'min_education': 'associate'},
+            'designer': {'min_years': 0, 'min_education': 'associate'},
+        }
+
+    def get_education_score(self, education_level):
+        """Chuyển đổi trình độ học vấn thành điểm số"""
+        education_mapping = {
+            'high_school': 1,
+            'associate': 2, 
+            'bachelor': 3,
+            'master': 4,
+            'phd': 5
+        }
+        return education_mapping.get(education_level.lower(), 1)
+
+    def improved_suitability_logic(self, candidate_data):
+        """
+        Logic đánh giá cải thiện với yêu cầu kinh nghiệm theo vị trí
+        """
+        years_exp = int(candidate_data.get('years_experience', 0))
+        education = candidate_data.get('education_level', 'high_school').lower()
+        skills = candidate_data.get('skills', '').lower()
+        position = candidate_data.get('position_applied', '').lower()
+        
+        # Tìm yêu cầu phù hợp nhất cho vị trí
+        position_req = None
+        for req_position, req_data in self.position_requirements.items():
+            if req_position in position or position in req_position:
+                position_req = req_data
+                break
+        
+        # Nếu không tìm thấy yêu cầu cụ thể, sử dụng yêu cầu mặc định
+        if position_req is None:
+            # Phân loại dựa trên từ khóa trong tên vị trí
+            if any(word in position for word in ['senior', 'lead', 'manager', 'director']):
+                position_req = {'min_years': 4, 'min_education': 'bachelor'}
+            elif any(word in position for word in ['scientist', 'specialist']):
+                position_req = {'min_years': 3, 'min_education': 'bachelor'}
+            elif any(word in position for word in ['junior', 'intern', 'fresher']):
+                position_req = {'min_years': 0, 'min_education': 'bachelor'}
+            else:
+                position_req = {'min_years': 1, 'min_education': 'bachelor'}  # Mặc định
+        
+        # Tính điểm đánh giá
+        score = 0
+        max_score = 10
+        feedback = []
+        
+        # 1. Kiểm tra kinh nghiệm (40% trọng số)
+        min_years = position_req['min_years']
+        if years_exp >= min_years + 2:
+            score += 4  # Vượt yêu cầu
+            feedback.append(f"✓ Kinh nghiệm vượt yêu cầu ({years_exp} năm >= {min_years} năm)")
+        elif years_exp >= min_years:
+            score += 3  # Đạt yêu cầu
+            feedback.append(f"✓ Kinh nghiệm đạt yêu cầu ({years_exp} năm >= {min_years} năm)")
+        elif years_exp >= min_years - 1 and min_years > 0:
+            score += 2  # Gần đạt yêu cầu
+            feedback.append(f"⚠ Kinh nghiệm gần đạt yêu cầu ({years_exp} năm, yêu cầu {min_years} năm)")
+        else:
+            score += 0  # Không đạt yêu cầu
+            feedback.append(f"✗ Kinh nghiệm chưa đạt yêu cầu ({years_exp} năm < {min_years} năm)")
+        
+        # 2. Kiểm tra học vấn (25% trọng số)
+        min_education = position_req['min_education']
+        candidate_edu_score = self.get_education_score(education)
+        min_edu_score = self.get_education_score(min_education)
+        
+        if candidate_edu_score >= min_edu_score + 1:
+            score += 2.5  # Vượt yêu cầu
+            feedback.append(f"✓ Học vấn vượt yêu cầu ({education} >= {min_education})")
+        elif candidate_edu_score >= min_edu_score:
+            score += 2  # Đạt yêu cầu
+            feedback.append(f"✓ Học vấn đạt yêu cầu ({education} >= {min_education})")
+        else:
+            score += 1  # Chưa đạt yêu cầu
+            feedback.append(f"✗ Học vấn chưa đạt yêu cầu ({education} < {min_education})")
+        
+        # 3. Kiểm tra kỹ năng (35% trọng số)
+        valuable_skills = ['python', 'java', 'machine learning', 'leadership', 'project management', 
+                          'sql', 'data analysis', 'communication', 'teamwork']
+        
+        skill_list = [s.strip() for s in skills.split(',')]
+        skill_count = len(skill_list)
+        valuable_skill_count = sum(1 for skill in valuable_skills if skill in skills)
+        
+        if valuable_skill_count >= 4 and skill_count >= 6:
+            score += 3.5  # Kỹ năng xuất sắc
+            feedback.append(f"✓ Kỹ năng xuất sắc ({valuable_skill_count} kỹ năng giá trị, {skill_count} tổng)")
+        elif valuable_skill_count >= 2 and skill_count >= 4:
+            score += 2.5  # Kỹ năng tốt
+            feedback.append(f"✓ Kỹ năng tốt ({valuable_skill_count} kỹ năng giá trị, {skill_count} tổng)")
+        elif valuable_skill_count >= 1:
+            score += 1.5  # Kỹ năng cơ bản
+            feedback.append(f"⚠ Kỹ năng cơ bản ({valuable_skill_count} kỹ năng giá trị, {skill_count} tổng)")
+        else:
+            score += 0.5  # Kỹ năng hạn chế
+            feedback.append(f"✗ Kỹ năng hạn chế ({valuable_skill_count} kỹ năng giá trị, {skill_count} tổng)")
+        
+        # Tính toán kết quả cuối cùng
+        percentage = (score / max_score) * 100
+        
+        # Quyết định cuối cùng dựa trên điều kiện nghiêm ngặt
+        suitable = False
+        confidence_level = "Thấp"
+        
+        if score >= 8:  # 80%
+            suitable = True
+            confidence_level = "Cao"
+            recommendation = "Rất khuyến khích mời phỏng vấn"
+        elif score >= 6.5:  # 65%
+            suitable = True  
+            confidence_level = "Trung bình"
+            recommendation = "Khuyến khích mời phỏng vấn"
+        elif score >= 5:  # 50%
+            suitable = False
+            confidence_level = "Thấp"
+            recommendation = "Cần đánh giá thêm hoặc xem xét vị trí thấp hơn"
+        else:
+            suitable = False
+            confidence_level = "Rất thấp"
+            recommendation = "Không phù hợp với vị trí này"
+        
+        return {
+            'suitable': suitable,
+            'score': score,
+            'max_score': max_score,
+            'percentage': percentage,
+            'confidence_level': confidence_level,
+            'recommendation': recommendation,
+            'feedback': feedback,
+            'position_requirements': {
+                'min_years': min_years,
+                'min_education': min_education,
+                'position': position
+            }
+        }
     
     def preprocess_text(self, text):
         """
         Tiền xử lý văn bản (CV, mô tả kỹ năng)
-        
-        Args:
-            text (str): Văn bản cần xử lý
-            
-        Returns:
-            str: Văn bản đã xử lý
         """
         if pd.isna(text) or text is None:
             return ""
@@ -120,61 +281,11 @@ class HRDecisionSupportSystem:
         except:
             return text
     
-    def extract_features(self, df):
-        """
-        Trích xuất đặc trưng từ dữ liệu ứng viên
-        
-        Args:
-            df (pd.DataFrame): Dữ liệu ứng viên
-            
-        Returns:
-            pd.DataFrame: Dữ liệu đã trích xuất đặc trưng
-        """
-        logger.info("📊 Đang trích xuất đặc trưng từ dữ liệu ứng viên...")
-        
-        # Tạo bản sao để không ảnh hưởng dữ liệu gốc
-        processed_df = df.copy()
-        
-        # Tiền xử lý văn bản
-        processed_df['skills_processed'] = processed_df['skills'].apply(self.preprocess_text)
-        processed_df['experience_description_processed'] = processed_df['experience_description'].apply(self.preprocess_text)
-        
-        # Kết hợp các trường văn bản
-        processed_df['combined_text'] = (
-            processed_df['skills_processed'] + ' ' + 
-            processed_df['experience_description_processed']
-        )
-        
-        # Tính toán các đặc trưng số
-        processed_df['education_score'] = processed_df['education_level'].map({
-            'high_school': 1,
-            'associate': 2, 
-            'bachelor': 3,
-            'master': 4,
-            'phd': 5
-        }).fillna(1)
-        
-        # Chuẩn hóa kinh nghiệm (năm)
-        processed_df['years_experience'] = pd.to_numeric(processed_df['years_experience'], errors='coerce').fillna(0)
-        
-        # Tính điểm kỹ năng (số lượng kỹ năng)
-        processed_df['num_skills'] = processed_df['skills'].str.count(',') + 1
-        processed_df['num_skills'] = processed_df['num_skills'].fillna(0)
-        
-        logger.info("✓ Trích xuất đặc trưng hoàn tất")
-        return processed_df
-    
     def create_sample_data(self, num_samples=1000):
         """
-        Tạo dữ liệu mẫu cho training
-        
-        Args:
-            num_samples (int): Số lượng mẫu
-            
-        Returns:
-            pd.DataFrame: Dữ liệu mẫu
+        Tạo dữ liệu mẫu cho training với logic cải thiện
         """
-        logger.info(f"🎲 Tạo dữ liệu mẫu với {num_samples} mẫu...")
+        logger.info(f"🎲 Tạo dữ liệu mẫu với {num_samples} mẫu (logic cải thiện)...")
         
         np.random.seed(42)
         
@@ -187,7 +298,8 @@ class HRDecisionSupportSystem:
         ]
         
         education_levels = ['high_school', 'associate', 'bachelor', 'master', 'phd']
-        positions = ['developer', 'analyst', 'manager', 'designer', 'consultant']
+        positions = ['developer', 'analyst', 'manager', 'designer', 'consultant', 
+                    'data_scientist', 'senior_developer', 'junior_developer', 'intern', 'fresher']
         
         data = []
         
@@ -205,16 +317,16 @@ class HRDecisionSupportSystem:
             # Experience description
             exp_desc = f"Worked as {position} for {years_exp} years with expertise in {', '.join(candidate_skills[:3])}"
             
-            # Decision logic for labeling
-            score = 0
-            if years_exp >= 3: score += 2
-            if education in ['bachelor', 'master', 'phd']: score += 2
-            if num_skills >= 5: score += 1
-            if 'python' in candidate_skills or 'java' in candidate_skills: score += 1
-            if 'leadership' in candidate_skills or 'project management' in candidate_skills: score += 1
+            # Sử dụng logic cải thiện để tạo nhãn
+            candidate_data = {
+                'years_experience': years_exp,
+                'education_level': education,
+                'skills': skills_str,
+                'position_applied': position
+            }
             
-            # Label: suitable if score >= 4
-            suitable = 1 if score >= 4 else 0
+            assessment = self.improved_suitability_logic(candidate_data)
+            suitable = 1 if assessment['suitable'] else 0
             
             data.append({
                 'candidate_id': f'CAND_{i+1:04d}',
@@ -229,20 +341,52 @@ class HRDecisionSupportSystem:
         df = pd.DataFrame(data)
         
         # Save sample data
-        sample_file = self.data_path / 'sample_candidates.csv'
+        sample_file = self.data_path / 'sample_candidates_improved.csv'
         df.to_csv(sample_file, index=False)
-        logger.info(f"✓ Dữ liệu mẫu đã lưu tại {sample_file}")
+        logger.info(f"✓ Dữ liệu mẫu cải thiện đã lưu tại {sample_file}")
         
         return df
+
+    def extract_features(self, df):
+        """
+        Trích xuất đặc trưng từ dữ liệu ứng viên
+        """
+        logger.info("📊 Đang trích xuất đặc trưng từ dữ liệu ứng viên...")
+        
+        # Tạo bản sao để không ảnh hưởng dữ liệu gốc
+        processed_df = df.copy()
+        
+        # Tiền xử lý văn bản
+        processed_df['skills_processed'] = processed_df['skills'].apply(self.preprocess_text)
+        processed_df['experience_description_processed'] = processed_df['experience_description'].apply(self.preprocess_text)
+        
+        # Kết hợp các trường văn bản
+        processed_df['combined_text'] = (
+            processed_df['skills_processed'] + ' ' + 
+            processed_df['experience_description_processed']
+        )
+        
+        # Tính toán các đặc trưng số
+        processed_df['education_score'] = processed_df['education_level'].apply(self.get_education_score)
+        
+        # Chuẩn hóa kinh nghiệm (năm)
+        processed_df['years_experience'] = pd.to_numeric(processed_df['years_experience'], errors='coerce').fillna(0)
+        
+        # Tính điểm kỹ năng (số lượng kỹ năng)
+        processed_df['num_skills'] = processed_df['skills'].str.count(',') + 1
+        processed_df['num_skills'] = processed_df['num_skills'].fillna(0)
+        
+        logger.info("✓ Trích xuất đặc trưng hoàn tất")
+        return processed_df
     
     def train_model(self, df=None):
         """
-        Training mô hình phân loại với thông báo tiếng Việt
+        Training mô hình phân loại với logic cải thiện
         """
-        logger.info("🧠 Bắt đầu huấn luyện mô hình...")
+        logger.info("🧠 Bắt đầu huấn luyện mô hình với logic cải thiện...")
         
         if df is None:
-            logger.info("📦 Tạo dữ liệu mẫu...")
+            logger.info("📦 Tạo dữ liệu mẫu với logic cải thiện...")
             df = self.create_sample_data()
         
         # Extract features
@@ -314,17 +458,32 @@ class HRDecisionSupportSystem:
     
     def predict_candidate(self, candidate_data):
         """
-        Dự đoán độ phù hợp của ứng viên với thông báo tiếng Việt
-        
-        Args:
-            candidate_data (dict): Thông tin ứng viên
-            
-        Returns:
-            dict: Kết quả dự đoán bằng tiếng Việt
+        Dự đoán độ phù hợp của ứng viên sử dụng cả ML model và logic cải thiện
         """
         if self.model is None:
-            raise ValueError("❌ Mô hình chưa được huấn luyện. Hãy chạy train_model() trước.")
+            # Nếu chưa có model, chỉ sử dụng logic cải thiện
+            logger.warning("⚠️ Chưa có mô hình ML, sử dụng logic đánh giá cải thiện")
+            assessment = self.improved_suitability_logic(candidate_data)
+            
+            result = {
+                'candidate_id': candidate_data.get('candidate_id', 'Không xác định'),
+                'prediction': 'Suitable' if assessment['suitable'] else 'Not Suitable',
+                'prediction_vietnamese': 'Phù hợp' if assessment['suitable'] else 'Chưa phù hợp',
+                'confidence': assessment['percentage'] / 100,
+                'probability_suitable': assessment['percentage'] / 100,
+                'recommendation': assessment['recommendation'],
+                'recommendation_vietnamese': assessment['recommendation'],
+                'education_display': self.get_education_vietnamese(candidate_data.get('education_level', '')),
+                'summary': self.generate_candidate_summary_vietnamese(candidate_data, assessment['suitable'], assessment['percentage'] / 100),
+                'detailed_feedback': assessment['feedback'],
+                'position_requirements': assessment['position_requirements'],
+                'assessment_method': 'Improved Logic Only'
+            }
+            
+            logger.info(f"🎯 Đánh giá logic cho {result['candidate_id']}: {result['prediction_vietnamese']} ({result['confidence']:.3f})")
+            return result
         
+        # Sử dụng cả ML model và logic cải thiện
         # Convert to DataFrame
         df = pd.DataFrame([candidate_data])
         
@@ -340,53 +499,49 @@ class HRDecisionSupportSystem:
         X_numerical = numerical_features
         X = np.hstack([X_text, X_numerical])
         
-        # Predict
-        prediction = self.model.predict(X)[0]
-        probability = self.model.predict_proba(X)[0]
+        # ML Prediction
+        ml_prediction = self.model.predict(X)[0]
+        ml_probability = self.model.predict_proba(X)[0]
+        
+        # Logic Assessment
+        logic_assessment = self.improved_suitability_logic(candidate_data)
+        
+        # Combine both approaches (weighted average)
+        ml_confidence = max(ml_probability)
+        logic_confidence = logic_assessment['percentage'] / 100
+        
+        # Trọng số: 60% ML, 40% Logic
+        final_confidence = 0.6 * ml_confidence + 0.4 * logic_confidence
+        
+        # Quyết định cuối cùng: phải đạt cả ML và Logic hoặc có confidence cao
+        final_suitable = (ml_prediction == 1 and logic_assessment['suitable']) or final_confidence > 0.8
         
         result = {
             'candidate_id': candidate_data.get('candidate_id', 'Không xác định'),
-            'prediction': 'Suitable' if prediction == 1 else 'Not Suitable',
-            'prediction_vietnamese': 'Phù hợp' if prediction == 1 else 'Chưa phù hợp',
-            'confidence': max(probability),
-            'probability_suitable': probability[1] if len(probability) > 1 else probability[0],
-            'recommendation': self.get_recommendation(prediction, max(probability)),
-            'recommendation_vietnamese': self.get_recommendation_vietnamese(prediction, max(probability)),
+            'prediction': 'Suitable' if final_suitable else 'Not Suitable',
+            'prediction_vietnamese': 'Phù hợp' if final_suitable else 'Chưa phù hợp',
+            'confidence': final_confidence,
+            'probability_suitable': final_confidence,
+            'recommendation': self.get_recommendation_vietnamese(1 if final_suitable else 0, final_confidence),
+            'recommendation_vietnamese': self.get_recommendation_vietnamese(1 if final_suitable else 0, final_confidence),
             'education_display': self.get_education_vietnamese(candidate_data.get('education_level', '')),
-            'summary': self.generate_candidate_summary_vietnamese(candidate_data, prediction, max(probability))
+            'summary': self.generate_candidate_summary_vietnamese(candidate_data, final_suitable, final_confidence),
+            'detailed_feedback': logic_assessment['feedback'],
+            'position_requirements': logic_assessment['position_requirements'],
+            'ml_prediction': 'Suitable' if ml_prediction == 1 else 'Not Suitable',
+            'ml_confidence': ml_confidence,
+            'logic_prediction': 'Suitable' if logic_assessment['suitable'] else 'Not Suitable',
+            'logic_confidence': logic_confidence,
+            'assessment_method': 'Combined ML + Improved Logic'
         }
         
-        logger.info(f"🎯 Dự đoán cho {result['candidate_id']}: {result['prediction_vietnamese']} (độ tin cậy: {result['confidence']:.3f})")
+        logger.info(f"🎯 Dự đoán kết hợp cho {result['candidate_id']}: {result['prediction_vietnamese']} (tin cậy cuối: {result['confidence']:.3f})")
         
         return result
-    
-    def get_recommendation(self, prediction, confidence):
-        """
-        Đưa ra khuyến nghị dựa trên dự đoán (English)
-        """
-        if prediction == 1:
-            if confidence > 0.8:
-                return "Highly recommended for interview"
-            elif confidence > 0.6:
-                return "Recommended for interview"
-            else:
-                return "Consider for interview with caution"
-        else:
-            if confidence > 0.8:
-                return "Not recommended"
-            else:
-                return "Need further evaluation"
     
     def get_recommendation_vietnamese(self, prediction, confidence):
         """
         Đưa ra khuyến nghị bằng tiếng Việt dựa trên dự đoán
-        
-        Args:
-            prediction (int): Kết quả dự đoán (0 hoặc 1)
-            confidence (float): Độ tin cậy
-            
-        Returns:
-            str: Khuyến nghị bằng tiếng Việt
         """
         if prediction == 1:
             if confidence > 0.8:
@@ -397,9 +552,11 @@ class HRDecisionSupportSystem:
                 return "Cân nhắc mời phỏng vấn với thái độ thận trọng"
         else:
             if confidence > 0.8:
-                return "Không khuyến khích"
+                return "Không phù hợp với vị trí này"
+            elif confidence > 0.6:
+                return "Cần đánh giá thêm hoặc xem xét vị trí thấp hơn"
             else:
-                return "Cần đánh giá thêm"
+                return "Không khuyến khích"
 
     def get_education_vietnamese(self, education_level):
         """Chuyển đổi trình độ học vấn sang tiếng Việt"""
@@ -417,32 +574,27 @@ class HRDecisionSupportSystem:
         years_exp = candidate_data.get('years_experience', 0)
         education = self.get_education_vietnamese(candidate_data.get('education_level', ''))
         skills_count = len(candidate_data.get('skills', '').split(','))
+        position = candidate_data.get('position_applied', 'chưa xác định')
         
-        summary = f"Ứng viên có {years_exp} năm kinh nghiệm, trình độ {education}, "
+        summary = f"Ứng viên ứng tuyển vị trí {position}, có {years_exp} năm kinh nghiệm, trình độ {education}, "
         summary += f"sở hữu {skills_count} kỹ năng chính. "
         
-        if prediction == 1:
+        if prediction:
             if confidence > 0.8:
                 summary += "Đây là ứng viên tiềm năng cao, rất phù hợp với vị trí ứng tuyển."
             else:
                 summary += "Ứng viên có tiềm năng tốt, phù hợp với vị trí ứng tuyển."
         else:
-            if confidence > 0.8:
-                summary += "Ứng viên chưa đáp ứng đủ yêu cầu cho vị trí này."
+            if confidence > 0.6:
+                summary += "Ứng viên cần được đánh giá kỹ hơn hoặc xem xét vị trí phù hợp hơn."
             else:
-                summary += "Ứng viên cần được đánh giá kỹ hơn để đưa ra quyết định cuối cùng."
+                summary += "Ứng viên chưa đáp ứng đủ yêu cầu cho vị trí này."
         
         return summary
     
     def batch_predict(self, csv_file):
         """
         Dự đoán hàng loạt từ file CSV
-        
-        Args:
-            csv_file (str): Đường dẫn file CSV
-            
-        Returns:
-            pd.DataFrame: Kết quả dự đoán
         """
         logger.info(f"📁 Xử lý dự đoán hàng loạt từ file {csv_file}")
         
@@ -488,20 +640,24 @@ class HRDecisionSupportSystem:
         """
         try:
             # Save model components
-            with open(self.model_path / 'rf_model.pkl', 'wb') as f:
+            with open(self.model_path / 'rf_model_improved.pkl', 'wb') as f:
                 pickle.dump(self.model, f)
             
-            with open(self.model_path / 'vectorizer.pkl', 'wb') as f:
+            with open(self.model_path / 'vectorizer_improved.pkl', 'wb') as f:
                 pickle.dump(self.vectorizer, f)
             
-            with open(self.model_path / 'scaler.pkl', 'wb') as f:
+            with open(self.model_path / 'scaler_improved.pkl', 'wb') as f:
                 pickle.dump(self.scaler, f)
             
             # Save feature columns
-            with open(self.model_path / 'feature_columns.json', 'w') as f:
+            with open(self.model_path / 'feature_columns_improved.json', 'w') as f:
                 json.dump(self.feature_columns, f)
             
-            logger.info("✅ Mô hình đã lưu thành công")
+            # Save position requirements
+            with open(self.model_path / 'position_requirements.json', 'w', encoding='utf-8') as f:
+                json.dump(self.position_requirements, f, ensure_ascii=False, indent=2)
+            
+            logger.info("✅ Mô hình cải thiện đã lưu thành công")
             
         except Exception as e:
             logger.error(f"❌ Lỗi lưu mô hình: {e}")
@@ -511,8 +667,28 @@ class HRDecisionSupportSystem:
         Load mô hình đã lưu với thông báo tiếng Việt
         """
         try:
-            if (self.model_path / 'rf_model.pkl').exists():
-                logger.info("📂 Đang tải mô hình từ file...")
+            # Try to load improved model first
+            if (self.model_path / 'rf_model_improved.pkl').exists():
+                logger.info("📂 Đang tải mô hình cải thiện từ file...")
+                
+                with open(self.model_path / 'rf_model_improved.pkl', 'rb') as f:
+                    self.model = pickle.load(f)
+                
+                with open(self.model_path / 'vectorizer_improved.pkl', 'rb') as f:
+                    self.vectorizer = pickle.load(f)
+                
+                with open(self.model_path / 'scaler_improved.pkl', 'rb') as f:
+                    self.scaler = pickle.load(f)
+                
+                with open(self.model_path / 'feature_columns_improved.json', 'r') as f:
+                    self.feature_columns = json.load(f)
+                
+                logger.info("✅ Tải mô hình cải thiện thành công!")
+                return True
+            
+            # Fallback to old model
+            elif (self.model_path / 'rf_model.pkl').exists():
+                logger.info("📂 Đang tải mô hình cũ từ file...")
                 
                 with open(self.model_path / 'rf_model.pkl', 'rb') as f:
                     self.model = pickle.load(f)
@@ -526,7 +702,7 @@ class HRDecisionSupportSystem:
                 with open(self.model_path / 'feature_columns.json', 'r') as f:
                     self.feature_columns = json.load(f)
                 
-                logger.info("✅ Tải mô hình thành công!")
+                logger.info("✅ Tải mô hình cũ thành công!")
                 return True
                 
         except Exception as e:
@@ -556,15 +732,16 @@ class HRDecisionSupportSystem:
                 (results_df['confidence'] > 0.8)
             ]),
             'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
-            'summary': f"Đã xử lý {total_candidates} ứng viên, trong đó {suitable_candidates} ứng viên phù hợp ({(suitable_candidates / total_candidates * 100):.1f}%)" if total_candidates > 0 else "Không có dữ liệu để xử lý"
+            'summary': f"Đã xử lý {total_candidates} ứng viên với logic cải thiện, trong đó {suitable_candidates} ứng viên phù hợp ({(suitable_candidates / total_candidates * 100):.1f}%)" if total_candidates > 0 else "Không có dữ liệu để xử lý",
+            'system_version': 'HR DSS v2.0 - Improved Logic'
         }
         
         # Save report
-        report_file = self.data_path / f'bao_cao_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+        report_file = self.data_path / f'bao_cao_cai_tien_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
         
-        logger.info(f"📊 Báo cáo đã được tạo và lưu tại {report_file}")
+        logger.info(f"📊 Báo cáo cải thiện đã được tạo và lưu tại {report_file}")
         return report
 
 
@@ -572,7 +749,7 @@ def main():
     """
     Hàm main để chạy ứng dụng
     """
-    parser = argparse.ArgumentParser(description='Hệ thống Hỗ trợ Ra quyết định Tuyển dụng')
+    parser = argparse.ArgumentParser(description='Hệ thống Hỗ trợ Ra quyết định Tuyển dụng - Phiên bản Cải thiện')
     parser.add_argument('--mode', choices=['train', 'predict', 'batch', 'demo'], 
                        default='demo', help='Chế độ chạy hệ thống')
     parser.add_argument('--input', type=str, help='File đầu vào cho dự đoán hàng loạt')
@@ -587,24 +764,24 @@ def main():
     hr_system = HRDecisionSupportSystem(args.model_path, args.data_path)
     
     if args.mode == 'train':
-        logger.info("🧠 Chế độ huấn luyện được chọn")
+        logger.info("🧠 Chế độ huấn luyện được chọn (với logic cải thiện)")
         accuracy = hr_system.train_model()
         print(f"🎉 Huấn luyện mô hình hoàn tất với độ chính xác: {accuracy:.3f}")
     
     elif args.mode == 'predict':
-        logger.info("🎯 Chế độ dự đoán đơn")
-        # Example candidate
+        logger.info("🎯 Chế độ dự đoán đơn (với logic cải thiện)")
+        # Test case: Data Scientist với 0 năm kinh nghiệm
         candidate = {
-            'candidate_id': 'DEMO_001',
-            'years_experience': 5,
+            'candidate_id': 'GiaHuy_Test',
+            'years_experience': 0,
             'education_level': 'bachelor',
-            'skills': 'python, machine learning, sql, data analysis, teamwork',
-            'experience_description': 'Chuyên gia phân tích dữ liệu có kinh nghiệm với kỹ năng lập trình mạnh',
-            'position_applied': 'analyst'
+            'skills': 'python, machine learning',
+            'experience_description': 'Mới tốt nghiệp với kiến thức cơ bản về lập trình',
+            'position_applied': 'data_scientist'
         }
         
         result = hr_system.predict_candidate(candidate)
-        print("📋 Kết quả dự đoán:")
+        print("📋 Kết quả dự đoán cải thiện:")
         print(json.dumps(result, indent=2, ensure_ascii=False))
     
     elif args.mode == 'batch':
@@ -612,18 +789,70 @@ def main():
             print("❌ Lỗi: Cần file --input cho chế độ dự đoán hàng loạt")
             return
         
-        logger.info(f"👥 Chế độ dự đoán hàng loạt cho file: {args.input}")
+        logger.info(f"👥 Chế độ dự đoán hàng loạt cho file: {args.input} (với logic cải thiện)")
         results = hr_system.batch_predict(args.input)
         report = hr_system.generate_report(results)
-        print("✅ Dự đoán hàng loạt hoàn tất")
+        print("✅ Dự đoán hàng loạt hoàn tất với logic cải thiện")
         print("📊 Báo cáo tổng hợp:")
         print(json.dumps(report, indent=2, ensure_ascii=False))
     
     else:  # demo mode
-        logger.info("🎮 Chế độ demo - Huấn luyện và kiểm thử")
+        logger.info("🎮 Chế độ demo - Kiểm thử logic cải thiện")
         
-        # Train model
-        accuracy = hr_system.train_model()
-        print(f"🎉 Mô hình đã được huấn luyện với độ chính xác: {accuracy:.3f}")
+        # Test multiple scenarios
+        test_cases = [
+            {
+                'name': 'Data Scientist với 0 năm kinh nghiệm (như trường hợp GiaHuy)',
+                'data': {
+                    'candidate_id': 'GiaHuy',
+                    'years_experience': 0,
+                    'education_level': 'bachelor',
+                    'skills': 'python, machine learning',
+                    'position_applied': 'data_scientist'
+                }
+            },
+            {
+                'name': 'Junior Developer tốt nghiệp mới (phù hợp)',
+                'data': {
+                    'candidate_id': 'JUNIOR001',
+                    'years_experience': 0,
+                    'education_level': 'bachelor',
+                    'skills': 'python, sql, teamwork',
+                    'position_applied': 'junior_developer'
+                }
+            },
+            {
+                'name': 'Senior Developer kinh nghiệm cao',
+                'data': {
+                    'candidate_id': 'SENIOR001',
+                    'years_experience': 6,
+                    'education_level': 'master',
+                    'skills': 'python, java, leadership, project management, sql',
+                    'position_applied': 'senior_developer'
+                }
+            }
+        ]
         
+        print("=== KIỂM THỬ LOGIC ĐÁNH GIÁ CẢI THIỆN ===\n")
         
+        for test_case in test_cases:
+            print(f"--- {test_case['name']} ---")
+            result = hr_system.predict_candidate(test_case['data'])
+            
+            print(f"Kết quả: {'✓ PHÙ HỢP' if result['prediction'] == 'Suitable' else '✗ CHƯA PHÙ HỢP'}")
+            print(f"Độ tin cậy: {result['confidence']:.1%}")
+            print(f"Khuyến nghị: {result['recommendation_vietnamese']}")
+            
+            if 'detailed_feedback' in result:
+                print("Chi tiết đánh giá:")
+                for feedback in result['detailed_feedback']:
+                    print(f"  {feedback}")
+            
+            if 'position_requirements' in result:
+                req = result['position_requirements']
+                print(f"Yêu cầu vị trí: {req['min_years']} năm kinh nghiệm, {req['min_education']}")
+            
+            print()
+
+if __name__ == "__main__":
+    main()
